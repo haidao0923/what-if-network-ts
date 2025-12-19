@@ -326,6 +326,8 @@ Error generating stack: `+a.message+`
                 height: 300px;
                 width: 100%;
                 object-fit: cover;
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
               }
 
               @media (max-width: 640px) {
