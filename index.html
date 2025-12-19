@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What If Network</title>
+    <link rel="icon" type="image/png" href="./images/logo.png" />
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Outfit', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            colors: {
+              primary: '#CA8A04', // Yellow 600
+              secondary: '#EAB308', // Yellow 500
+              dark: '#1A1B2E', // Deep Navy (Main Background)
+              card: '#242640', // Slightly lighter navy for cards
+              light: '#E2E8F0', // Light Gray/White for text
+            },
+            typography: (theme) => ({
+              DEFAULT: {
+                css: {
+                  color: theme('colors.gray.300'),
+                  h1: {
+                    color: theme('colors.white'),
+                    fontFamily: theme('fontFamily.serif')
+                  },
+                  h2: {
+                    color: theme('colors.white'),
+                    fontFamily: theme('fontFamily.serif')
+                  },
+                  h3: {
+                    color: theme('colors.white'),
+                    fontFamily: theme('fontFamily.serif'),
+                    fontWeight: '700',
+                    marginTop: theme('spacing.8'),
+                    marginBottom: theme('spacing.2'),
+                  },
+                  h4: {
+                    color: theme('colors.white'),
+                    fontFamily: theme('fontFamily.serif')
+                  },
+                  p: {
+                    marginBottom: theme('spacing.4'),
+                  },
+                  strong: { color: theme('colors.white') },
+                  a: { color: theme('colors.primary') },
+                  blockquote: { color: theme('colors.gray.400'), borderLeftColor: theme('colors.primary') },
+                },
+              },
+            }),
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #1A1B2E;
+        color: #E2E8F0;
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
+    "react-router": "https://aistudiocdn.com/react-router@6.22.3",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@6.22.3"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-B7IRXgEC.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
+</html>
