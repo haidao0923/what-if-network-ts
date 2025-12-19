@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { 
+import {
   ArrowLeft, Calendar, User, Clock, Share2, Type, Minus, Plus,
   Mail, Twitter, Link as LinkIcon, Check
 } from 'lucide-react';
@@ -21,7 +21,7 @@ const BlogPostDetail: React.FC = () => {
 
   const relatedPosts = useMemo(() => {
     if (!post) return [];
-    
+
     // Helper to extract significant keywords from text
     const getKeywords = (text: string) => {
       const stopWords = ['this', 'that', 'with', 'from', 'what', 'when', 'where', 'which', 'have', 'been', 'were'];
@@ -38,15 +38,15 @@ const BlogPostDetail: React.FC = () => {
       .filter(p => p.id !== post.id)
       .map(p => {
         let score = 0;
-        
+
         // 1. Category Match (Base score)
         if (p.category === post.category) score += 5;
-        
+
         // 2. Keyword overlap (Boost score)
         const pKeywords = getKeywords(`${p.title} ${p.excerpt}`);
         const matchCount = pKeywords.filter(k => currentKeywords.includes(k)).length;
         score += matchCount;
-        
+
         return { article: p, score };
       });
 
@@ -104,9 +104,9 @@ const BlogPostDetail: React.FC = () => {
     <div className="bg-dark min-h-screen pb-12">
       {/* Hero Header for Post */}
       <div className="relative h-96 w-full">
-        <img 
-          src={post.imageUrl} 
-          alt={post.title} 
+        <img
+          src={post.imageUrl}
+          alt={post.title}
           className="w-full h-full object-cover opacity-80"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/50 to-transparent"></div>
@@ -124,13 +124,13 @@ const BlogPostDetail: React.FC = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-lg">
               {post.title}
             </h1>
-            
+
             <div className="flex flex-wrap items-center gap-6 text-gray-300">
               <div className="flex items-center bg-black/30 px-3 py-1.5 rounded-full backdrop-blur-sm">
                  {author && author.avatar ? (
-                    <img 
-                        src={author.avatar} 
-                        alt={author.name} 
+                    <img
+                        src={author.avatar}
+                        alt={author.name}
                         className="w-6 h-6 rounded-full mr-2 object-cover border border-gray-400"
                     />
                  ) : (
@@ -153,13 +153,13 @@ const BlogPostDetail: React.FC = () => {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-10">
         <div className="bg-card rounded-2xl p-8 md:p-12 shadow-2xl border border-gray-800">
-          
+
           {/* Toolbar */}
           <div className="flex justify-between items-center mb-8 pb-6 border-b border-gray-700">
              {/* Font Size Controls */}
             <div className="flex items-center space-x-4 bg-dark/50 p-2 rounded-lg border border-gray-700">
                <span className="text-gray-400 text-sm font-medium mr-1 hidden sm:inline">Text Size</span>
-               <button 
+               <button
                 onClick={() => setFontSizeLevel(prev => Math.max(0, prev - 1))}
                 className={`p-1.5 rounded hover:bg-gray-700 transition-colors ${fontSizeLevel === 0 ? 'text-gray-600' : 'text-gray-300'}`}
                 aria-label="Decrease font size"
@@ -168,7 +168,7 @@ const BlogPostDetail: React.FC = () => {
                  <Minus className="w-4 h-4" />
                </button>
                <Type className="w-4 h-4 text-primary" />
-               <button 
+               <button
                 onClick={() => setFontSizeLevel(prev => Math.min(2, prev + 1))}
                 className={`p-1.5 rounded hover:bg-gray-700 transition-colors ${fontSizeLevel === 2 ? 'text-gray-600' : 'text-gray-300'}`}
                 aria-label="Increase font size"
@@ -180,7 +180,7 @@ const BlogPostDetail: React.FC = () => {
 
             {/* Share Menu */}
             <div className="relative">
-              <button 
+              <button
                 onClick={() => setShareOpen(!shareOpen)}
                 className="flex items-center space-x-2 bg-primary hover:bg-yellow-600 text-white px-4 py-2 rounded-lg transition-colors font-medium shadow-lg shadow-yellow-900/20"
               >
@@ -191,21 +191,21 @@ const BlogPostDetail: React.FC = () => {
               {shareOpen && (
                 <div className="absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-dark border border-gray-700 ring-1 ring-black ring-opacity-5 focus:outline-none overflow-hidden animate-fade-in-down z-20">
                   <div className="py-1">
-                    <button 
+                    <button
                       onClick={() => handleShare('twitter')}
                       className="flex w-full items-center px-4 py-3 text-sm text-gray-300 hover:bg-gray-800 hover:text-white transition-colors"
                     >
                       <Twitter className="mr-3 h-4 w-4 text-[#1DA1F2]" />
                       Twitter
                     </button>
-                    <button 
+                    <button
                       onClick={() => handleShare('email')}
                       className="flex w-full items-center px-4 py-3 text-sm text-gray-300 hover:bg-gray-800 hover:text-white transition-colors"
                     >
                       <Mail className="mr-3 h-4 w-4 text-gray-400" />
                       Email
                     </button>
-                    <button 
+                    <button
                       onClick={() => handleCopy('link')}
                       className="flex w-full items-center px-4 py-3 text-sm text-gray-300 hover:bg-gray-800 hover:text-white transition-colors"
                     >
@@ -228,7 +228,28 @@ const BlogPostDetail: React.FC = () => {
           </div>
 
           {/* Content */}
-          <article className={`prose prose-invert ${getProseClass()} max-w-none prose-headings:font-serif prose-headings:text-white prose-p:text-gray-300 prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-strong:text-white prose-blockquote:border-l-primary prose-blockquote:bg-gray-800/30 prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:rounded-r-lg prose-img:rounded-xl prose-img:shadow-xl`}>
+          <article className={`article-content prose prose-invert ${getProseClass()} max-w-none prose-headings:font-serif prose-headings:text-white prose-p:text-gray-300 prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-strong:text-white prose-blockquote:border-l-primary prose-blockquote:bg-gray-800/30 prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:rounded-r-lg prose-img:rounded-xl prose-img:shadow-xl`}>
+            <style>{`
+              /* Ensure regular images aren't too tall */
+              .article-content img {
+                max-height: 600px;
+                width: 100%;
+                object-fit: cover;
+              }
+
+              /* Enforce consistent height for grid images */
+              .article-content .grid img {
+                height: 300px;
+                width: 100%;
+                object-fit: cover;
+              }
+
+              @media (max-width: 640px) {
+                .article-content .grid img {
+                  height: 200px;
+                }
+              }
+            `}</style>
             <div dangerouslySetInnerHTML={{ __html: post.content }} />
           </article>
 
@@ -237,9 +258,9 @@ const BlogPostDetail: React.FC = () => {
              <h3 className="text-xl font-serif font-bold text-white mb-6">About the Author</h3>
              <div className="flex items-center space-x-4 bg-dark/30 p-6 rounded-xl border border-gray-700/50">
                 {author && author.avatar ? (
-                    <img 
-                        src={author.avatar} 
-                        alt={author.name} 
+                    <img
+                        src={author.avatar}
+                        alt={author.name}
                         className="w-16 h-16 rounded-full object-cover border-2 border-primary"
                     />
                 ) : (
@@ -264,15 +285,15 @@ const BlogPostDetail: React.FC = () => {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {relatedPosts.map(related => (
-                <Link 
-                  key={related.id} 
+                <Link
+                  key={related.id}
                   to={`/article/${related.id}`}
                   className="bg-card rounded-xl overflow-hidden shadow-lg border border-gray-800 hover:border-gray-600 transition-all hover:-translate-y-1 group"
                 >
                   <div className="h-40 overflow-hidden relative">
-                    <img 
-                      src={related.imageUrl} 
-                      alt={related.title} 
+                    <img
+                      src={related.imageUrl}
+                      alt={related.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <span className="absolute top-2 left-2 bg-primary/90 backdrop-blur-sm text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">
