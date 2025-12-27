@@ -6,6 +6,7 @@ import BlogGrid from './components/BlogGrid';
 import BlogPostDetail from './components/BlogPostDetail';
 import ContactForm from './components/ContactForm';
 import { ARTICLES } from './articles';
+import { Instagram, Youtube } from 'lucide-react';
 
 const Home = () => {
   // Posts reversed to show latest first
@@ -37,7 +38,7 @@ const App: React.FC = () => {
           <Route path="/contact" element={<ContactForm />} />
         </Routes>
       </main>
-      
+
       <footer className="bg-[#151625] text-white py-12 mt-12 border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
@@ -45,8 +46,14 @@ const App: React.FC = () => {
             <p className="text-gray-400 text-sm mt-2">Embracing the unexpected, one adventure at a time.</p>
           </div>
           <div className="flex space-x-6">
-            <a href="https://www.instagram.com/whatifnetwork" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors">Instagram</a>
-            <a href="https://www.youtube.com/@what.if.network" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors">YouTube</a>
+            <a href="https://www.instagram.com/whatifnetwork" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-400 hover:text-primary transition-colors">
+              <Instagram className="w-5 h-5 mr-2" />
+              Instagram
+            </a>
+            <a href="https://www.youtube.com/@what.if.network" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-400 hover:text-primary transition-colors">
+              <Youtube className="w-5 h-5 mr-2" />
+              YouTube
+            </a>
           </div>
         </div>
       </footer>

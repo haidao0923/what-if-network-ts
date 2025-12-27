@@ -2,55 +2,6 @@ import { BlogPost } from './types';
 
 export const ARTICLES: BlogPost[] = [
   {
-    id: 'what-if-i-chose-unpaved-road',
-    title: "What if I chose the unpaved road?",
-    excerpt: "When taking a vacation to the Bahamas, most people imagine sunbathing on the white sandy beach or swimming in the clear blue water, what if I instead decide to just start walking up the hill and see where nature takes me?",
-    content: `
-      <h3>A Reason For Change</h3>
-      <p>
-          That is exactly what I did when I went to a small resort island called Half Moon Cay, Bahamas on December 2023. The water temperature was very cold in December so instead of suffering through the uncomfortable water, I decided to venture on a solo hike around the island.
-      </p>
-      <img src="../images/articles/what-if-i-chose-unpaved-road/0.png" alt="Bahamas View 1" class="rounded-lg shadow-lg my-6 w-full object-cover">
-      <h3>The Choice</h3>
-      <p>
-          About 10 minutes into the hike, I came across a curved path. Most people would continue the trail toward the right, but a spontaneous thought popped into my mind. <b><u>What if</u></b> I chose to walk on the rocky path?
-      </p>
-      <img src="../images/articles/what-if-i-chose-unpaved-road/1.png" alt="Bahamas View 2" class="rounded-lg shadow-lg my-6 w-full object-cover">
-      <p> Onward I went, stepping over rock pebbles and broken branches, excited to discover what lies on the other side.</p>
-      <img src="../images/articles/what-if-i-chose-unpaved-road/2.png" alt="Bahamas View 3" class="rounded-lg shadow-lg my-6 w-full object-cover">
-      <h3>The End?</h3>
-      <p> I walked and walked with nothing except for a water bottle and a black hat. After 40 minutes of climbing over boulders, up and down several hills, and slipping through narrow tree openings, I finally reached the end of the rocky road.</p>
-      <img src="../images/articles/what-if-i-chose-unpaved-road/3.png" alt="Bahamas View 4" class="rounded-lg shadow-lg my-6 w-full object-cover">
-      <p>
-          I spent a brief moment to admire the incredible view of the blue sea from above and, revitalized with my personal achievement of hiking through uncharted grounds, I was ready to turn back and reunite with my family tanning on the beach below. What I saw next was something that noone could have ever predicted.
-      </p>
-      <h3>An Unexpected Discovery</h3>
-      <p>
-          The moment I turned around to walk back, no doubt curious by my unusual presence on the unpaved path, a baby goat trodded barely 50 feet away. As I came closer, I bent down to be within 6 feet of the baby goat looking inquisitively at me. Unfortunately, I did not have any food to offer him but I will be sure to bring some trail mix on every nature hikes from now on.
-      </p>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-          <img src="../images/articles/what-if-i-chose-unpaved-road/4.png" alt="Bahamas View 5" class="rounded-lg shadow-lg w-full object-cover m-0">
-          <img src="../images/articles/what-if-i-chose-unpaved-road/5.png" alt="Bahamas View 6" class="rounded-lg shadow-lg w-full object-cover m-0">
-      </div>
-      <h3>The Lesson</h3>
-      <p>
-          Coming down from the hike, I did not expect to find an even rarer discovery. What I thought was just a beautiful shell turned out to be the home of a young hermit crab with a surprisingly very sturdy grip.
-      </p>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-          <img src="../images/articles/what-if-i-chose-unpaved-road/6.png" alt="Bahamas View 7" class="rounded-lg shadow-lg w-full object-cover m-0">
-          <img src="../images/articles/what-if-i-chose-unpaved-road/7.png" alt="Bahamas View 8" class="rounded-lg shadow-lg w-full object-cover m-0">
-      </div>
-      <p>
-          What a fitting end to this story. A hermit crab isn't afraid to try on new shells as they grow. Let us all live in the same way and turn the <b><u>What if</u></b> into <b><u>What we did.</u></b>
-      </p>
-    `,
-    date: "February 15, 2024",
-    authorId: "hai-dao",
-    category: "Travel",
-    imageUrl: "../images/articles/what-if-i-chose-unpaved-road/1.png",
-    readTime: "6 min read"
-  },
-  {
     id: 'what-if-i-was-homeless-for-100-hours',
     title: "What if I was homeless for 100 hours?",
     excerpt: "Traveling to another state for 5 days sounds fun. But is it still fun if you did not have a place to sleep? What if I did that on purpose to see if it was possible to live on only the kindness of completely strangers?",
@@ -110,7 +61,7 @@ export const ARTICLES: BlogPost[] = [
       </div>
       <p>Did I take the chatty man up on his offer to spend the night in his apartment? Find out in the next module: <a href="#/article/what-if-i-slept-with-a-serial-killer" class="text-primary hover:text-white transition-colors">What if I slept with a serial killer?</a></p>
     `,
-    date: "March 10, 2024",
+    date: "March 22, 2023",
     authorId: "hai-dao",
     category: "Social Experiments",
     imageUrl: "../images/articles/what-if-i-was-homeless-for-100-hours/16.png",
@@ -155,10 +106,121 @@ export const ARTICLES: BlogPost[] = [
       <p>The next morning I woke up once again at 5am without an alarm. Thankful for still being alive, I hastily gathered my belongings and exited the apartment. Immediately, I saw firsthand many of what Kramer had said the previous night. There were two drug-addicted vagrants sitting right outside of the train station, calling out at me as I approached the station door. As I stepped closer, the door was locked and there was still 45 minutes before the station opens for the day. I kept my distance from the vagrants and spotted a bulky clean-shaven man jogging down toward the station. I stepped toward his direction for safety. David was a 51-year-old divorced monk who practiced linguistics, Judo, and Hindu mantras. People from Somerville were very talkative and within 1 hour I had learned that David used to be physically tortured by polices from Belarus and that he think people on their phones, beggars, and prostitutes, are literal demons walking among us (I later met a junkie prostitute on my way to downtown).</p>
       <p>The moral of this adventure? Why did I feel safer at the prospect of sleeping with a college student than a man in his 50s? Why did the monk feel safe talking with me while blatantly calling people within 30 feet of us demons? We all have different life experiences, and sometime we are afraid to approach those who experienced life a different way from us, but rather than focus on the difference, we should look at how much we are alike. Those are the things that made us human.</p>
     `,
-    date: "March 15, 2024",
+    date: "March 25, 2023",
     authorId: "hai-dao",
     category: "Social Experiments",
     imageUrl: "../images/articles/what-if-i-slept-with-a-serial-killer/8.png",
     readTime: "8 min read"
+  },
+  {
+    id: 'what-if-i-chose-unpaved-road',
+    title: "What if I chose the unpaved road?",
+    excerpt: "When taking a vacation to the Bahamas, most people imagine sunbathing on the white sandy beach or swimming in the clear blue water, what if I instead decide to just start walking up the hill and see where nature takes me?",
+    content: `
+      <h3>A Reason For Change</h3>
+      <p>
+          That is exactly what I did when I went to a small resort island called Half Moon Cay, Bahamas on December 2023. The water temperature was very cold in December so instead of suffering through the uncomfortable water, I decided to venture on a solo hike around the island.
+      </p>
+      <img src="../images/articles/what-if-i-chose-unpaved-road/0.png" alt="Bahamas View 1" class="rounded-lg shadow-lg my-6 w-full object-cover">
+      <h3>The Choice</h3>
+      <p>
+          About 10 minutes into the hike, I came across a curved path. Most people would continue the trail toward the right, but a spontaneous thought popped into my mind. <b><u>What if</u></b> I chose to walk on the rocky path?
+      </p>
+      <img src="../images/articles/what-if-i-chose-unpaved-road/1.png" alt="Bahamas View 2" class="rounded-lg shadow-lg my-6 w-full object-cover">
+      <p> Onward I went, stepping over rock pebbles and broken branches, excited to discover what lies on the other side.</p>
+      <img src="../images/articles/what-if-i-chose-unpaved-road/2.png" alt="Bahamas View 3" class="rounded-lg shadow-lg my-6 w-full object-cover">
+      <h3>The End?</h3>
+      <p> I walked and walked with nothing except for a water bottle and a black hat. After 40 minutes of climbing over boulders, up and down several hills, and slipping through narrow tree openings, I finally reached the end of the rocky road.</p>
+      <img src="../images/articles/what-if-i-chose-unpaved-road/3.png" alt="Bahamas View 4" class="rounded-lg shadow-lg my-6 w-full object-cover">
+      <p>
+          I spent a brief moment to admire the incredible view of the blue sea from above and, revitalized with my personal achievement of hiking through uncharted grounds, I was ready to turn back and reunite with my family tanning on the beach below. What I saw next was something that noone could have ever predicted.
+      </p>
+      <h3>An Unexpected Discovery</h3>
+      <p>
+          The moment I turned around to walk back, no doubt curious by my unusual presence on the unpaved path, a baby goat trodded barely 50 feet away. As I came closer, I bent down to be within 6 feet of the baby goat looking inquisitively at me. Unfortunately, I did not have any food to offer him but I will be sure to bring some trail mix on every nature hikes from now on.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+          <img src="../images/articles/what-if-i-chose-unpaved-road/4.png" alt="Bahamas View 5" class="rounded-lg shadow-lg w-full object-cover m-0">
+          <img src="../images/articles/what-if-i-chose-unpaved-road/5.png" alt="Bahamas View 6" class="rounded-lg shadow-lg w-full object-cover m-0">
+      </div>
+      <h3>The Lesson</h3>
+      <p>
+          Coming down from the hike, I did not expect to find an even rarer discovery. What I thought was just a beautiful shell turned out to be the home of a young hermit crab with a surprisingly very sturdy grip.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+          <img src="../images/articles/what-if-i-chose-unpaved-road/6.png" alt="Bahamas View 7" class="rounded-lg shadow-lg w-full object-cover m-0">
+          <img src="../images/articles/what-if-i-chose-unpaved-road/7.png" alt="Bahamas View 8" class="rounded-lg shadow-lg w-full object-cover m-0">
+      </div>
+      <p>
+          What a fitting end to this story. A hermit crab isn't afraid to try on new shells as they grow. Let us all live in the same way and turn the <b><u>What if</u></b> into <b><u>What we did.</u></b>
+      </p>
+    `,
+    date: "December 19, 2023",
+    authorId: "hai-dao",
+    category: "Travel",
+    imageUrl: "../images/articles/what-if-i-chose-unpaved-road/1.png",
+    readTime: "6 min read"
+  },
+  {
+    id: 'what-if-i-directed-and-filmed-a-game-show',
+    title: "What if I directed and filmed a game show?",
+    excerpt: "Have you ever liked a game show so much that you binge-watch all 18 seasons wishing for a chance to compete in them yourself? What if I transformed that wish into reality?",
+    content: `
+      <p>
+          Taskmaster is a gameshow that challenge 5 comedians to a series of collaborative and competitive tasks wherein at the conclusion of 10 episodes, the contestant with the most points by completing their tasks in the most innovative way is declared the winner and given a bust of the head of the taskmaster.
+      </p>
+      <p>
+          I discovered the series on YouTube during my time studying at Georgia Institute of Technology and thought that it would be fun to recreate the show with my friends and so I set out to create props for the show.
+      </p>
+      <img src="../images/articles/what-if-i-directed-and-filmed-a-game-show/0.png" alt="Game Show Props" class="rounded-lg shadow-lg my-6 w-full object-cover">
+      <p>
+          First, I created the familiar taskmaster envelope by printing the task description on cardstock papers. Next, I printed out promotional materials flyers to post around campus, and mini envelopes with the title of the club to distribute throughout Georgia Tech.
+      </p>
+      <img src="../images/articles/what-if-i-directed-and-filmed-a-game-show/1.png" alt="Promotional Materials" class="rounded-lg shadow-lg my-6 w-auto" style="object-fit: contain; height: 500px;">
+      <p>
+          After making preliminary promotional materials, I booked a room on campus for a weekly meetup to watch the game show and created social media pages on Discord, Instagram, YouTube, and Linktree. In the meantime, I woodworked a jenga set out of 2x4 wood by using a combination of a large band saw and a miter saw, sanding the edges and engraving each individual pieces with letters using a laser engraver.
+      </p>
+      <img src="../images/articles/what-if-i-directed-and-filmed-a-game-show/2.png" alt="Jenga Set" class="rounded-lg shadow-lg w-full object-cover">
+      <img src="../images/articles/what-if-i-directed-and-filmed-a-game-show/3.png" alt="Woodworking" class="rounded-lg shadow-lg w-full object-cover">
+      <p>
+          During our weekly meetings, we explored the resources available inside the room including a whiteboard, desks, projectors, and two built-in room camera with 360 degree recording. We filmed some of our meeting activities and after editing with DaVinci Resolve, we published the game show to YouTube!
+      </p>
+      <p>
+          And let not forget the final prize of the Taskmaster show, a bust of the head of the Taskmaster, achieved through a mobile 3d-scan of my head and printed with ABS and resin.
+      </p>
+      <img src="../images/articles/what-if-i-directed-and-filmed-a-game-show/4.png" alt="Taskmaster Bust" class="rounded-lg shadow-lg my-6 w-full object-cover">
+      <p>
+          Checkout the final video below!
+      </p>
+      <div class="relative w-full pb-[56.25%] h-0 rounded-lg overflow-hidden shadow-lg my-6">
+        <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/NEbZZuxLnDQ?si=x_yVVk7S5XED0OQR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    `,
+    date: "January 13, 2024",
+    authorId: "hai-dao",
+    category: "Activity",
+    imageUrl: "../images/articles/what-if-i-directed-and-filmed-a-game-show/4.png",
+    readTime: "5 min read"
+  },
+  {
+    id: 'what-if-i-asked-stores-for-free-food-on-my-birthday',
+    title: "What If I Asked Stores for Free Stuffs on My Birthday?",
+    excerpt: "Most people spend their 21st birthday at a bar having their first public drink. But I never liked the taste of alcohol. What I do like are free junk foods. Lets see who else agree.",
+    content: `
+      <p>
+          When I was a 20-year-old in college, I developed an infatuation for the adventurous lifestyle of the people from the YouTube channel Yes Theory, and so I joined a group chat at Georgia Tech dedicated to stepping outside my comfort zone.
+      </p>
+      <p>
+          The timing was perfectly as the week before my birthday, the group announced a challenge called 'Stranger Danger' where we were paired up with another randomly assigned student in the groupchat to plan a meetup and potentially make a new adventurous friends.
+      </p>
+      <p>
+          Most people planned to watch a movie or grab lunch together, but I
+      </p>
+    `,
+    date: "September 23, 2023",
+    authorId: "hai-dao",
+    category: "Social Experiments",
+    imageUrl: "../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/0.png",
+    readTime: "5 min read"
   }
 ];
