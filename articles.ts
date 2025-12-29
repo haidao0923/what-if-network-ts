@@ -113,6 +113,159 @@ export const ARTICLES: BlogPost[] = [
     readTime: "8 min read"
   },
   {
+    id: 'what-if-i-asked-stores-for-free-food-on-my-birthday',
+    title: "What If I Asked Stores for Free Stuffs on My Birthday?",
+    excerpt: "Most people spend their 21st birthday at a bar having their first public drink. But I never liked the taste of alcohol. What I do like are free junk foods. Lets see who else agree.",
+    content: `
+      <p>
+          When I was a 20-year-old in college, I had recently developed an interest for the adventurous lifestyle of the people from the YouTube channel Yes Theory, and so I joined a group at Georgia Tech dedicated to stepping outside my comfort zone.
+      </p>
+      <p>
+          Timing was perfect as the week before my birthday, the group announced a challenge called 'Stranger Danger' where we were paired up with another randomly assigned student in the groupchat to meetup.
+      </p>
+      <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/1.png" alt="Seek Discomfort GT Logo" class="rounded-lg shadow-lg my-6 w-auto" style="object-fit: contain; height: 200px;">
+      <p>
+          Most groups planned to watch a movie or grab lunch together, but I dreamt for an adventure unlike any other. I had been planning out my route for getting restaurant freebies on my birthday for a few weeks, looking up social media, finding the more generous stores around Atlanta.
+      </p>
+      <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/2.png" alt="Birthday Freebies" class="rounded-lg shadow-lg w-full object-cover" style="object-fit: contain; height: 200px">
+      <p>
+          I thought that it would be a perfect opportunity to invite the stranger on this one in a lifetime experience, but up to the second I hit sent on my invitation six days before my birthday, I was still feeling doubtful and pessimistic, trying to rationalize inside my head everything that could go wrong during my venture.
+      </p>
+      <p>
+          "I am a smart and successful college student at one of the top university in the United States. Why am I lowering myself to a vagrant begging stores for free food?"
+      </p>
+      <p>
+          Then I thought about the homeless people on the streets begging without a choice every day just to survive, and I made up my mind. "If they can do these things, then so can I".
+      </p>
+      <p>
+          And so I hit sent on my invitation and we settled on a meeting time at 1:30pm. With her response, the quest is set in stones. Now, my own ego and pride are intertwined. And with the two pressuring me together, I would no longer be able to go back on my words and my goals.
+      <p>
+      <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/3.png" alt="Homeless Person" class="rounded-lg shadow-lg w-full object-cover" style="object-fit: contain; height: 200px">
+      <p>
+          The stranger would not join me until 1:30pm but I wanted to start my expedition early in order to maximize on the number of free items I would get throughout the day. So I woke up at 10am and begin driving down to the local Texaco gas station to fill up the tank in preparation for an expectedly long day of driving around the city asking for free foods.
+      </p>
+      <p>
+          I never expected to begin my quest at this place, but arriving at the gas station, I thought to myself. "I'm already here, and there are worst places to ask for freebies. What's the harm in taking a chance and begin my expedition here?"
+      </p>
+      <p>
+          Rather than paying for gas with a credit card, I came inside to pay with cash. After receiving my receipt, I summoned all the courage in my body to ask the following: "Today is my birthday, and I am doing a challenge to see how many birthday freebies I could get in a single day. I have done my research and the world record is 34 freebies in a day. Is there any items that you are willing to give me today to become one of the 35 stores in the new world record?"
+      </p>
+      <p>
+          The middle-aged hispanic man behind the counter quickly gave a slight chuckle, and thought for merely a second before forming a smile and ask, "So what do you want to get?" Surprise by his vague offer, I thought he may have misunderstood my question and was planning to charge me for the items that I am getting, and so I countered "Um.. anything is find, whatever you're willing to give me for free."
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+          <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/4.png" alt="Texaco Gas Station" class="rounded-lg shadow-lg w-full object-cover m-0">
+          <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/5.png" alt="Red Powerade Bottle" class="rounded-lg shadow-lg w-full object-cover m-0">
+      </div>
+      <p>
+          Sensing my hesitation, the employee maintained his smile and say, "Get whatever you want, the item is on the house. Would you like a drink?" An enthusiastic smile flooded my face as I respond, "Yes! a drink would be great!" "Go ahead, pick whatever you like from the fridge", and so I ran to the back of the store, hastily grabbed a powerade before the employee could change his mind, said thank you, he scanned the item with a discount to $0, wrote on the receipt "Happy birthday! :)" and I left the store filled with confidence that today was going to be a great and productive day filled with more freebies than I could ever dreamt of.
+      </p>
+      <p>
+          I lost most of my old pictures but saved the receipt as a reminder of my achievement. Unfortunately the text had faded when I took the picture again 2 years later.
+      </p>
+      <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/6.png" alt="Signed Happy Birthday Receipt" class="rounded-lg shadow-lg w-full object-cover" style="object-fit: contain; height: 500">
+      <p>
+          How did I leverage my overinflated confidence after this incredibly fortunate encounter? Instead of going to another individually-operated gas station, I went to the complete opposite type of establishment, the largest grocery store in sight right across the street, Food Depot.
+      </p>
+      <p>
+          I walked inside Food Depot, and immediately went to the customer service desk by the entrance. I ask the employee there if they had anything to give me for free on my birthday to be part of a possible world record. The employee paged the manager of the store who came out and with a blank expression on his face, completely dismiss my request. He cut me off after three sentences, telling me to leave under threat of getting securities involved. I did not want any trouble and so I hastily left the store.
+      </p>
+      <p>
+          Needing an easy win to regain my confidence after the rejection and also a large meal to satisfy my stomach before the long day ahead, I looked at my list of birthday freebies and find one restaurant considered to provide one of the most fulfilling birthday meal.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
+          <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/7.png" alt="O'Charley Restaurant" class="rounded-lg shadow-lg w-full object-cover m-0">
+          <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/8.png" alt="O'Charley Free Appetizer" class="rounded-lg shadow-lg w-full object-cover m-0">
+          <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/9.png" alt="O'Charley Birthday Cobbler" class="rounded-lg shadow-lg w-full object-cover m-0">
+      </div>
+      <p>
+          I climbed into my car and drove about an hour to O'charley which gave me a free meal of shrimps & stuffed crabs in additional to a birthday cobbler. Close by, I saw a small bakery called Spudz. Needing another confidence booster to get my day started, I stepped inside, put on my most convincing and energetic charm, and the nice lady in her 40s behind the counter gave me a muffin with a good luck on my venture.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+          <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/10.png" alt="Spudz Bakery Store" class="rounded-lg shadow-lg w-full object-cover m-0">
+          <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/11.png" alt="Muffin" class="rounded-lg shadow-lg w-full object-cover m-0">
+      </div>
+      <p>
+          I asked two more restaurants, Anthony Pizza & Pasta and Huddle House who both rejected me (although Huddle House told me about a freebie if I signed up in advanced to their newsletter), but that is still 3 Yes and 3 No, much better than I expected.
+      </p>
+      <p>
+          After visiting 6 different stores, and waiting for the appetizer from O'Charley, it was already past 12:30pm so I went on my way to meet up with the stranger at her place.
+      </p>
+      <p>
+          Together with the stranger, we visited 11 restaurants and fast food chains who rejected us including one very angry asian man in his late 50s. After giving my usual world record birthday freebies spiel, the gentleman immediately cursed at me to "Get the fuck out." I calmly tried to say "Sorry have a nice day" but even before I could finish my sentence, he cursed at me again with a cold demeaning stare telling me to leave. The girl next to me commented after leaving "He was so rude. It was good that your first encounter of the day was with the nice guy at the gas station. If the first store I visited acted like that elderly man, I would have lost all confidence to approach anyone else for the rest of the day."
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
+          <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/12.png" alt="Wendy's Frosty" class="rounded-lg shadow-lg w-full object-cover m-0">
+          <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/13.png" alt="Pizza Hut's Breadsticks" class="rounded-lg shadow-lg w-full object-cover m-0">
+          <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/14.png" alt="Pizza Hut's Pepsi Bottle" class="rounded-lg shadow-lg w-full object-cover m-0">
+          <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/15.png" alt="Rocky Mountain's Slippery Nipple Shot" class="rounded-lg shadow-lg w-full object-cover m-0">
+          <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/16.png" alt="Poke's Tofu" class="rounded-lg shadow-lg w-full object-cover m-0">
+          <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/17.png" alt="QT's Soft-served Vanilla Ice Cream Cone" class="rounded-lg shadow-lg w-full object-cover m-0">
+      </div>
+      <p>
+          Fortunately for the both of us, mixed in with the 11 rejections were 8 yes which netted us a Frosty from Wendy's, a large box of bread sticks and a Pepsi bottle from Pizza Hut (the biggest freebie of the trip), a slippery nipple drink from Rocky Mountain, a cup of Tofu from Poke, a very generous portion of soft-served vanilla ice cream from QT, a McChicken from McDonald, stickers from Pijiu Belly, and a Milkshake from Chick-fil-a (all of these achieved without using any apps, and simply approaching the employees at the counter and nicely asking them).
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
+          <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/18.png" alt="McDonald's McChicken" class="rounded-lg shadow-lg w-full object-cover m-0">
+          <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/19.png" alt="Chick-fil-a Milkshake" class="rounded-lg shadow-lg w-full object-cover m-0">
+          <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/20.png" alt="Chick-fil-a Receipt" class="rounded-lg shadow-lg w-full object-cover m-0">
+      </div>
+      <p>
+          After parting ways with the stranger turned friend, I went out to receive 5 consecutive rejections before receiving a 32oz Smoothie from Smoothie King (I got rejected by a different Smoothie King), 2 cookies from Subway, and a burrito from Taco Bell.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+          <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/21.png" alt="Smoothie' King's Smoothie" class="rounded-lg shadow-lg w-full object-cover m-0">
+          <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/22.png" alt="Smoothie King's Receipt" class="rounded-lg shadow-lg w-full object-cover m-0">
+          <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/23.png" alt="Subway's Cookies" class="rounded-lg shadow-lg w-full object-cover m-0">
+          <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/24.png" alt="Taco Bell's Burrito" class="rounded-lg shadow-lg w-full object-cover m-0">
+      </div>
+      <p>
+          One store in particular stood out from the rest: Eats. When I came into this restaurant asking for a freebie, I got rejected immediately. But the way this middle-age hispanic employee rejected me supported the saying "It's not what you say, but how you say it" that can improve or diminish the other person's mood.
+      </p>
+      <p>
+          "We can't give you any freebies, but I can give you birthday punches for free." Still confused by his out of the norm response, thinking that "birthday punches" must have meant some sort of smoothies, I verbalized my confusion, "okay?" The employee noticed my confused expression and clarified in a playful tone "How old are you? I'll punch you hard on the arm that many times." That was the only freebie I rejected on my birthday, but I wished him a wonderful day and left with a laugh on my face.
+      </p>
+      <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/25.png" alt="Eats Restaurant" class="rounded-lg shadow-lg w-full object-cover" style="object-fit: contain; height: 200px">
+      <p>
+          In total, I asked 33 stores, restaurants, and gas stations. The end result was much better than I had anticipated with a ratio of 14:19 Yes to No.
+      </p>
+      <p>
+          Rejected (19): Food Depot, Anthony Pizza & Pasta, Huddle House (sign up earlier), Donut World, Smoothie King, Ding Tea, Sarpino, Waffle House, Cookout, Krystal,  Sublime Donut, Firehouse Sub (need app), CM Chicken, Ding Tea, KReal Tacos, Wingnuts, satto, eats (optional birthday punches), Zaxby (app)
+      </p>
+      <p>
+          Freebies (14): Texaco Gas Station (Powerade), Spudz (Muffin), O'charley (shrimp & stuffed crab, birthday cobbler),  Wendy's (Frosty), Pizza Hut (box of bread sticks & Pepsi bottle), Rocky Mountain (slippery nipple), Poke (Tofu), QT (Ice cream), McDonald (McChicken), Chick-fil-A (Milkshake), Pijiu Belly (stickers), Smoothie King (a different one) (32oz smoothie), subway (2 cookies), Taco Bell (Burrito)
+      </p>
+      <p>
+          So what's the lesson from asking "What if I asked stores for free stuffs on my birthday?" and my statistically significant sample size of 33 stores?
+      </p>
+      <ol type="1">
+        <li>I learned that gas station employees are very nice (both gas stations had friendly workers who were very receptive to my request).</li>
+        <li>I learned that <b><u>42%</u></b> of stores will say yes to giving you birthday freebies.</li>
+        <li>I learned that rejection depends on <b><u>what</u></b> you asked (Pijiu Belly gave me promotional stickers).</li>
+        <li>I learned that rejection depends on <b><u>who</u></b> you asked (one Smoothie King rejected me but another gave me a smoothie).</li>
+        <li>I learned that rejection depends on <b><u>when</u></b> you asked (the angry man may be having a bad day).</li>
+        <li>I learned that even a yes can seem ingenuine and a no can be considerate depending on <b><u>how</u></b> you respond (the employee from Eats playfully offering birthday punches).</li>
+      </ol>
+      <p>
+          Finally, I learned to be more emphathetic with how beggars felt when asking for food. Even when writing this blog 2 years after my endeavor, I still remembered the happy smile on the gas station attendee's face and the harsh curse words from the angry elderly man ruining my mood.
+      </p>
+      <p>
+          There is a reason why I haven't attempted this challenge again in a while, because while asking for free foods, I felt immense dread and helplessness with every rejection, despite an almost equal number of yes. I only did this for one day, but imagine the homeless people having to do it every single day of their life.
+      </p>
+      <p>
+          The concept of <b><u>loss aversion</u></b> posits that it takes twice as many gains psychologically to make up for every loss. In essence, for me to feel fine after my attempt, I needed at least a 67% yes to no ratio instead of the 42% in my experiment.
+      </p>
+      <p>
+          Next time a vagrant come to us asking for food, or a stranger asking for help, let's remember this experience and be part of the yes to brighten their day.
+      </p>
+    `,
+    date: "September 23, 2023",
+    authorId: "hai-dao",
+    category: "Social Experiments",
+    imageUrl: "../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/0.png",
+    readTime: "15 min read"
+  },
+  {
     id: 'what-if-i-chose-unpaved-road',
     title: "What if I chose the unpaved road?",
     excerpt: "When taking a vacation to the Bahamas, most people imagine sunbathing on the white sandy beach or swimming in the clear blue water, what if I instead decide to just start walking up the hill and see where nature takes me?",
@@ -202,25 +355,4 @@ export const ARTICLES: BlogPost[] = [
     imageUrl: "../images/articles/what-if-i-directed-and-filmed-a-game-show/4.png",
     readTime: "5 min read"
   },
-  {
-    id: 'what-if-i-asked-stores-for-free-food-on-my-birthday',
-    title: "What If I Asked Stores for Free Stuffs on My Birthday?",
-    excerpt: "Most people spend their 21st birthday at a bar having their first public drink. But I never liked the taste of alcohol. What I do like are free junk foods. Lets see who else agree.",
-    content: `
-      <p>
-          When I was a 20-year-old in college, I developed an infatuation for the adventurous lifestyle of the people from the YouTube channel Yes Theory, and so I joined a group chat at Georgia Tech dedicated to stepping outside my comfort zone.
-      </p>
-      <p>
-          The timing was perfectly as the week before my birthday, the group announced a challenge called 'Stranger Danger' where we were paired up with another randomly assigned student in the groupchat to plan a meetup and potentially make a new adventurous friends.
-      </p>
-      <p>
-          Most people planned to watch a movie or grab lunch together, but I
-      </p>
-    `,
-    date: "September 23, 2023",
-    authorId: "hai-dao",
-    category: "Social Experiments",
-    imageUrl: "../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/0.png",
-    readTime: "5 min read"
-  }
 ];
