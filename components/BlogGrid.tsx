@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { BlogPost } from '../types';
 import { AUTHORS } from '../authors';
-import { Clock, Search, ChevronLeft, ChevronRight, Filter } from 'lucide-react';
+import { Clock, Search, ChevronLeft, ChevronRight, Filter, User } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 interface BlogGridProps {
@@ -13,6 +13,7 @@ const POSTS_PER_PAGE = 6;
 const BlogGrid: React.FC<BlogGridProps> = ({ posts }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedAuthor, setSelectedAuthor] = useState('All');
   const [currentPage, setCurrentPage] = useState(1);
 
   // Extract unique categories from posts
@@ -21,21 +22,28 @@ const BlogGrid: React.FC<BlogGridProps> = ({ posts }) => {
     return ['All', ...Array.from(uniqueCats).sort()];
   }, [posts]);
 
-  // Filter posts based on search query and selected category
+  // Extract unique authors from posts
+  const uniqueAuthorIds = useMemo(() => {
+    const ids = new Set(posts.map(post => post.authorId));
+    return ['All', ...Array.from(ids)];
+  }, [posts]);
+
+  // Filter posts based on search query, selected category, and selected author
   const filteredPosts = posts.filter(post => {
     const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       post.excerpt.toLowerCase().includes(searchQuery.toLowerCase()) ||
       post.category.toLowerCase().includes(searchQuery.toLowerCase());
 
     const matchesCategory = selectedCategory === 'All' || post.category === selectedCategory;
+    const matchesAuthor = selectedAuthor === 'All' || post.authorId === selectedAuthor;
 
-    return matchesSearch && matchesCategory;
+    return matchesSearch && matchesCategory && matchesAuthor;
   });
 
-  // Reset to page 1 when search query or category changes
+  // Reset to page 1 when search query, category, or author changes
   useEffect(() => {
     setCurrentPage(1);
-  }, [searchQuery, selectedCategory]);
+  }, [searchQuery, selectedCategory, selectedAuthor]);
 
   // Calculate pagination details
   const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE);
@@ -57,26 +65,53 @@ const BlogGrid: React.FC<BlogGridProps> = ({ posts }) => {
       <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
         <div className="flex flex-col items-start sm:flex-row sm:items-center gap-4">
           <h2 className="text-3xl font-serif font-bold text-white whitespace-nowrap">Latest Adventures</h2>
-          <div className="relative inline-block w-fit">
-            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-              <Filter className="h-3 w-3 text-primary" />
+          <div className="flex flex-wrap gap-2">
+            {/* Category Filter */}
+            <div className="relative inline-block w-fit">
+              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <Filter className="h-3 w-3 text-primary" />
+              </div>
+              <select
+                value={selectedCategory}
+                onChange={(e) => setSelectedCategory(e.target.value)}
+                className="appearance-none bg-card border border-gray-700 text-gray-300 py-1.5 pl-9 pr-8 rounded-full text-sm focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary cursor-pointer hover:bg-gray-800 transition-colors shadow-sm"
+                aria-label="Filter by category"
+              >
+                {categories.map(category => (
+                  <option key={category} value={category}>
+                    {category === 'All' ? 'All Categories' : category}
+                  </option>
+                ))}
+              </select>
+              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
+                <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                </svg>
+              </div>
             </div>
-            <select
-              value={selectedCategory}
-              onChange={(e) => setSelectedCategory(e.target.value)}
-              className="appearance-none bg-card border border-gray-700 text-gray-300 py-1.5 pl-9 pr-8 rounded-full text-sm focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary cursor-pointer hover:bg-gray-800 transition-colors shadow-sm"
-              aria-label="Filter by category"
-            >
-              {categories.map(category => (
-                <option key={category} value={category}>
-                  {category}
-                </option>
-              ))}
-            </select>
-            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
-              <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
-              </svg>
+
+            {/* Author Filter */}
+            <div className="relative inline-block w-fit">
+              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <User className="h-3 w-3 text-primary" />
+              </div>
+              <select
+                value={selectedAuthor}
+                onChange={(e) => setSelectedAuthor(e.target.value)}
+                className="appearance-none bg-card border border-gray-700 text-gray-300 py-1.5 pl-9 pr-8 rounded-full text-sm focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary cursor-pointer hover:bg-gray-800 transition-colors shadow-sm"
+                aria-label="Filter by author"
+              >
+                {uniqueAuthorIds.map(authorId => (
+                  <option key={authorId} value={authorId}>
+                    {authorId === 'All' ? 'All Authors' : (AUTHORS[authorId]?.name || 'Unknown')}
+                  </option>
+                ))}
+              </select>
+              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400">
+                <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -211,13 +246,14 @@ const BlogGrid: React.FC<BlogGridProps> = ({ posts }) => {
           </div>
           <h3 className="text-lg font-medium text-white mb-2">No adventures found</h3>
           <p className="text-gray-400 max-w-sm">
-            We couldn't find any stories matching your search or selected category.
+            We couldn't find any stories matching your search or selected filters.
           </p>
           <button
              onClick={() => {
                  setSearchQuery('');
                  setSelectedCategory('All');
-             }}
+                 setSelectedAuthor('All');
+              }}
              className="mt-4 text-primary hover:text-yellow-400 text-sm font-medium"
           >
               Clear filters

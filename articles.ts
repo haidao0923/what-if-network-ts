@@ -236,7 +236,7 @@ export const ARTICLES: BlogPost[] = [
           Freebies (14): Texaco Gas Station (Powerade), Spudz (Muffin), O'charley (shrimp & stuffed crab, birthday cobbler),  Wendy's (Frosty), Pizza Hut (box of bread sticks & Pepsi bottle), Rocky Mountain (slippery nipple), Poke (Tofu), QT (Ice cream), McDonald (McChicken), Chick-fil-A (Milkshake), Pijiu Belly (stickers), Smoothie King (a different one) (32oz smoothie), subway (2 cookies), Taco Bell (Burrito)
       </p>
       <p>
-          So what's the lesson from asking "What if I asked stores for free stuffs on my birthday?" and my statistically significant sample size of 33 stores?
+          So what's the takeaway from this adventure and my statistically significant sample size of 33 stores?
       </p>
       <ol type="1">
         <li>I learned that gas station employees are very nice (both gas stations had friendly workers who were very receptive to my request).</li>
@@ -250,7 +250,7 @@ export const ARTICLES: BlogPost[] = [
           Finally, I learned to be more emphathetic with how beggars felt when asking for food. Even when writing this blog 2 years after my endeavor, I still remembered the happy smile on the gas station attendee's face and the harsh curse words from the angry elderly man ruining my mood.
       </p>
       <p>
-          There is a reason why I haven't attempted this challenge again in a while, because while asking for free foods, I felt immense dread and helplessness with every rejection, despite an almost equal number of yes. I only did this for one day, but imagine the homeless people having to do it every single day of their life.
+          There is a reason why I haven't attempted this challenge again in a while, because while asking for free foods, I felt immense dread and helplessness with every rejection, despite an almost equal number of yes. I only did this for one day knowing that I'll be fine even if I get rejected, but imagine the homeless people having to do it every single day of their life just to survive.
       </p>
       <p>
           The concept of <b><u>loss aversion</u></b> posits that it takes twice as many gains psychologically to make up for every loss. In essence, for me to feel fine after my attempt, I needed at least a 67% yes to no ratio instead of the 42% in my experiment.
@@ -309,7 +309,7 @@ export const ARTICLES: BlogPost[] = [
       </p>
     `,
     date: "December 19, 2023",
-    authorId: "hai-dao",
+    authorId: "johnny-test",
     category: "Travel",
     imageUrl: "../images/articles/what-if-i-chose-unpaved-road/1.png",
     readTime: "6 min read"
