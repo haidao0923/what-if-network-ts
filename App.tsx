@@ -46,13 +46,13 @@ const App: React.FC = () => {
             <p className="text-gray-400 text-sm mt-2">Embracing the unexpected, one adventure at a time.</p>
           </div>
           <div className="flex space-x-6">
-            <a href="https://www.instagram.com/whatifnetwork" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-400 hover:text-primary transition-colors">
-              <Instagram className="w-5 h-5 mr-2" />
-              Instagram
-            </a>
             <a href="https://www.youtube.com/@what.if.network" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-400 hover:text-primary transition-colors">
               <Youtube className="w-5 h-5 mr-2" />
               YouTube
+            </a>
+            <a href="https://www.instagram.com/whatifnetwork" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-400 hover:text-primary transition-colors">
+              <Instagram className="w-5 h-5 mr-2" />
+              Instagram
             </a>
           </div>
         </div>

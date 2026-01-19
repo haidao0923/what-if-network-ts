@@ -355,4 +355,90 @@ export const ARTICLES: BlogPost[] = [
     imageUrl: "../images/articles/what-if-i-directed-and-filmed-a-game-show/4.png",
     readTime: "5 min read"
   },
+{
+    id: 'what-if-i-danced-country-two-step',
+    title: "What if I danced Country Two-step",
+    excerpt: "They say the hardest part of any journey is the first step, but at Nashville’s Eastside Bowl, I learned that the hardest part is actually the first two-step.",
+    content: `
+      <p>
+          After chatting with the Salsa dance teacher at Nashville Palace, she recommended that I visit Eastside Bowl the next day at 7pm for "Honky Tonk Tuesday" to talk with locals, learn two-step dance, and listen to a great band. At 7:10pm, I arrived at the venue with a mission: to break out of my shell. While the lobby was a buzzing hive of bowling and vintage vibes, the backroom was where the real challenge lived. Toward the back of the venue is a hallway with a large man checking IDs at the front and two women in the back collecting the $10 cover fee for a ticket to the dancefloor.
+      </p>
+      <img src="../images/articles/what-if-i-danced-country-two-step/1.png" alt="Eastside Bowl Bar" class="rounded-lg shadow-lg my-6 w-full object-cover">
+      <p>
+          Even though I was 15 minutes late to the 7pm dance class, stepping inside the dimly lit room, I saw an empty dance floor, no music, and barely anyone in the room. Including the lone female bartender, there was about 15 people standing around, barely talking to each other, drinking alone by themselves.
+      </p>
+      <p>
+          I tried to build "social momentum" with the closest guy standing at a table near the entrance by asking him if he had been to Eastside Bowl before, where he's from, and what he does for work. He told me that he is a local salesman and have been to the venue several times. I commented that he have a salesman voice and we chatted for about 10 minutes before the conversation started to run dry and we were standing side by side in deafening silence.
+      </p>
+      <p>
+          Fortunately, a few seconds later at 7:25, the dance teacher walked up to the dance floor and gathered all the interested dancers together. When she asked the leads to stand on one side and the follows to stand on the other side, a sunken feeling began to surface between me and the many men around. For the first time in many months, there were a disproportionately high amount of 9 leads to only 4 follows. The dance instructor even had to ask the follows to be open to switching partners and rotate between the leads. However, about 5 more minutes of waiting, the mixture of female to male became roughly even with about 16 of each.
+      </p>
+      <p>
+          When the teacher told us to approach the follows, I walked forward in a straight line to an elderly woman in her 60s with glasses. I stepped toward her and told her my name, but my voice is soft and she is hard of hearing. Noticing my awkward approach, she looked extremely disappointed and a little terrified being my partner (the look on her face resembled that of someone staring straight at a murderer), but she still reluctantly offered her hands and we danced. I was completely off-beat and she was also a beginner, so we were struggling throughout the song. We danced and practice two more songs before she told her male 60 year old friend to dance with her instead straight in front of my face while ignoring my presence.
+      </p>
+      <p>
+          In the next song, the dance teacher taught us the "Country Shuffle" (left, together, left, together, right, together), and my dance partner was no longer present on the dance floor. Instead, her 60 year old female friend stepped up and offered to dance with me. This second partner was much more aggressive. She repeatedly told me to speak louder and to verbalize each move so that we can stay in sync. I complied but struggled greatly because I had not learned how to project my voice yet. I danced with this second partner horribly for two songs before the dance teacher gathered us together to teach a new dance move to be performed at the end of a song (a cuddle dip).
+      </p>
+      <p>
+          When the instructor gathered us together again, my second partner immediately turned to her friend (my first partner) and danced with her instead. The song started and I looked around like an abandoned child. On the dance floor with about 12 pairs, I scanned the area, hoping to find another solo dancer willing to adopt me for a dance. However, everyone on the dance floor had attached to their counterpart, and so I approached the dance teacher to ask for a dance. She told me that she cannot dance with me because she was teaching, but she walked around and asked the female bartender to dance with me. The bartender looked at me and refused, pummeling my confidence even lower. The instructor told me to follow her back to the front of the dance floor, saying that she'll teach me, but then she turned to a pair nearby and started teaching them instead, completely ignoring what she saw as a peerless loser on the dance floor.
+      </p>
+      <p>
+          Feeling completely defeated and devastated that I wasted $10 for the worst night of my trip, I looked toward the exit, planning to go back to my hotel to sleep away a dreadful night. Near the exit, at the very back of the dimly-lit room was a group of three of the most attractive girls in the venue. They were in their early 20s with vibrant red and white formal dresses, excitedly talking with each other around a rectangular table. Thinking that my reputation could not drop any lower now that I have been rejected by two grandmothers in their 60s, rejected by the dance instructor, and even rejected by the bartender, I thought that there was nothing left to lose. I recognized that a 3-set of women is ideal to approach because if you pull one away for a dance, the other two can still talk with each other, and so I put on my masculine act, rolled back my shoulders, straightened my back, and walked straight up to the group.
+      </p>
+      <p>
+          "Would any of you like to dance with me?" I asked the group. The two girls on each side turned to the quiet but not any less beautiful girl in the group and said in unison "that's her". "Go dance with him" they encouraged the shy friend. She stepped forward with a smile and say in a rushed and excited voice, "I have never been here before, and I don't know the dance". "Don't worry, I'm also new to dancing, so we can be bad together" I reassured her while walking together up to the middle of the dance floor.
+      </p>
+      <p>
+          She told me that she did not see what the instructor was teaching (which was very fortunate for me because that meant she did not see me wandering around without a partner for 10 minutes before approaching her), so I told her about the basic of two step to the left and one step to the right and we started dancing. I then tried to spin her, and then do the cuddle dip that was most recently taught but I did not remember the name of the move nor the motion, and my partner did not watch the dance lesson so she did not know the move either.
+      </p>
+      <p>
+          I led her to the dance instructor at the front of the dancefloor who turned around with a happy and astonished look. "You found a wonderful partner, that's great!" "Could you show us the move at the end of the song again where the follow raises her leg?" "Ok, dance with her, two step left, one step right. Now do a spin." Then the instructor maneuver our arms to perform the cuddle dip.
+      </p>
+      <p>
+          "I can tell that she know how to dance, she can teach you." said the instructor confidently. "Yes, she's a very good dancer." I commented. I turned to my partner, "You are very good at dancing. I thought you said that you never dance before?" "I don't know this dance, but I do ballroom dancing and they are similar." "Oh, you are very good then, teach me how to dance." Then the next song started.
+      </p>
+      <p>
+          "Ok, so do you play any musical instruments?" she asked. "I play a bit of piano" "Ok, so when you move, you have to move to the beat, if you pay attention to the song, you can tell the bass notes, and every step is on the bass note." I listened, and she counted 2...1...go, then we started to move in sync. "Ok, now when do we do the spin?" "It depends on the song, and usually when there is a pause." After the song ended, we cuddle dipped, then I remembered that when I danced with the lead singer of a dance group at a cruise, she would always give me a high five after a dance, and so I raised both hands up for a high five to end on a positive note.
+      </p>
+      <p>
+          Then I made some small talks and learned that she recently graduated as a civil engineer and we danced for two more songs. After the third song, we high five for a third time, then the curtains behind us opened and we stood there looking up at the band on stage. Thinking that I overstayed my time with her, I extended a hand for a shake and thank her for dancing with me.
+      </p>
+      <video controls loop playsinline src="../images/articles/what-if-i-danced-country-two-step/video1.mp4" alt="Eastside Bowl Stage" class="w-auto h-[500px] rounded-lg object-cover"></video>
+      <p>
+          She returned to her friends and I stood around the front dancing by myself for a while. Trying to appear more lively and happy, I began practicing the "Country Shuffle" by myself for 5 minutes before noticing two guys dancing with their hips swaying back and forth while turning their foot inside and out. I copied their dancing style then complimented the guy on his dance move. 3 minutes later, a girl came up opposite him and they dance together so I stepped out of the way.
+      </p>
+      <p>
+          Isolated once again, I scanned the room and saw my previous dance partner still chatting in a corner with her friends at the edge of the dance floor, but I felt that it was still too soon to dance with her again, and the style of two-step is to rotate with many dancers to practice with all types of people. So I gathered up the courage and scanned the room for a girl who is vibing with the music. A girl was standing at the edge of the dancefloor moving slowly back and forth and so I approached her, but she rejected me. After my first success, I was not too concerned by her rejection and immediately turned to the other side, walked a few steps to another girl vibing to the music by herself, and asked for a dance to which she responded enthusiastically. After the dance, I also high five her and then went back to the civil engineer and make small talk before asking her for another dance.
+      </p>
+      <p>
+          This time, she pointed out that the music aligns better with a different dance style and so she taught me the waltz, a ballroom square dance, and we started moving to the slow rhythmic music. Afterward, I high fives her again, and we separated. More confident now, I maintained the momentum and ask three new partners to dance with me before going back to the first group of 3 girls. This time, I made conversation with the group, asking who was the sisters, and the first girl encouraged her sister to dance with me. Afterward, I high five her, and immediately after, a girl with glasses and a flowery dress invited me to dance. I finished two more songs and we separated, with me spinning around and into the 10th partner for the night.
+      </p>
+      <p>
+          After one song, the curtain closes to give the band a break, and I started looking around frantically, not knowing what to do now that the music has stopped and the dance floor cleared. I surveilled the room, looking up to the second level and saw a girl bobbing her head side to side while leaning over the railing at a back corner. I made my way upstairs to meet her. She introduced herself as Krystal, and that she is from Nashville. Afterward, I asked her to practice dancing with me, and she say that she is more confident leading. Seizing the moment and eager to experience dancing from the opposite side, I said that I want to practice following, and so we spent the next 15 minutes practicing.
+      </p>
+      <p>
+          She was an incredible instructor, articulating each motion and answering all of my questions. She showed me the "Country Shuffle", spin, and signaling as a lead when performing a spin. Afterward, I wanted to practice leading so she asked her friend to practice with me. Her friend was equally receptive, explaining that I need to maintain tension with the hands of the follow, and she taught me to signal each move more clearly by putting pressure on the follow's palm and back in addition to taking up more space on the dance floor as a lead. I asked her about dancing more smoothly to the music and maintaining tempo after a spin and she explained that the spin follows a 4 step count (pull in, push out, spin, lean back while putting tension on the follower's fingers (interlocking hands like a Lego block)) before moving back to the shuffle on the next beat.
+      </p>
+      <p>
+          After about 10 minutes, the curtains reopened and I went back down to the dancefloor. Since I was upstair practicing in a corner with only 2 girls for 30 minutes, I lost my momentum of randomly approaching people on the crowded floor below to dance. Expectedly, my social anxiety resurfaced so I stood in a back corner beside a few guys standing still and quietly staring at the stage. I forced myself to open the guy immediately to my right but all his answers were monotonous. Despite being quiet, he was muscular and has a sturdy frame and so I tried looking for a pair of girls vibing to the music so that we could approach together, but there was no such group.
+      </p>
+      <p>
+          The girls who were not actively dancing the country two-step were either by themselves or in groups of three. After 5 minutes of looking around, I turned back to my right and saw that the guy I was standing next to has quietly disappeared into the shadow, and so I began dancing by myself again, moving more explosively and taking up more space on the dancefloor as the follow upstair had shown me. 5 minutes of twisting back and forth to the beat of the music and vigorously shaking my hips and I began to leverage the adrenaline into dancing and switching between 4 different partners before my feet started to hurt from over 2 hours of almost non-stop dancing.
+      </p>
+      <p>
+          Satisfied with the result of stepping outside my comfort zone of asking over 20 different people to dance, I was ready to take a break (but not before accomplishing one last side quest). I stepped back into the corner with about 10 guys standing by themselves, barely moving their body, and staring blankly in front of them. I made a few quick small talk and asked one of the guys "Do you like dancing?" "Have you dance tonight yet?" "Not yet" "What are you waiting for?". He couldn't give me answer, but I knew how he felt at that moment because that was me at the beginning of the night, and so I gave him a shove and introduced him to one of my 20 dance partners earlier in the night, and say "You two should dance together". The two looked at one another with a brief look of surprise on their face before joining hands in a dance.
+      </p>
+      <p>
+          I turned around to walk into the back area of the room with standing tables and groups of people chatting with one another over glasses of wines, and I joined a mixed group of three friends by making an observational statement. We juggled around different topics about where we've been, the music, and the philosophy of life before I spotted a large group of 7 college-aged friends sitting around a rectangular table. One of the girls in the group was holding an envelope, and as someone who's always down to play party games, I approached and asked her "Is that a love note for me?" to which she responded that it was a card for her friend sitting across the table. I chatted with the group for a bit then went upstair to rest and enjoy the music.
+      </p>
+      <p>
+          So what did I learn from trying partnered dancing for the first time? I learned that how you feel about yourself and your behavior greatly affect how other people perceives you and that "nothing to lose" is actually an invitation to gain everything.
+      </p>
+    `,
+    date: "January 13, 2026",
+    authorId: "hai-dao",
+    category: "Activity",
+    imageUrl: "../images/articles/what-if-i-danced-country-two-step/2.png",
+    readTime: "12 min read"
+  },
 ];
