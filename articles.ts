@@ -59,7 +59,7 @@ export const ARTICLES: BlogPost[] = [
         <img src="../images/articles/what-if-i-was-homeless-for-100-hours/18.png" alt="Living on Nothing 19" class="rounded-lg shadow-lg w-full object-cover">
         <img src="../images/articles/what-if-i-was-homeless-for-100-hours/19.png" alt="Living on Nothing 20" class="rounded-lg shadow-lg w-full object-cover">
       </div>
-      <p>Did I take the chatty man up on his offer to spend the night in his apartment? Find out in the next module: <a href="#/article/what-if-i-slept-with-a-serial-killer" class="text-primary hover:text-white transition-colors">What if I slept with a serial killer?</a></p>
+      <p>Did I take the chatty man up on his offer to spend the night in his apartment? Find out in the next module: <a href="/article/what-if-i-slept-with-a-serial-killer" class="text-primary hover:text-white transition-colors">What if I slept with a serial killer?</a></p>
     `,
     date: "March 22, 2023",
     authorId: "hai-dao",
@@ -72,7 +72,7 @@ export const ARTICLES: BlogPost[] = [
     title: "What if I slept with a serial killer?",
     excerpt: "The continuation of my homeless challenge took a dark turn. Stranded in a storm with no place to spend the night, I had to trust a complete stranger whose name matched a notorious killer.",
     content: `
-      <p>This is a continuation of <a href="#/article/what-if-i-was-homeless-for-100-hours" class="text-primary hover:text-white transition-colors">What if I was homeless for 100 hours</a>.</p>
+      <p>This is a continuation of <a href="/article/what-if-i-was-homeless-for-100-hours" class="text-primary hover:text-white transition-colors">What if I was homeless for 100 hours</a>.</p>
       <p>I drank a lot of water last night while chatting with the man in his 50s so I woke up at 5am to go to the restroom. When I returned, the door to the banana lounge was locked with my backpack inside. The student's warning immediately popped into my mind and I feared that the man may have been a thief who took off with my belongings and locked the door. I patrolled the area for about 20 minutes before seeing a cleaner coming out of the lounge. I rushed over and made brief small talks as he held the door open for me to enter. After enjoying a cup of coffee in the lounge, I gathered my belongings and starts my 4th day in Boston on 4 hours of sleep.</p>
       <img src="../images/articles/what-if-i-slept-with-a-serial-killer/0.png" alt="Sleeping with a Stranger 1" class="rounded-lg shadow-lg my-6 w-full object-cover">
       <p>As it was still early in the morning, I set out on a mini challenge to take the Boston 'T' Subway to the end of the line, walk straight in one direction for an hour, and see where wanderlust took me. Aside from a wonderful walk in the cool cloudy weather, I did not encounter much in this remote area except for stretches of empty land and a few stores selling deliciously cheap cookies.</p>
