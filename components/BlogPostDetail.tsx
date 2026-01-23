@@ -306,10 +306,10 @@ const BlogPostDetail: React.FC = () => {
                     </span>
                   </div>
                   <div className="p-5">
-                    <h4 className="font-bold text-white mb-2 line-clamp-2 group-hover:text-primary transition-colors">
+                    <h4 className="font-bold text-white mb-2 line-clamp-3 group-hover:text-primary transition-colors">
                       {related.title}
                     </h4>
-                    <p className="text-sm text-gray-400 line-clamp-2">
+                    <p className="text-sm text-gray-400 line-clamp-4">
                       {related.excerpt}
                     </p>
                   </div>
