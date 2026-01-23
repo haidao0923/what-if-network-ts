@@ -10,6 +10,18 @@ interface BlogGridProps {
 
 const POSTS_PER_PAGE = 6;
 
+// Helper to get category-specific colors
+export const getCategoryColor = (category: string): string => {
+  const mapping: Record<string, string> = {
+    'Social Experiments': 'bg-primary',
+    'Travel': 'bg-emerald-600',
+    'Wellness': 'bg-rose-600',
+    'Activity': 'bg-indigo-600',
+    'Creativity': 'bg-amber-600',
+  };
+  return mapping[category] || 'bg-primary';
+};
+
 const BlogGrid: React.FC<BlogGridProps> = ({ posts }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -150,7 +162,7 @@ const BlogGrid: React.FC<BlogGridProps> = ({ posts }) => {
                       className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100"
                     />
                     <div className="absolute top-4 left-4">
-                      <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase shadow-sm bg-primary/90 text-white backdrop-blur-sm">
+                      <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase shadow-sm ${getCategoryColor(post.category)}/90 text-white backdrop-blur-sm`}>
                         {post.category}
                       </span>
                     </div>

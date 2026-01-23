@@ -6,6 +6,7 @@ import {
 } from 'lucide-react';
 import { ARTICLES } from '../articles';
 import { AUTHORS } from '../authors';
+import { getCategoryColor } from './BlogGrid';
 
 const BlogPostDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -117,7 +118,7 @@ const BlogPostDetail: React.FC = () => {
               Back to Adventures
             </Link>
             <div className="flex items-center space-x-2 mb-4">
-              <span className="px-3 py-1 rounded-full bg-primary text-white text-xs font-bold uppercase tracking-wider">
+              <span className={`px-3 py-1 rounded-full ${getCategoryColor(post.category)} text-white text-xs font-bold uppercase tracking-wider`}>
                 {post.category}
               </span>
             </div>
@@ -298,7 +299,7 @@ const BlogPostDetail: React.FC = () => {
                       alt={related.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <span className="absolute top-2 left-2 bg-primary/90 backdrop-blur-sm text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">
+                    <span className={`absolute top-2 left-2 ${getCategoryColor(related.category)}/90 backdrop-blur-sm text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider`}>
                       {related.category}
                     </span>
                     <span className="absolute bottom-2 right-2 bg-black/60 backdrop-blur-sm text-white text-xs px-2 py-1 rounded">
