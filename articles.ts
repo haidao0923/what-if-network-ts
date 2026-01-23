@@ -445,4 +445,61 @@ export const ARTICLES: BlogPost[] = [
     imageUrl: "../images/articles/what-if-i-danced-country-two-step/3.png",
     readTime: "12 min read"
   },
+  {
+    "id": "what-if-i-played-mini-golf-until-i-get-a-hole-in-one-on-every-hole",
+    "title": "What if I played mini golf until I get a hole-in-one on every hole?",
+    "excerpt": "What happen when an overinflated ego meets lack of research? You get a man running around the golf course swinging a putt like a man possessed.",
+    "content": `
+      <p>
+          At 11:10am on a Wednesday morning in Nashville, Tennessee, I went to Puttshack with a mission to see how long it would take for me to get a hole-in-one in every hole. I have never been to this location before, and from a brief look at the images online, I thought that it was just a small room with only one 9-hole course, and so I budgeted only 2 hours to complete the challenge. After paying for 2 hours of street parking and paying for the All-You-Can-Putt ticket, I walked toward the course and immediately learned that the challenge would take much longer than I had anticipated. In the large room were two 9-hole courses next to each other so if it takes me on average 10 minutes to get a hole-in-one, I would need to spend at least 3 hours at the center. Fortunately, because I entered right after the employee put out the signs and opened the door, there was only one other group playing mini-golf and I had plenty of time to speed through the courses. Little did I know that the challenge was going to get a lot tougher in the next 30 minutes.
+      </p>
+      <img src="../images/articles/what-if-i-played-mini-golf-until-i-get-a-hole-in-one-on-every-hole/0.png" alt="Puttshack Course" class="rounded-lg shadow-lg my-6 w-full object-cover">
+      <p>
+          I began my mission, selected a comfortable putt, and zealously approached the first hole. I set up the camera at an angle to record myself putting, hoping to capture the moment I achieved a hole-in-one. This took awhile because I did not bring any filming equipment with me on this trip, and was working with only a smartphone. After a few holes, I scrapped the idea because it was taking up too much time, and conceded to only taking out my phone and recording the screen after getting a hole-in-one.
+      </p>
+      <div class="relative w-full pb-[56.25%] h-0 rounded-lg overflow-hidden shadow-lg my-6">
+      <video controls class="absolute top-0 left-0 w-full h-full object-cover">
+          <source src="../videos/articles/what-if-i-played-mini-golf-until-i-get-a-hole-in-one-on-every-hole/video0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+      </div>
+      <p>
+          After playing through a round of mini-golf and getting a single hole-in-one, I asked the attendant to show me how to get a new ball for another round through my All-You-Can-Putt ticket. The attendant explained that I can tap on an SMS link to book a new round, and looking at the options, I grimaced at the implications. In the link were 4 different courses to choose from, which meant that the expected time to complete my objective had doubled once again from 3 to 6 hours. In a rush, I quickly selected one of the courses that I had not seen and asked an employee to direct me to the course. He pointed at a corridor on the opposite side of the room which houses an equally large space containing 18 more holes of mini-golf.
+      </p>
+      <div class="relative w-full pb-[56.25%] h-0 rounded-lg overflow-hidden shadow-lg my-6">
+      <video controls class="absolute top-0 left-0 w-full h-full object-cover">
+          <source src="../videos/articles/what-if-i-played-mini-golf-until-i-get-a-hole-in-one-on-every-hole/video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+      </div>
+      <p>
+          Still, I tried my best to finish my mission and began swinging the club like a man possessed, achieving 8 different hole-in-one in 40 minutes, doubling my expected average, and even placing 1st on the daily leaderboard (it has now been 3 hours).
+      </p>
+      <div class="relative w-full pb-[56.25%] h-0 rounded-lg overflow-hidden shadow-lg my-6">
+      <video controls class="absolute top-0 left-0 w-full h-full object-cover">
+          <source src="../videos/articles/what-if-i-played-mini-golf-until-i-get-a-hole-in-one-on-every-hole/video2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+      </div>
+      <p>
+          At this point, I discovered two demoralizing facts about my current predicament. Firstly, despite my recent gains and progress of achieving 9 of the easiest hole-in-ones, there were still 27 more holes to go and I have already spent three hours during the least crowded time at Puttshack. The venue is open for only 9 more hours, so even if I spend the entire day, I would not be able to finish my mission. Second, I discovered that I was playing too fast, and there was a limit to the number of sessions I could book because every round I book needs to be in a timeslot 10 minutes after my previous round, and the screen to retrieve a ball to putt only showed up to 90 minutes in advance. At 2pm, I was already having to book a slot for 3pm because of how fast I was rushing through each course, and so I took a forced break to tour the venue, go to the restroom, and just wander through the bar, taking videos of each hole.
+      </p>
+      <div class="relative w-full pb-[56.25%] h-0 rounded-lg overflow-hidden shadow-lg my-6">
+      <video controls class="absolute top-0 left-0 w-full h-full object-cover">
+          <source src="../videos/articles/what-if-i-played-mini-golf-until-i-get-a-hole-in-one-on-every-hole/video3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+      </div>
+      <p>
+          After 30 minutes, I began playing through the courses again, but at this point, I have not eaten anything since morning and I have been putting for over 4 hours, and so I exited the venue with 14 out of 36 hole-in-one and another glance at my name on the top of the daily leaderboard.
+      </p>
+      <img src="../images/articles/what-if-i-played-mini-golf-until-i-get-a-hole-in-one-on-every-hole/1.png" alt="Puttshack Scoreboard" class="rounded-lg shadow-lg my-6 w-full object-cover">
+    `,
+    "date": "January 23, 2026",
+    "authorId": "hai-dao",
+    "category": "Activity",
+    "imageUrl": "../images/articles/what-if-i-played-mini-golf-until-i-get-a-hole-in-one-on-every-hole/0.png",
+    "readTime": "4 min read"
+    }
+
 ];
