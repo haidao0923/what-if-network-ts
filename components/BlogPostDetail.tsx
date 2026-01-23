@@ -82,7 +82,7 @@ const BlogPostDetail: React.FC = () => {
   };
 
   const shareUrl = window.location.href;
-  const shareText = `Check out this adventure: ${post.title}`;
+  const shareText = `Check out this adventure from What If Network: ${post.title}`;
 
   const handleShare = (platform: 'twitter' | 'email') => {
     if (platform === 'twitter') {
