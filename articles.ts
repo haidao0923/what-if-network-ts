@@ -3,7 +3,7 @@ import { BlogPost } from './types';
 export const ARTICLES: BlogPost[] = [
   {
     id: 'what-if-i-was-homeless-for-100-hours',
-    title: "What if I was homeless for 100 hours?",
+    title: "What If I Was Homeless for 100 Hours?",
     excerpt: "Traveling to another state for 5 days sounds fun. But is it still fun if you did not have a place to sleep? What if I did that on purpose to see if it was possible to live on only the kindness of completely strangers?",
     content: `
       <p>Traveling to another state for 5 days sounds fun... but is it still fun if you did not have a place to sleep? What if I did that on purpose to see if it was possible to live on only the kindness of completely strangers?</p>
@@ -69,7 +69,7 @@ export const ARTICLES: BlogPost[] = [
   },
   {
     id: 'what-if-i-slept-with-a-serial-killer',
-    title: "What if I slept with a serial killer?",
+    title: "What If I Slept With a Serial Killer?",
     excerpt: "The continuation of my homeless challenge took a dark turn. Stranded in a storm with no place to spend the night, I had to trust a complete stranger whose name matched a notorious killer.",
     content: `
       <p>This is a continuation of <a href="/article/what-if-i-was-homeless-for-100-hours" class="text-primary hover:text-white transition-colors">What if I was homeless for 100 hours</a>.</p>
@@ -267,7 +267,7 @@ export const ARTICLES: BlogPost[] = [
   },
   {
     id: 'what-if-i-chose-unpaved-road',
-    title: "What if I chose the unpaved road?",
+    title: "What If I Chose the Unpaved Road?",
     excerpt: "When taking a vacation to the Bahamas, most people imagine sunbathing on the white sandy beach or swimming in the clear blue water, what if I instead decide to just start walking up the hill and see where nature takes me?",
     content: `
       <h3>A Reason For Change</h3>
@@ -316,7 +316,7 @@ export const ARTICLES: BlogPost[] = [
   },
   {
     id: 'what-if-i-directed-and-filmed-a-game-show',
-    title: "What if I directed and filmed a game show?",
+    title: "What If I Directed and Filmed a Game Show?",
     excerpt: "Have you ever liked a game show so much that you binge-watch all 18 seasons wishing for a chance to compete in them yourself? What if I transformed that wish into reality?",
     content: `
       <p>
@@ -357,7 +357,7 @@ export const ARTICLES: BlogPost[] = [
   },
 {
     id: 'what-if-i-danced-country-two-step',
-    title: "What if I danced Country Two-step",
+    title: "What If I Danced Country Two-Step",
     excerpt: "They say the hardest part of any journey is the first step, but at Nashville’s Eastside Bowl, I learned that the hardest part is actually the first two-step.",
     content: `
       <p>
@@ -434,7 +434,7 @@ export const ARTICLES: BlogPost[] = [
       <p>
           I turned around to walk into the back area of the room with standing tables and groups of people chatting with one another over glasses of wines, and I joined a mixed group of three friends by making an observational statement. We juggled around different topics about where we've been, the music, and the philosophy of life before I spotted a large group of 7 college-aged friends sitting around a rectangular table. One of the girls in the group was holding an envelope, and as someone who's always down to play party games, I approached and asked her "Is that a love note for me?" to which she responded that it was a card for her friend sitting across the table. I chatted with the group for a bit then went upstair to rest and enjoy the music.
       </p>
-      <img src="../images/articles/what-if-i-danced-country-two-step/2.png" alt="Eastside Bowl Entrance" class="rounded-lg shadow-lg w-full object-cover" style="object-fit: contain; height: 500px">
+      <img src="../images/articles/what-if-i-danced-country-two-step/2.png" alt="Eastside Bowl Entrance" class="rounded-lg shadow-lg my-6 w-full object-cover">
       <p>
           What did I learn from trying partnered dancing for the first time? I learned that how you feel about yourself and your behavior greatly affect how other people perceives you and that "nothing to lose" is actually an invitation to gain everything.
       </p>
@@ -447,8 +447,8 @@ export const ARTICLES: BlogPost[] = [
   },
   {
     "id": "what-if-i-played-mini-golf-until-i-get-a-hole-in-one-on-every-hole",
-    "title": "What if I played mini golf until I get a hole-in-one on every hole?",
-    "excerpt": "What happen when an overinflated ego meets lack of research? You get a man running around the golf course swinging a putt like a hyperactive boy.",
+    "title": "What If I Played Mini Golf Until I Get a Hole-in-One on Every Hole?",
+    "excerpt": "What happen when an overinflated ego meets lack of research? You get a man running around the golf course like a hyperactive kid on an impossible mission.",
     "content": `
       <p>
           At 11:10am on a Wednesday morning in Nashville, Tennessee, I went to Puttshack with a mission to see how long it would take for me to get a hole-in-one in every hole. I have never been to this location before, and from a brief look at the images online, I thought that it was just a small room with only one 9-hole course, and so I budgeted only 2 hours to complete the challenge. After paying for 2 hours of street parking and paying for the All-You-Can-Putt ticket, I walked toward the course and immediately learned that the challenge would take much longer than I had anticipated. In the large room were two 9-hole courses next to each other so if it takes me on average 10 minutes to get a hole-in-one, I would need to spend at least 3 hours at the center. Fortunately, because I entered right after the employee put out the signs and opened the door, there was only one other group playing mini-golf and I had plenty of time to speed through the courses. Little did I know that the challenge was going to get a lot tougher in the next 30 minutes.

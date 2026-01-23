@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import {
   ArrowLeft, Calendar, User, Clock, Share2, Type, Minus, Plus,
-  Mail, Twitter, Link as LinkIcon, Check
+  Mail, Twitter, Link as LinkIcon, Check, Instagram
 } from 'lucide-react';
 import { ARTICLES } from '../articles';
 import { AUTHORS } from '../authors';
@@ -92,7 +92,31 @@ const BlogPostDetail: React.FC = () => {
     }
   };
 
-  const handleCopy = (source: 'instagram' | 'link') => {
+  const handleInstagramShare = async () => {
+    const captionText = `${post.title}\n\n${post.excerpt}\n\nRead the full story at the link below! #WhatIfNetwork\n${shareUrl}`;
+
+    // Check for native mobile sharing first for true "composer" experience
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: post.title,
+          text: post.excerpt,
+          url: shareUrl,
+        });
+        return;
+      } catch (err) {
+        console.debug('Native share cancelled or failed:', err);
+      }
+    }
+
+    // Fallback: Copy caption for manual Instagram posting
+    navigator.clipboard.writeText(captionText).then(() => {
+      setCopiedSource('instagram');
+      setTimeout(() => setCopiedSource(null), 2000);
+    });
+  };
+
+  const handleCopy = (source: 'link') => {
     navigator.clipboard.writeText(shareUrl).then(() => {
       setCopiedSource(source);
       setTimeout(() => setCopiedSource(null), 2000);
@@ -192,6 +216,17 @@ const BlogPostDetail: React.FC = () => {
               {shareOpen && (
                 <div className="absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-dark border border-gray-700 ring-1 ring-black ring-opacity-5 focus:outline-none overflow-hidden animate-fade-in-down z-20">
                   <div className="py-1">
+                    <button
+                      onClick={() => handleInstagramShare()}
+                      className="flex w-full items-center px-4 py-3 text-sm text-gray-300 hover:bg-gray-800 hover:text-white transition-colors"
+                    >
+                      {copiedSource === 'instagram' ? (
+                        <Check className="mr-3 h-4 w-4 text-green-500" />
+                      ) : (
+                        <Instagram className="mr-3 h-4 w-4 text-[#E4405F]" />
+                      )}
+                      {copiedSource === 'instagram' ? 'Caption Copied!' : 'Instagram'}
+                    </button>
                     <button
                       onClick={() => handleShare('twitter')}
                       className="flex w-full items-center px-4 py-3 text-sm text-gray-300 hover:bg-gray-800 hover:text-white transition-colors"
