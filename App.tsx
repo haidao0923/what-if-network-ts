@@ -1,5 +1,5 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import BlogGrid from './components/BlogGrid';
@@ -7,6 +7,12 @@ import BlogPostDetail from './components/BlogPostDetail';
 import ContactForm from './components/ContactForm';
 import { ARTICLES } from './articles';
 import { Instagram, Youtube } from 'lucide-react';
+
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void;
+  }
+}
 
 const Home = () => {
   // Posts reversed to show latest first
@@ -28,6 +34,17 @@ const Home = () => {
 };
 
 const App: React.FC = () => {
+  const location = useLocation();
+
+  // Track page views on route change
+  useEffect(() => {
+    if (window.gtag) {
+      window.gtag('config', 'G-MS19G6DNEM', {
+        page_path: location.pathname + location.search,
+      });
+    }
+  }, [location]);
+
   return (
     <div className="min-h-screen bg-dark text-light font-sans selection:bg-primary selection:text-white flex flex-col">
       <Navbar />
