@@ -357,7 +357,7 @@ export const ARTICLES: BlogPost[] = [
   },
 {
     id: 'what-if-i-danced-country-two-step',
-    title: "What If I Danced Country Two-Step",
+    title: "What If I Danced Country Two-Step?",
     excerpt: "They say the hardest part of any journey is the first step, but at Nashville’s Eastside Bowl, I learned that the hardest part is actually the first two-step.",
     content: `
       <p>
@@ -446,6 +446,82 @@ export const ARTICLES: BlogPost[] = [
     readTime: "12 min read"
   },
   {
+    "id": "what-if-i-became-a-photojournalist",
+    "title": "What If I Became a Photojournalist?",
+    "excerpt": "I walked into Imaging USA 2026 with a microphone and a mission. Between the out-of-body nerves of street interviewing and the mixture of enthusiastic photographers, I learned that the line between amateur and pro is thinner than it looks.",
+    "content": `
+      <p>
+        Photography and Journalism as a career have always fascinated me. Taking pictures, asking questions, and writing notes are activities that the average person conduct multiple times per day. What separates a professional from a hobbyist? Is it the equipment, network, mindset, behavior, or something else?
+      </p>
+      <p>
+        I attended the Imaging USA 2026 photography expo at Nashville, Tennessee to learn from professionals in the field and uncover their trade secrets.
+      </p>
+      <img src="../images/articles/what-if-i-became-a-photojournalist/0.png" alt="Imaging USA Entrance" class="rounded-lg shadow-lg w-full object-cover" style="object-fit: contain; height: 400px">
+      <p>
+        I arrived at the trade show on a cold Monday morning with a fashionable black coat and a confident expression on my face. Knowing the character that I wanted to be for this event, I immediately stroke up a conversation with the few people walking outside as I arrived at the entrance to the Gaylord Opryland Resort. Once inside, I claimed my badge and descended to the bottom level and into the massive expo. The area was crowded with streams of photographers wandering around, clusters of people listening to informational talks, groups with flashy equipment on photowalks, and throughout the expo were photographers taking pictures of models in every quadrant of the room.
+      </p>
+      <p>
+        Capitalizing on the excitement from being surrounded by so many photographers, I immediately rushed outside to my car to get a pair of microphone to interview people and learn as much as I can about photography, modeling, and what it takes to succeed in these roles.
+      </p>
+      <img src="../images/articles/what-if-i-became-a-photojournalist/1.png" alt="Gaylord Opryland Resort Entrance" class="rounded-lg shadow-lg w-full object-cover" style="object-fit: contain; height: 400px">
+      <p>
+        Coming back into the expo hall, I wandered around with nerves so overwhelming that it could burst out at any moment, fearing rejection from approaching people for an interview as someone with absolutely no credibility as a journalist. But after wandering around for 10 excruciating minutes, I forced myself to approach a model at the very back corner of the expo hall (knowing that she was paid to talk with people at the event) and I asked to interview her.
+      </p>
+      <p>
+        The next 5 minutes was like an out of body experience. My arms were outstretched as I pointed the microphone at her with my right hand while keeping my smartphone steady on my left hand, simultaneously maintaining proper eye contact and coming up with questions on the spot. Even though I had 5 questions prepared beforehand, I could barely remember them when face-to-face with the model before me (this was definitely one of the most uncomfortable moments of my life) but I persevered and came away with an amateurish recording of the interview.
+      </p>
+      <video controls loop playsinline src="../images/articles/what-if-i-became-a-photojournalist/video0.mp4" alt="First Model Interview" class="w-auto h-[500px] rounded-lg object-cover"></video>
+      <p>
+        I learned that as a model....
+      </p>
+      <p>
+        15 minutes later, I spotted a talkative extrovert chatting at a booth, and leveraging my brief reddit studies on journalism, I approached her for an interview. She responded enthusiasticly, and I thank her afterward for her time. I never introduced myself or told her the reason why I was gathering public information and so I was surprised that after the interview, she did not ask me any question about my affiliations or why I approached her (maybe she could tell that I was a novice from my stutters during the interview). Once again, I left the experience with a very amateurish video because as a solo interviewer, I needed to maintain a close distance to hold the microphone close to the mouth of the interviewee while simultaneous holding the phone on my left hand as far back as possible to keep the other person properly in frame.
+      </p>
+      <video controls loop playsinline src="../images/articles/what-if-i-became-a-photojournalist/video1.mp4" alt="Second Interview Attempt" class="w-auto h-[500px] rounded-lg object-cover"></video>
+      <p>
+        From experiencing these two failures of videography, I learned that I needed an easy to carry tripod or handsfree recording system to reduce the mental and physical burden of holding the phone and keeping the subject in frame while interviewing.
+      </p>
+      <p>
+        As such, I stopped doing formal interviews and instead simply make conversation with other people on the expo floor. From the brief chats with other photographers, a lot of the answers I received were very vague and most simply respond with some variations of "the different camera settings and framings depend on your photography style" and "when you take enough pictures, you will develop a photographer's eye for what photo looks good".
+      </p>
+      <img src="../images/articles/what-if-i-became-a-photojournalist/2.png" alt="Expo Floor" class="rounded-lg shadow-lg w-full object-cover" style="object-fit: contain; height: 400px">
+      <p>
+        Toward the end of the expo, I saw a gathering of people at the famous Fujifilm booth and stumbled upon an opportunity to join other photographers for a photowalk. I traded my driver license for a professional camera and did not miss the chance to get a photo of myself with the camera taken by another attendee who is a professional event photographer (Unfortunately, I did not ask for his contact information)
+      </p>
+      <img src="../images/articles/what-if-i-became-a-photojournalist/3.png" alt="Me with a Professional Camera" class="rounded-lg shadow-lg w-full object-cover" style="object-fit: contain; height: 400px">
+      <p>
+        There were three Fujifilm employees and a male model guiding the 8 photographers through the photowalk around the Gaylord Opryland Resort, and I learned quite a bit during the session. The instructor explained various settings on the camera with the main focus on the "Exposure Triangle" which includes the "aperture" controlling the depth of view (a low "aperture" for portrait photography to focus on the subject and a higher value for landscape photography), the "shutter speed" controlling how sharp or smooth your motion pictures are, and finally the "ISO" determining how much light the camera captures. I was able to visualize the changes in real-time as I tinker with the settings while taking photos throughout the photowalk.
+      </p>
+      <img src="../images/articles/what-if-i-became-a-photojournalist/4.png" alt="Picture of a Professional Camera With The Scene In Frame" class="rounded-lg shadow-lg w-full object-cover" style="object-fit: contain; height: 400px">
+      <p>
+        The next day, I returned to the convention center through a different entrance and discovered that the resort was much bigger than I had thought. Immediately inside was what I can only describe as an oasis in a cityscape with tropical plants, sculpted rocks, fountains, and manmade waterfalls surrounding elevated pedestrian walkways. Scanning the fantastical landscape in astonishment, I yearned for a photo and video of myself with the view in the background. Looking around, I approached two different convention attendees also walking around by themselves to ask for a photo and video and both of them were very enthusiastic when I offered to return the favor and take a photo for them.
+      </p>
+      <video controls loop playsinline src="../images/articles/what-if-i-became-a-photojournalist/video2.mp4" alt="Resort Oasis Walkthrough" class="w-auto h-[500px] rounded-lg object-cover"></video>
+      <p>
+        The next room was a much bigger greenhouse with hundreds of plants and hanging musical decorations representing the "Music City" of the USA. Once again, I asked a nearby photographer for a picture, and immediately afterward, another photographer came over offering to take a photo for me in a different orientation. Exploring the convention center, I approached 4 more attendees to take photos for me throughout the resort.
+      </p>
+      <img src="../images/articles/what-if-i-became-a-photojournalist/5.png" alt="Music City Display" class="rounded-lg shadow-lg w-full object-cover" style="object-fit: contain; height: 400px">
+      <p>
+        Inside the expo on Tuesday afternoon, I saw a lady in her late 30s talking into a microphone in front of a tall and skinny tripod with a ring light. She was doing exactly what I wanted to do at the start of the expo, but with a much more professional setup.  "The tripod was exactly what I needed to conduct street interviews more efficiently" I thought. So I approached her and asked for the name of the tripod. She explained that she is also starting a channel where she go to different conventions and get public opinion, and she asked me if I would like to be in an interview. I responded positively and she clipped a microphone to my jacket for an interview. I acted just like how I wanted my interviewees to act, and at the end asked for her Instagram or social media to connect. She respond just like how I imagined I would respond, by dodging the question over embarrassment that I have a low following as someone just starting out with digital journalism.
+      </p>
+      <img src="../images/articles/what-if-i-became-a-photojournalist/6.png" alt="Model at Imaging USA 2026" class="rounded-lg shadow-lg w-full object-cover" style="object-fit: contain; height: 400px">
+      <p>
+        Overall, I had a wonderful experience at Imaging USA 2026. I chatted with over 20 different photographers and models, asked 8 photographers for pictures, operated a professional camera, and learned about the "Exposure Triangle" and the rule of third when framing and editing. On the journalism side of being a photojournalist, I conducted two formal interviews with a smartphone and microphone to a model and a photographer. I was also an interviewee for someone else's passion project.
+      </p>
+      <p>
+        The exciting but equally scary thing about photography and journalism is that there is no predefined standards for what makes a photo beautiful or what makes a story captivating. The reason why many of the photographers I talked to gave me vague answers was because beauty is in the eye of the beholder. So, what makes a good photojournalist? It is a blend of equipment, network, mindset, and behavior. Every photojournalist is different because a photo or video taken on a smartphone will have a different lighting and mood to a photo or video taken with a camera. Every person also have a different network, because each interview you conduct varies depending on who you meet and their purpose and mood throughout the day. A journalist's mindset and consequently behavior can also affect the quality and quantity of your research, but once again, even a negative mindset or an introverted journalist could tell a unique story from their personal point of view.
+      </p>
+      <p>
+        One photographer I chatted with during a photowalk told me that he does event photography, weddings, graduation headshots, travel, and couple photography, but he still could not identify a point in time where he could say that he is a professional, because at the end of the day, just like my amateurish attempt at interviewing people to the lady in her 30s walking around the expo hall with her tripod, everyone in the community is carving their own path in the world, and while we are striving towards that ideal, each of us meet and affect each other in numerous unforeseeable ways.
+      </p>
+    `,
+    "date": "January 13, 2026",
+    "authorId": "hai-dao",
+    "category": "Activity",
+    "imageUrl": "../images/articles/what-if-i-became-a-photojournalist/3.png",
+    "readTime": "12 min read"
+  },
+  {
     "id": "what-if-i-played-mini-golf-until-i-get-a-hole-in-one-on-every-hole",
     "title": "What If I Played Mini Golf Until I Get a Hole-in-One on Every Hole?",
     "excerpt": "What happen when an overinflated ego meets lack of research? You get a man running around the golf course like a hyperactive kid on an impossible mission.",
@@ -478,6 +554,5 @@ export const ARTICLES: BlogPost[] = [
     "category": "Activity",
     "imageUrl": "../images/articles/what-if-i-played-mini-golf-until-i-get-a-hole-in-one-on-every-hole/2.png",
     "readTime": "8 min read"
-    }
-
+  },
 ];
