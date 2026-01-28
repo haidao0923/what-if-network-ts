@@ -558,7 +558,7 @@ export const ARTICLES: BlogPost[] = [
   },
   {
     "id": "what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat",
-    "title": "What if I planned a trip to NYC with no time to eat?",
+    "title": "What If I Planned a Trip to NYC With No Time to Eat?",
     "excerpt": "Will I accomplish every activities on my bucket list or will hunger and exhaustion overwhelm me?",
     "content": `
         <p>
@@ -586,6 +586,7 @@ export const ARTICLES: BlogPost[] = [
         <p>
             I initially planned to also walk through central park and explore the tomb of Ulysses S. Grant but there was only a few hours before sunset so I immediately took the bus and subway downtown to the main Metropolitan Museum of Arts.
         </p>
+        <h3>The Largest Museum in the Americas</h3>
         <p>
             From the reviews online, I allocated 3.5 hours to explore the museum, thinking that would be ample time to leisurely stroll through their exhibits.
         </p>
@@ -595,13 +596,14 @@ export const ARTICLES: BlogPost[] = [
         <p>
             I exchanged my MET Cloisters ticket for a free ticket to the Metropolitan Museum of Arts and head inside one of the three interconnected corridors. The path stretched on seemingly forever with paintings, sculptures, and relics from the past with their own paragraph delving deeper into the history of each art pieces.
         </p>
-        <img src="../images/articles/what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat/2.png" alt="Endless Rooms in the Met Museum" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain; height: 500px">
+        <img src="../images/articles/what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat/2.png" alt="The MET Egyptian Exhibit" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain">
         <p>
             I knew immediately that it would be impossible to study individual artworks and so I opted to just record my walk through every exhibits at the museum.
         </p>
         <p>
             I walked ceaselessly without barely any stops for over 8 miles in 3.5 hours and by the time the museum closes at 5pm, I still had not walked through every exhibit in the museum despite not even reading of the exhibit descriptions.
         </p>
+        <img src="../images/articles/what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat/3.png" alt="Endless Rooms in the Met Museum" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain; height: 500px">
         <p>
             Throughout my brisk walkthrough, I saw many tourists posing for pictures, but there were also locals casually exploring pieces of arts that they missed from previous visits, and multiple student groups reviewing art and history throughout the ages.
         </p>
@@ -609,15 +611,15 @@ export const ARTICLES: BlogPost[] = [
             So what did I learn about arts from the largest museum in the Americas? Walking for 3.5 hours with a 20lb backpack, bending down to see details of relics from below, and staring up repeatedly at paintings hung on the walls, I learned that art is time consuming but it can also give you back pain and a sore neck.
         </p>
         <div style="width: 100%; max-width: 100%; aspect-ratio: 16 / 9;">
-        <iframe
-            src="https://www.youtube.com/embed/jgKYIl6rqIg?si=yd64t3J2FACXZN9e"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-            style="width: 100%; height: 100%;">
-        </iframe>
+            <iframe
+                src="https://www.youtube.com/embed/jgKYIl6rqIg?si=yd64t3J2FACXZN9e"
+                title="MET Museum Compilation"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                style="width: 100%; height: 100%;">
+            </iframe>
         </div>
         <p>
             I initially planned to leave the MET by 4pm to catch a view of the sunset on the Staten Island ferry at 4:40pm, but after failing to explore every section of the museum by 5pm and getting increasingly hungrier each second having eaten nothing since waking up 12 hours earlier (the delicious smell of nearby food trucks only serve to further agitate my growling stomach), I conceded to my hunger in search for a fulfilling meal. Google Maps showed a promising Chinese buffet an hour away on the path to my third destination of the day, the Dyker Heights Christmas light.
@@ -628,27 +630,243 @@ export const ARTICLES: BlogPost[] = [
         <p>
             Right away, I noticed that despite arriving at the peak dining hour of 6pm, every single offering was cold and unappetizing. The meat were hard, some undercooked, and others were poorly seasoned. Even the dumplings were dry and the sushi were soggy. Still, I slogged through every dish once hoping to find a diamond in the rough. In the end, I left after 30 minutes still hungry because I could barely finish the plates.
         </p>
-        <img src="../images/articles/what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat/3.png" alt="Buffet Plate at Flaming Grill & Buffet in Brooklyn, NY" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain">
+        <img src="../images/articles/what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat/4.png" alt="Buffet Plate at Flaming Grill & Buffet in Brooklyn, NY" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain">
         <p>
             At 6:40pm, I took a 50 minutes bus ride to the Dyker Heights Christmas lights. Since the bus stopped about 0.8 miles from the address of the lights, I decided to turn off my GPS to conserve battery and wander through the surroundings neighborhood. My first stop was the Bay Ridge Holiday House which attracted a decently sized crowd of about a dozen people when I visited at 7:30pm. I then proceeded to walk another half mile down 83rd to 86th street, recording the beautiful lights on display along the way. This neighborhood completely outshine (pun intended) any other residential display in the US through the sheer number of lights with some families spending up to $20,000 in set up costs. After 90 minutes of strolling through the neighborhoods, taking pictures of festive decorations, and recording the holiday light shows, I accidentally stumbled upon the busiest and loudest street in an otherwise silent neighbor at 9:07pm. I knew even before seeing the big sign at the house entrance that I had arrived at the famous Dyker Height Christmas light display with nearly 3,000 highly rated reviews because there were multiple police cars and upward of 100 people covering the sidewalk, excitedly chatting, taking pictures, and enjoying hot chocolates as cars stroll down the road stopping intermittently to admire the lights.
         </p>
-        <video controls loop playsinline src="../images/articles/what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat/video3.mp4" alt="Dyker Height Christmas Lights Compilation" class="w-auto h-[500px] rounded-lg my-6 object-cover"></video>
+        <div style="width: 100%; max-width: 100%; aspect-ratio: 16 / 9;">
+            <iframe
+                src="https://www.youtube.com/embed/G6__Bx7VhwE?si=K05jV79xZhBcZ9yk"
+                title="Dyker Height Christmas Light"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                style="width: 100%; height: 100%;">
+            </iframe>
+        </div>
         <p>
             Many of the nearby decorated houses took advantage of the high foot traffic to sell desserts and refreshments with food trucks parked on their driveway. Some families were even selling light up toys and photo ops, ultimately transforming the street once hidden deep inside a residential neighborhood into a bustling Christmas market. After 2 hours of strolling through every major Dyker Height Christmas light street in the torturously cold air, having walked over 23 miles for 12 hours on 4 hours of sleep, I began my journey back to the warm comfort of an AirBnB at 10:50pm. One hour later, I fell into a satisfied sleep in preparation for an even longer day tomorrow.
         </p>
         <p>
-            Read about my second day in "What if I became a tech blogger?"
+            Read about my second day in <a href="/article/what-if-i-became-a-tech-blogger" class="text-primary hover:text-white transition-colors">"What if I became a tech blogger?"</a>
         </p>
-        <img src="../images/articles/what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat/4.png" alt="AI Summit NY" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain;">
+        <img src="../images/articles/what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat/5.png" alt="AI Summit NY" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain;">
         <p>
-            or the second night in "What if I accidently fasted for 30 hours?"
+            or the second night in <a href="/article/what-if-i-accidently-fasted-for-30-hours" class="text-primary hover:text-white transition-colors">"What if I accidently fasted for 30 hours?"</a>
         </p>
-        <img src="../images/articles/what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat/5.png" alt="Bryant Park Winter Village" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain;">
+        <img src="../images/articles/what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat/6.png" alt="Bryant Park Winter Village" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain;">
         `,
-    "date": "January 14, 2026",
+    "date": "December 9, 2025",
     "authorId": "hai-dao",
     "category": "Travel",
-    "imageUrl": "../images/articles/what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat/1.png",
+    "imageUrl": "../images/articles/what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat/7.png",
     "readTime": "12 min read"
-  }
+  },
+  {
+    "id": "what-if-i-accidently-fasted-for-30-hours",
+    "title": "What If I Accidently Fasted for 30 Hours?",
+    "excerpt": "The sights in NYC are captivating. But who would have thought that it could make you lose all sense of time.",
+    "content": `
+        <p>
+            This is a continuation of <a href="/article/what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat" class="text-primary hover:text-white transition-colors">"What if I planned a trip to NYC with no time to eat?"</a> and <a href="/article/what-if-i-became-a-tech-blogger" class="text-primary hover:text-white transition-colors">"What if I became a tech blogger?"</a>
+        </p>
+        <p>
+            Around 4:30pm on the second day of my NYC trip, I left the Javits Convention Center to visit a nearby prescheduled attraction called The Vessel at 5pm.
+        </p>
+        <p>
+            The Vessel is a climbable honeycomb sculpture with over 2,500 steps designed to provide an interactive experience with a beautiful view up to 150 feet high in the open space. Because I had booked this attraction 2 weeks earlier for a discount, I could not foresee the wind and rain pouring down on Hudson Yards, Manhattan, NY this night at 5pm.
+        </p>
+        <p>
+            My time in NYC was limited so I could not reschedule this attraction to a different day, and so I proceeded to the entrance, dreading the imminent climb in the rain.
+        </p>
+        <p>
+            After showing the security my bag and entering the sculpture, I was pleasantly surprised to see from a closer look that the stairway leading to the top of the sculpture is partially sheltered by the platform above it. So beside from the chilly cold air on a winter night, I stayed mostly dry climbing up and down over 500 steps, exploring all accessible vantage points of the sculpture, the surrounding Christmas lights, and Manhattan's cityscape at night.
+        </p>
+        <div style="width: 100%; max-width: 100%; aspect-ratio: 16 / 9;">
+            <iframe
+                src="https://www.youtube.com/embed/Wbe_MztL9PQ?si=QVBGLIxJ6_GQR71G"
+                title="What If I Climbed The Vessel In The Rain?"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                style="width: 100%; height: 100%;">
+            </iframe>
+        </div>
+        <p>
+            45 minutes later, I left The Vessel to enter the Hudson Yards shopping mall and watch the Toy Soldier Troupe Dance performance from 6:30pm to 7pm.
+        </p>
+        <div style="width: 100%; max-width: 100%; aspect-ratio: 16 / 9;">
+            <iframe
+                src="https://www.youtube.com/embed/TjC9RGxq6Eo?si=kFPce2AgSbVJwWoa"
+                title="Toy Soldier Dance Troupe"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                style="width: 100%; height: 100%;">
+            </iframe>
+        </div>
+        <p>
+            At 7pm, I went up to the highest accessible floor of the Hudson Yards for my prebooked timeslot to visit the tallest outdoor viewing deck in the Western Hemisphere. When I reached the lobby of The Edge, the receptionist informed me that due to the rain and high winds, the outdoor observation is closed but I can reschedule my ticket for a different day. If the outdoor area was open, I would have still went up and explore in the spirit of embracing the unique experience, but I opted to rebook my slot for 9:30am the next morning.
+        </p>
+        <img src="../images/articles/what-if-i-accidently-fasted-for-30-hours/0.png" alt="Orb Post Light In front of NYC Cityscape at Night" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain; height: 300px">
+        <p>
+            To fill my now open schedule, I scour through the directory of attractions on Google Maps to find places that were still open and discovered that the New York Public Library was open until 8pm. I took the subway and walked 7 minutes in the freezing rain before reaching the library. The sky was pitch black and people were walking out of the library because there was only 35 minutes left until it closes. I dashed inside, went through a rigorous security procedure of walking through a metal detector and the guard manually searching through my backpack, and began a rapid walk around the massive marbled building (named the most beautiful library in the US). When I arrived, the guards were already ushering people outside of certain exhibits and closing the doors, but despite the fact that many rooms were closed, I could still not walkthrough all the open area in 30 minutes. In a rush, I simply ran around taking pictures of unique sights before being directed out as the library closes.
+        </p>
+        <img src="../images/articles/what-if-i-accidently-fasted-for-30-hours/1.png" alt="New York Public Library Exhibit" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain; height: 400px">
+        <p>
+            My next destination was the nearby Bryant Park Winter Village where I saw many people enjoying the free ice skating rink. I also shot one of the most vivid and creative photo of my NYC trip this night.
+        </p>
+        <p>
+            The circle at the top of the image that appeared to be a supermoon was caused by water droplet from the drizzling rain that night hitting the lense at just the right moment.
+        </p>
+        <img src="../images/articles/what-if-i-accidently-fasted-for-30-hours/2.png" alt="Bryant Park Winter Village" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain;">
+        <p>
+            After spending about 30 minutes browsing the shops and admiring the festive surrounding, I took a subway to the Roosevelt Island Tramway Station and rode a 4 minute tram ride included with my one week unlimited metro card. Even though the glass windows were blurred due to the rain, crossing high above the busy highway and over the water surrounded by skyscrapers illuminated in the night was surreal. At 8:30pm, there were still over a dozen passengers on both the departing and returning car.
+        </p>
+        <video controls loop playsinline src="../images/articles/what-if-i-accidently-fasted-for-30-hours/video0.mp4" alt="Roosevelt Island Tram" class="w-auto h-[500px] rounded-lg my-6 object-cover"></video>
+        <img src="../images/articles/what-if-i-accidently-fasted-for-30-hours/3.png" alt="Roosevelt Island Tram Waiting Area" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain;>
+        <p>
+            Around 9:30pm, the rain has mostly stopped, so I rearranged my schedule and take an hour long subway ride to visit the Brooklyn Bridge at night instead of during sunrise. I was afraid that walking across a mile-long bridge in the dark would be dangerous, but once I reached the entrance, I discovered that the bridge is very well-lit and there are still hundreds of cars with lights right below crossing through the highway even at 10:30pm. After a 30 minutes walk, I crossed the bridge with some breathtaking pictures. Check out the short video below to read more about my experience walking across the Brooklyn Bridge.
+        </p>
+        <img src="../images/articles/what-if-i-accidently-fasted-for-30-hours/4.png" alt="Me on the Brooklyn Bridge" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain; height: 500px">
+        <p>
+            With only an hour before midnight, I hurried to the subway station once again to experience what I read online as a hidden experience even among some locals: the midnight moment.
+        </p>
+        <p>
+            At 11:40pm, I walked out of 42nd St Station into Times Square and it was as if a portal had opened into a different a world. Even 2 miles away, the streets were nowhere close to as illuminated as this place with Billboard lights transforming the street and sky into a shade of pink. All around were groups of tourists with their phones and gimbals in hand taking pictures and videos of their surrounding. It's hard to imagine how long I would have to wait driving through this area because while there are clearly-marked roadway, the streets were completely filled with people walking in all direction. I joined the crowd of people with phone in one hand as I walked around, lost in a trance at the dreamlike surrounding, and before I knew it, every billboard turned black and a countdown begin.
+        </p>
+        <div style="width: 100%; max-width: 100%; aspect-ratio: 16 / 9;">
+            <iframe
+                src="https://www.youtube.com/embed/TjC9RGxq6Eods?sifsfdsfsdfd"
+                title="Times Square Midnight Moment"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                style="width: 100%; height: 100%;">
+            </iframe>
+        </div>
+        <p>
+            Within 10 seconds, the pink mask surrounding Times Square turned to white and then rainbow and at that moment, it was like time had frozen still. Every pedestrian walking along the sidewalk suddenly stopped to look above and around, admiring the synchronized art display with eyes stretched and mouth hung open. In these short moments, some people takes out their phone to record, other simply looked up in awe. Families hugged each other, and some posed for pictures.
+        </p>
+        <p>
+            Three minutes later, it was like nothing had happened. People acted just like they did before the Midnight Moment, and even though I was in the center of the busiest block in Times Square, I heard no mention of the art display. If someone had missed the show for even a second, they would be completely clueless of what had taken place.
+        </p>
+        <img src="../images/articles/what-if-i-accidently-fasted-for-30-hours/5.png" alt="Me in Time Square" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain;">
+        <p>
+            After about 20 more minutes in the below freezing temperature, I was ready to return to my warm Airbnb. On my way back to the subway station, I stumbled upon a Pizza Store that I had researched prior to visiting NYC but did not keep it at the top of my mind on this night full of unexpected twists. However, since it was on my bucket list of NYC experiences, I stepped inside Z Grill Pizzeria and ordered their special promotion of $3.99 for 2 plain cheese pizza slice and a soda.
+        </p>
+        <img src="../images/articles/what-if-i-accidently-fasted-for-30-hours/6.png" alt="Z Grill Pizzeria" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain;">
+        <p>
+            It might have been the fact that I had not eaten anything in over 30 hours, or it may have been that the dough was mixed with NYC low-mineral tap water, but taking a bite inside the subway station, the cheap cheese pizza slice at 12:40am tasted multiple times more delicious and fulfilling than even the most topping-dense meat-eater slice from Pizza Hut back in Georgia. After walking for 24 miles in a day and 30 hours without anything in my stomach, two slices felt like a buffet to my inactive intestine, and a portion that I could normally finish in under two minutes on a regular day took over 20 minutes as I chewed, savored, and rested between each bite.
+        </p>
+        <img src="../images/articles/what-if-i-accidently-fasted-for-30-hours/7.png" alt="Box of pizza on top of my leg inside subway station" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain;">
+        <p>
+            I arrived at my Airbnb at 1:30am and quickly get ready for bed in preparation for my third, last, and longest day in NYC.
+        </p>
+        <p>
+            Follow my adventure in <a href="/article/what-if-i-collected-more-swags-than-i-could-carry-home" class="text-primary hover:text-white transition-colors">"What if I collected more swags than I could carry home?"</a>
+        </p>
+        `,
+    "date": "December 10, 2025",
+    "authorId": "hai-dao",
+    "category": "Travel",
+    "imageUrl": "../images/articles/what-if-i-accidently-fasted-for-30-hours/2.png",
+    "readTime": "12 min read"
+  },
+  {
+    "id": "what-if-i-collected-more-swags-than-i-could-carry-home",
+    "title": "What If I Collected More Swags Than I Could Carry Home?",
+    "excerpt": "My third day is NYC is full of unexpected events. What happen when I recklessly say 'yes' to last-minute trips and accepted dozens of gifts?",
+    "content": `
+        <p>
+            This is a continuation of <a href="/article/what-if-i-accidently-fasted-for-30-hours" class="text-primary hover:text-white transition-colors">"What if I accidently fasted for 30 hours?"</a>
+        </p>
+        <p>
+            I woke up at 8:30am on Thursday morning to get ready for my 9:30am timeslot to visit The Edge NYC. After taking a 40 minute bus and subway ride to the Hudson Yards, I stepped outside the subway station to the windiest day of my trip. The wind was so strong that it was extremely difficult to walk in a direction opposite from the wind, and many people cross the street at intersections just to avoid trudging through the gust. Imagine that at 1,100 feet in the air!
+        </p>
+        <img src="../images/articles/what-if-i-collected-more-swags-than-i-could-carry-home/0.png" alt="Me Standing At The Edge of The Edge" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain;">
+        <p>
+            I did not want to forfeit my ticket, and so I went up to the 100th floor and stepped outside. There were already about 20 people up here despite the chilling temperature. It was less windy than I expected as the glass panels on all four sides provided good protection from the gusts. I endured through the frostbite inducing cold and explored all sides of the observation deck, walked and laid on top of the glass floor panel looking down 1,100 feet below, and also posed at The Edge of The Edge for a picturesque photo. From a high vantage point, the cityscape looked like a miniature model and I was the architect.
+        </p>
+        <p>
+            20 minutes later, I could not handle the cold any longer, and had to step inside where I spend 8 minutes taking pictures with the Pinkmas holiday decorations. I went outside for 8 more minutes, then back in again for 8 minutes, each time letting my body warm up before heading back out to admire the city. This time I met an older asian lady in her 40s who asked me to take a picture for her. I agreed and she repaid the favor by taking pictures for me. When I stepped outside, she approached me again and we take pictures and videos of each other for 8 more minutes. When I stepped back inside for one final time, I lingered around for last minute photo opportunities before saying goodbye to the sky and descending 100 floors.
+        </p>
+        <video controls loop playsinline src="../images/articles/what-if-i-collected-more-swags-than-i-could-carry-home/video0.mp4" alt="The Edge" class="w-auto h-[500px] rounded-lg my-6 object-cover"></video>
+        <p>
+            Stepping into the street, I approached the northern terminus of The High Line near the Vessel but despite trudging forward with all of my strength, the strong wind rendered me completely immobile. Turning around, my body literally lifted off the ground, shoving me back to the midpoint.
+        </p>
+        <p>
+            Starving from the lack of food the past two days of my trip, I took a 40 minute subway ride to Chinatown in New York searching for two cheap high calories meal. I visited Jin Mei Dumpling and ordered 20 Steamed Pork Buns for $10, then I went to Mei Lai Wah Bakery and ordered two Baked Porn Bun for $6. "This lavish meal will supplement all the lost calories from the two days prior" I told myself as I head back to attend my second day as a tech blogger at the AI Summit NY.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
+            <img src="../images/articles/what-if-i-collected-more-swags-than-i-could-carry-home/1.png" alt="Jin Mei Dumpling" class="rounded-lg shadow-lg w-full object-cover h-64">
+            <img src="../images/articles/what-if-i-collected-more-swags-than-i-could-carry-home/2.png" alt="Jin Mei Dumpling's Steam Pork Buns" class="rounded-lg shadow-lg w-full object-cover h-64">
+            <img src="../images/articles/what-if-i-collected-more-swags-than-i-could-carry-home/3.png" alt="Mei Lai Wah Bakery" class="rounded-lg shadow-lg w-full object-cover h-64">
+        </div>
+        <p>
+            At 4pm, I exited the Javits convention center and made my way to the largest train station in the world: Grand Central. This station is arguably an underground city with over 1 million people passing through every day during December, stores, and tunnels spreading further than the eye could see. With so many outlets, In the brief time I spent at the station, multiple people came up to me asking for direction to their destination, but I could only direct them to the information desk or someone else who looked like a local because I was also disoriented by the omnidirectional exits and multiple levels for different trains.
+        </p>
+        <p>
+            When you begin a trip from Grand Central, you could be getting on a new rail with digital display or an outdated one where you must listen to the conductor to make sure that you arrive at the correct stop. I stepped onto a wrong train by mistake and went nearly 30 minutes past my intended destination, but fortunately, I discovered my mistake just in time. At 5:50pm, I arrived at The Shops at Columbus Circle just 10 minutes before the free Broadway Under The Stars performance where I listened to songs from SIX The Musical, Two Strangers (Carry a Cake Across New York), and The Queen of Versailles.
+        </p>
+        <p>
+            I did not have time to buy rush tickets earlier in the day, but with heightened determination to see a Broadway show after listening to the incredible voices of these Broadway singers, I immediately searched for places to buy tickets online. Unfortunately, as it was only 50 minutes before show start time, not a single online store had tickets.
+        </p>
+        <p>
+            With one last tempt of faith, I took a 20 minutes subway to Times Square and searched the area. I saw a small line forming outside a theater and stepped inside asking for last minute tickets, but the ticket agent told me that their show is in a small theater and all the tickets are sold out. I asked her for any nearby theater that may still be selling tickets because today was my last day in NYC and I wanted to see a Broadway show. She directed me to a theater on the opposite side of the block with a much longer line, and without knowing any better, I joined the long line and waited 5 minutes to get to the entrance. The lady at the front was a security guard checking my bags and tickets. She searched through my belongings and when I told her that I have no tickets, she directed me to the glass door at the back of the line to buy tickets.
+        </p>
+        <p>
+            "I want to buy a ticket to see a Broadway show" "What show do you want to see?" "Whatever show is happening right now" "What seat do you want?" There was an elderly couple right beside me and they opted for a ticket priced around $100 per person which was a lot higher than I had budgeted for this trip, so in a nervous voice I say "Um... do you have any student discounts?" "We don't have any student discount for this show, but the cheapest ticket I have is a partial view for $49" Disappointed that not only will I be buying Broadway tickets for a higher price than I anticipated, but that I will also be getting a blocked view of the show, I asked "What does the partial view look like?" "It's not bad, you can still see all the actors, some of the background will be blocked." This journey is all about taking chances, so I bought the tickets and stepped inside.
+        </p>
+        <p>
+            The seat I was assigned was on the left orchestra at the very end, but by the time the show started about 20 minutes later, there was no one sitting in the middle of the row, and so I and a few other people next to me moved seat to the center for a complete view of the performance. Even if I had to sit at the partial view throughout the show, it would still be a phenomenal experience. All the performers were incredible artists in both their harmony and synchronized dance. Watching these performers in action, you can clearly tell that each of them spend hundreds of hours practicing their acts because they sing and move so perfectly in sync that some dance appears quite uncanny (as they were designed to be!). Aside from the show starting 10 minutes after the scheduled time, everything from the respectful audience to the sound system, costume, and set designs were the highest standard of any performances I have ever seen.
+        </p>
+        <p>
+            After the show, I spent about 10 minutes people watching in Times Square before heading to Fifth Avenue to see two popular Christmas attractions, the Saks Light Show and the Rockefeller Christmas Tree and Skating Rink. At 10:00pm, I began my return trip to my Airbnb where I dropped off the 20-pounds backpack I have been carrying for over 40 hours over 3 days and took a bus to a nearby nightclub: The House of Yes where I chatted with locals and dance with some of the wildest crowd I have ever seen in night clubs.
+        </p>
+        <p>
+            I returned to my Airbnb at 1:30am to pack my belongings but there is a major problem. I bought a Frontier ticket with no carry-on allowance, and now not only do I have an oversized backpack, but also a pillow-sized plushie and an equally large external bag of all the swags I collected at the AI Summit NY. I left behind two large books on AI at the Airbnb because it would be impossible to condense the books and I lugged the three large items to JFK airport. After passing through TSA at 5am, I began to look for places where I can carry out my plan of hiding the extraneous luggage. I searched for a restroom near my departing gate, but the men's restroom is closed for cleaning. Frantically looking around, there was no restroom in sight, and when I asks a cleaner, she also say that there is no restroom available within a 15 minute walk. The next 20 minutes felt like an eternity, but I waited while brainstorming alternative ideas. I could hide the plushie underneath my jacket, but there was no space to hide the second bag. When the men's restroom finally opened about 30 minutes before the boarding time, I immediately rushed inside one of the stalls. Looking inside the bag of swags, I put on a baggy pajama pant over my dress pant and stuffed as many soft t-shirts, hats, socks, and gloves as possible in the space between my two pants, and the beanie underneath my coat.
+        </p>
+        <p>
+            When I came out of the restroom, my figure looked as if I had gained 100lbs, and some of the passengers who were sitting next to me at the gate noticed immediately. Three talkative college-aged girls chattered among themselves saying "Look! That guy is hiding stuffs under his coat and pants." I gave myself some affirmation "Fortunately, the Frontier agent at the gate did not see me before my disguise so I still have a chance. And beside, the rule is stupid anyway, it doesn't make sense to charge me for extra luggage when a heavier man weigh a lot more than the combined weight of me with all of my extra luggage."
+        </p>
+        <p>
+            Boarding started and I approached the gate more nervous than I have ever been in my life. I normally walked at a slower than average pace, but in the minute leading up to the front of the line, my gait speed was comparative to that of a soldier crawling through a minefield. The closer I got to the front of the gate, the more my confidence grew. The agent was just waving people through, trying to board as fast as possible. "But all of them had small luggage while mine was clearly oversized" said the voice inside my head. Then I reached the front of the line. If the agent was shorter than me, she would have saw the large gap underneath my coat, clearing exposing that I was hiding a plushie underneath, but luck was on my side. The agent quickly scanned my passport and waved me through.
+        </p>
+        <p>
+            Once inside, I was sitting in the seat with a belly so big that it would have been impossible to put on my seatbelt. I glanced around for the perfect opportunity, and slipped the plushie out of my coat. When everyone had boarded the plane, I noticed that there was still space in the overhead compartment, and I asked the flight attendant if I could put my oversized "personal item" in the overhead. He said yes, and I had a warm and comfortable flight home. When I arrived at my home airport, I quickly went into the closest restroom to take the clothing and socks from between my two pants so that I can more easily move my legs and went home satisfied with all that I have accomplished during my NYC trip.
+        </p>
+        <h3>So, what is the main takeaway from my 3-day trip to NYC?</h3>
+        <p>I learned that</p>
+        <ol>
+            <li>
+            <strong>In saying Yes to certain adventures, I am saying No to a different but not any less interesting experience.</strong>
+            <br/>
+            Before visiting NYC, I was infatuated with all the different sightseeing activities like seeing the largest museum in the Americas and the tallest outdoor viewing deck in the Western Hemisphere. But by spending all of my time at these places, I missed out on the experience of enjoying more authentic New York delicacies. In saying yes to so many swags, I missed out on reading a potentially interesting book and also risked not being able to bring all of the swags back home.
+            </li>
+            <li>
+            <strong>A good trip depends on your mindset and willingness to push past the obstacles.</strong>
+            <br/>
+            Instead of letting the fact that it was raining ruin my experience of visiting The Vessel, I climbed it anyway and discovered that it was still very enjoyable in the rain. I noticed things that I would have otherwise missed such as the platform above of The Vessel acting as protection from the rain for the walkway below. And in my 30 hours without consuming food, I discovered what it felt like to experience the longest water-fast of my life.
+            </li>
+            <li>
+            <strong>Balance between making decisions with your head and your heart.</strong>
+            <br/>
+            Sometime our rational mind can be too protective, not allowing us to step outside of our comfort zone in fear that the consequence could hurt us. But that results in a very boring and uneventful life. If I had not wandered around and getting lost inside Grand Central, I would have never knew the diverse collection of trains that passed through the largest and most populous train station in the world. And if I had not let my heart decide when buying the last-minute Broadway ticket, I would have saved $49 but at the cost of never knowing what a Broadway show look and sound like.
+            </li>
+        </ol>
+        <blockquote>
+            In one sentence: Take action by doing something new everyday, persevere through the challenges, and focus on the bright side of life.
+        </blockquote>
+        `,
+    "date": "December 11, 2025",
+    "authorId": "hai-dao",
+    "category": "Travel",
+    "imageUrl": "../images/articles/what-if-i-collected-more-swags-than-i-could-carry-home/main.png",
+    "readTime": "15 min read"
+    }
 ];
