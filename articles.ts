@@ -127,7 +127,7 @@ export const ARTICLES: BlogPost[] = [
       <p>
           Most groups planned to watch a movie or grab lunch together, but I dreamt for an adventure unlike any other. I had been planning out my route for getting restaurant freebies on my birthday for a few weeks, looking up social media, finding the more generous stores around Atlanta.
       </p>
-      <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/2.png" alt="Birthday Freebies" class="rounded-lg shadow-lg w-full object-cover" style="object-fit: contain; height: 200px">
+      <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/2.png" alt="Birthday Freebies" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain; height: 200px">
       <p>
           I thought that it would be a perfect opportunity to invite the stranger on this one in a lifetime experience, but up to the second I hit sent on my invitation six days before my birthday, I was still feeling doubtful and pessimistic, trying to rationalize inside my head everything that could go wrong during my venture.
       </p>
@@ -140,7 +140,7 @@ export const ARTICLES: BlogPost[] = [
       <p>
           And so I hit sent on my invitation and we settled on a meeting time at 1:30pm. With her response, the quest is set in stones. Now, my own ego and pride are intertwined. And with the two pressuring me together, I would no longer be able to go back on my words and my goals.
       <p>
-      <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/3.png" alt="Homeless Person" class="rounded-lg shadow-lg w-full object-cover" style="object-fit: contain; height: 200px">
+      <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/3.png" alt="Homeless Person" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain; height: 200px">
       <p>
           The stranger would not join me until 1:30pm but I wanted to start my expedition early in order to maximize on the number of free items I would get throughout the day. So I woke up at 10am and begin driving down to the local Texaco gas station to fill up the tank in preparation for an expectedly long day of driving around the city asking for free foods.
       </p>
@@ -163,7 +163,7 @@ export const ARTICLES: BlogPost[] = [
       <p>
           I lost most of my old pictures but saved the receipt as a reminder of my achievement. Unfortunately the text had faded when I took the picture again 2 years later.
       </p>
-      <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/6.png" alt="Signed Happy Birthday Receipt" class="rounded-lg shadow-lg w-full object-cover" style="object-fit: contain; height: 500">
+      <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/6.png" alt="Signed Happy Birthday Receipt" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain; height: 500">
       <p>
           How did I leverage my overinflated confidence after this incredibly fortunate encounter? Instead of going to another individually-operated gas station, I went to the complete opposite type of establishment, the largest grocery store in sight right across the street, Food Depot.
       </p>
@@ -225,7 +225,7 @@ export const ARTICLES: BlogPost[] = [
       <p>
           "We can't give you any freebies, but I can give you birthday punches for free." Still confused by his out of the norm response, thinking that "birthday punches" must have meant some sort of smoothies, I verbalized my confusion, "okay?" The employee noticed my confused expression and clarified in a playful tone "How old are you? I'll punch you hard on the arm that many times." That was the only freebie I rejected on my birthday, but I wished him a wonderful day and left with a laugh on my face.
       </p>
-      <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/25.png" alt="Eats Restaurant" class="rounded-lg shadow-lg w-full object-cover" style="object-fit: contain; height: 200px">
+      <img src="../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/25.png" alt="Eats Restaurant" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain; height: 200px">
       <p>
           In total, I asked 33 stores, restaurants, and gas stations. The end result was much better than I had anticipated with a ratio of 14:19 Yes to No.
       </p>
@@ -333,8 +333,8 @@ export const ARTICLES: BlogPost[] = [
       <p>
           After making preliminary promotional materials, I booked a room on campus for a weekly meetup to watch the game show and created social media pages on Discord, Instagram, YouTube, and Linktree. In the meantime, I woodworked a jenga set out of 2x4 wood by using a combination of a large band saw and a miter saw, sanding the edges and engraving each individual pieces with letters using a laser engraver.
       </p>
-      <img src="../images/articles/what-if-i-directed-and-filmed-a-game-show/2.png" alt="Jenga Set" class="rounded-lg shadow-lg w-full object-cover">
-      <img src="../images/articles/what-if-i-directed-and-filmed-a-game-show/3.png" alt="Woodworking" class="rounded-lg shadow-lg w-full object-cover">
+      <img src="../images/articles/what-if-i-directed-and-filmed-a-game-show/2.png" alt="Jenga Set" class="rounded-lg my-6 shadow-lg w-full object-cover">
+      <img src="../images/articles/what-if-i-directed-and-filmed-a-game-show/3.png" alt="Woodworking" class="rounded-lg my-6 shadow-lg w-full object-cover">
       <p>
           During our weekly meetings, we explored the resources available inside the room including a whiteboard, desks, projectors, and two built-in room camera with 360 degree recording. We filmed some of our meeting activities and after editing with DaVinci Resolve, we published the game show to YouTube!
       </p>
@@ -355,7 +355,7 @@ export const ARTICLES: BlogPost[] = [
     imageUrl: "../images/articles/what-if-i-directed-and-filmed-a-game-show/4.png",
     readTime: "5 min read"
   },
-{
+  {
     id: 'what-if-i-danced-country-two-step',
     title: "What If I Danced Country Two-Step?",
     excerpt: "They say the hardest part of any journey is the first step, but at Nashville’s Eastside Bowl, I learned that the hardest part is actually the first two-step.",
@@ -404,7 +404,7 @@ export const ARTICLES: BlogPost[] = [
       <p>
           Then I made some small talks and learned that she recently graduated as a civil engineer and we danced for two more songs. After the third song, we high five for a third time, then the curtains behind us opened and we stood there looking up at the band on stage. Thinking that I overstayed my time with her, I extended a hand for a shake and thank her for dancing with me.
       </p>
-      <video controls loop playsinline src="../images/articles/what-if-i-danced-country-two-step/video0.mp4" alt="Eastside Bowl Stage" class="w-auto h-[500px] rounded-lg object-cover"></video>
+      <video controls loop playsinline src="../images/articles/what-if-i-danced-country-two-step/video0.mp4" alt="Eastside Bowl Stage" class="w-auto h-[500px] rounded-lg my-6 object-cover"></video>
       <p>
           She returned to her friends and I stood around the front dancing by myself for a while. Trying to appear more lively and happy, I began practicing the "Country Shuffle" by myself for 5 minutes before noticing two guys dancing with their hips swaying back and forth while turning their foot inside and out. I copied their dancing style then complimented the guy on his dance move. 3 minutes later, a girl came up opposite him and they dance together so I stepped out of the way.
       </p>
@@ -417,7 +417,7 @@ export const ARTICLES: BlogPost[] = [
       <p>
           After one song, the curtain closes to give the band a break, and I started looking around frantically, not knowing what to do now that the music has stopped and the dance floor cleared. I surveilled the room, looking up to the second level and saw a girl bobbing her head side to side while leaning over the railing at a back corner. I made my way upstairs to meet her. She introduced herself as Krystal, and that she is from Nashville. Afterward, I asked her to practice dancing with me, and she say that she is more confident leading. Seizing the moment and eager to experience dancing from the opposite side, I said that I want to practice following, and so we spent the next 15 minutes practicing.
       </p>
-      <video controls loop playsinline src="../images/articles/what-if-i-danced-country-two-step/video1.mp4" alt="Eastside Bowl Upstair" class="w-auto h-[500px] rounded-lg object-cover"></video>
+      <video controls loop playsinline src="../images/articles/what-if-i-danced-country-two-step/video1.mp4" alt="Eastside Bowl Upstair" class="w-auto h-[500px] rounded-lg my-6 object-cover"></video>
       <p>
           She was an incredible instructor, articulating each motion and answering all of my questions. She showed me the "Country Shuffle", spin, and signaling as a lead when performing a spin. Afterward, I wanted to practice leading so she asked her friend to practice with me. Her friend was equally receptive, explaining that I need to maintain tension with the hands of the follow, and she taught me to signal each move more clearly by putting pressure on the follow's palm and back in addition to taking up more space on the dance floor as a lead. I asked her about dancing more smoothly to the music and maintaining tempo after a spin and she explained that the spin follows a 4 step count (pull in, push out, spin, lean back while putting tension on the follower's fingers (interlocking hands like a Lego block)) before moving back to the shuffle on the next beat.
       </p>
@@ -427,7 +427,7 @@ export const ARTICLES: BlogPost[] = [
       <p>
           The girls who were not actively dancing the country two-step were either by themselves or in groups of three. After 5 minutes of looking around, I turned back to my right and saw that the guy I was standing next to has quietly disappeared into the shadow, and so I began dancing by myself again, moving more explosively and taking up more space on the dancefloor as the follow upstair had shown me. 5 minutes of twisting back and forth to the beat of the music and vigorously shaking my hips and I began to leverage the adrenaline into dancing and switching between 4 different partners before the dancefloor became too crowded and my feet started to hurt from over 2 hours of almost non-stop dancing.
       </p>
-      <video controls loop playsinline src="../images/articles/what-if-i-danced-country-two-step/video2.mp4" alt="Eastside Bowl Dancefloor" class="w-auto h-[500px] rounded-lg object-cover"></video>
+      <video controls loop playsinline src="../images/articles/what-if-i-danced-country-two-step/video2.mp4" alt="Eastside Bowl Dancefloor" class="w-auto h-[500px] rounded-lg my-6 object-cover"></video>
       <p>
           Satisfied with the result of stepping outside my comfort zone of asking over 20 different people to dance, I was ready to take a break (but not before accomplishing one last side quest). I stepped back into the corner with about 10 guys standing by themselves, barely moving their body, and staring blankly in front of them. I made a few quick small talk and asked one of the guys "Do you like dancing?" "Have you dance tonight yet?" "Not yet" "What are you waiting for?". He couldn't give me answer, but I knew how he felt at that moment because that was me at the beginning of the night, and so I gave him a shove and introduced him to one of my 20 dance partners earlier in the night, and say "You two should dance together". The two looked at one another with a brief look of surprise on their face before joining hands in a dance.
       </p>
@@ -456,43 +456,43 @@ export const ARTICLES: BlogPost[] = [
       <p>
         I attended the Imaging USA 2026 photography expo at Nashville, Tennessee to learn from professionals in the field and uncover their trade secrets.
       </p>
-      <img src="../images/articles/what-if-i-became-a-photojournalist/0.png" alt="Imaging USA Entrance" class="rounded-lg shadow-lg w-full object-cover" style="object-fit: contain; height: 400px">
+      <img src="../images/articles/what-if-i-became-a-photojournalist/0.png" alt="Imaging USA Entrance" class="rounded-lg shadow-lg my-6 w-full object-cover">
       <p>
         I arrived at the trade show on a cold Monday morning with a fashionable black coat and a confident expression on my face. Knowing the character that I wanted to be for this event, I immediately stroke up a conversation with the few people walking outside as I arrived at the entrance to the Gaylord Opryland Resort. Once inside, I claimed my badge and descended to the bottom level and into the massive expo. The area was crowded with streams of photographers wandering around, clusters of people listening to informational talks, groups with flashy equipment on photowalks, and throughout the expo were photographers taking pictures of models in every quadrant of the room.
       </p>
       <p>
         Capitalizing on the excitement from being surrounded by so many photographers, I immediately rushed outside to my car to get a pair of microphone to interview people and learn as much as I can about photography, modeling, and what it takes to succeed in these roles.
       </p>
-      <img src="../images/articles/what-if-i-became-a-photojournalist/1.png" alt="Gaylord Opryland Resort Entrance" class="rounded-lg shadow-lg w-full object-cover" style="object-fit: contain; height: 400px">
+      <img src="../images/articles/what-if-i-became-a-photojournalist/1.png" alt="Gaylord Opryland Resort Entrance" class="rounded-lg shadow-lg my-6 w-full object-cover">
       <p>
         Coming back into the expo hall, I wandered around with nerves so overwhelming that it could burst out at any moment, fearing rejection from approaching people for an interview as someone with absolutely no credibility as a journalist. But after wandering around for 10 excruciating minutes, I forced myself to approach a model at the very back corner of the expo hall (knowing that she was paid to talk with people at the event) and I asked to interview her.
       </p>
       <p>
         The next 5 minutes was like an out of body experience. My arms were outstretched as I pointed the microphone at her with my right hand while keeping my smartphone steady on my left hand, simultaneously maintaining proper eye contact and coming up with questions on the spot. Even though I had 5 questions prepared beforehand, I could barely remember them when face-to-face with the model before me (this was definitely one of the most uncomfortable moments of my life) but I persevered and came away with an amateurish recording of the interview.
       </p>
-      <video controls loop playsinline src="../images/articles/what-if-i-became-a-photojournalist/video0.mp4" alt="First Model Interview" class="w-auto h-[500px] rounded-lg object-cover"></video>
+      <video controls loop playsinline src="../images/articles/what-if-i-became-a-photojournalist/video0.mp4" alt="First Model Interview" class="w-auto h-[500px] rounded-lg my-6 object-cover"></video>
       <p>
-        I learned that as a model....
+        I learned that in order to succeed as a model, you must stay positive, resilience, and learn how to best accommodate they various demands of different photographers while maintaining your own individual style.
       </p>
       <p>
         15 minutes later, I spotted a talkative extrovert chatting at a booth, and leveraging my brief reddit studies on journalism, I approached her for an interview. She responded enthusiasticly, and I thank her afterward for her time. I never introduced myself or told her the reason why I was gathering public information and so I was surprised that after the interview, she did not ask me any question about my affiliations or why I approached her (maybe she could tell that I was a novice from my stutters during the interview). Once again, I left the experience with a very amateurish video because as a solo interviewer, I needed to maintain a close distance to hold the microphone close to the mouth of the interviewee while simultaneous holding the phone on my left hand as far back as possible to keep the other person properly in frame.
       </p>
-      <video controls loop playsinline src="../images/articles/what-if-i-became-a-photojournalist/video1.mp4" alt="Second Interview Attempt" class="w-auto h-[500px] rounded-lg object-cover"></video>
+      <video controls loop playsinline src="../images/articles/what-if-i-became-a-photojournalist/video1.mp4" alt="Second Interview Attempt" class="w-auto h-[500px] rounded-lg my-6 object-cover"></video>
       <p>
         From experiencing these two failures of videography, I learned that I needed an easy to carry tripod or handsfree recording system to reduce the mental and physical burden of holding the phone and keeping the subject in frame while interviewing.
       </p>
       <p>
         As such, I stopped doing formal interviews and instead simply make conversation with other people on the expo floor. From the brief chats with other photographers, a lot of the answers I received were very vague and most simply respond with some variations of "the different camera settings and framings depend on your photography style" and "when you take enough pictures, you will develop a photographer's eye for what photo looks good".
       </p>
-      <img src="../images/articles/what-if-i-became-a-photojournalist/2.png" alt="Expo Floor" class="rounded-lg shadow-lg w-full object-cover" style="object-fit: contain; height: 400px">
+      <img src="../images/articles/what-if-i-became-a-photojournalist/2.png" alt="Expo Floor" class="rounded-lg shadow-lg my-6 w-full object-cover">
       <p>
         Toward the end of the expo, I saw a gathering of people at the famous Fujifilm booth and stumbled upon an opportunity to join other photographers for a photowalk. I traded my driver license for a professional camera and did not miss the chance to get a photo of myself with the camera taken by another attendee who is a professional event photographer (Unfortunately, I did not ask for his contact information)
       </p>
-      <img src="../images/articles/what-if-i-became-a-photojournalist/3.png" alt="Me with a Professional Camera" class="rounded-lg shadow-lg w-full object-cover" style="object-fit: contain; height: 400px">
+      <img src="../images/articles/what-if-i-became-a-photojournalist/3.png" alt="Me with a Professional Camera" class="rounded-lg shadow-lg my-6 w-full object-cover">
       <p>
-        There were three Fujifilm employees and a male model guiding the 8 photographers through the photowalk around the Gaylord Opryland Resort, and I learned quite a bit during the session. The instructor explained various settings on the camera with the main focus on the "Exposure Triangle" which includes the "aperture" controlling the depth of view (a low "aperture" for portrait photography to focus on the subject and a higher value for landscape photography), the "shutter speed" controlling how sharp or smooth your motion pictures are, and finally the "ISO" determining how much light the camera captures. I was able to visualize the changes in real-time as I tinker with the settings while taking photos throughout the photowalk.
+        There were three Fujifilm employees and a male model accompanying the 8 photographers through the photowalk around the Gaylord Opryland Resort, and I learned quite a bit during the session. The instructor explained various settings on the camera with the main focus on the "Exposure Triangle" which includes the "aperture" controlling the depth of view (a low "aperture" for portrait photography to focus on the subject and a higher value for landscape photography), the "shutter speed" controlling how sharp or smooth your motion pictures are, and finally the "ISO" determining how much light the camera captures. I was able to visualize the changes in real-time as I tinker with the settings while taking photos throughout the photowalk.
       </p>
-      <img src="../images/articles/what-if-i-became-a-photojournalist/4.png" alt="Picture of a Professional Camera With The Scene In Frame" class="rounded-lg shadow-lg w-full object-cover" style="object-fit: contain; height: 400px">
+      <img src="../images/articles/what-if-i-became-a-photojournalist/4.png" alt="Picture of a Professional Camera With The Scene In Frame" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain; height: 400px">
       <p>
         The next day, I returned to the convention center through a different entrance and discovered that the resort was much bigger than I had thought. Immediately inside was what I can only describe as an oasis in a cityscape with tropical plants, sculpted rocks, fountains, and manmade waterfalls surrounding elevated pedestrian walkways. Scanning the fantastical landscape in astonishment, I yearned for a photo and video of myself with the view in the background. Looking around, I approached two different convention attendees also walking around by themselves to ask for a photo and video and both of them were very enthusiastic when I offered to return the favor and take a photo for them.
       </p>
@@ -500,11 +500,11 @@ export const ARTICLES: BlogPost[] = [
       <p>
         The next room was a much bigger greenhouse with hundreds of plants and hanging musical decorations representing the "Music City" of the USA. Once again, I asked a nearby photographer for a picture, and immediately afterward, another photographer came over offering to take a photo for me in a different orientation. Exploring the convention center, I approached 4 more attendees to take photos for me throughout the resort.
       </p>
-      <img src="../images/articles/what-if-i-became-a-photojournalist/5.png" alt="Music City Display" class="rounded-lg shadow-lg w-full object-cover" style="object-fit: contain; height: 400px">
+      <img src="../images/articles/what-if-i-became-a-photojournalist/5.png" alt="Music City Display" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain; height: 400px">
       <p>
         Inside the expo on Tuesday afternoon, I saw a lady in her late 30s talking into a microphone in front of a tall and skinny tripod with a ring light. She was doing exactly what I wanted to do at the start of the expo, but with a much more professional setup.  "The tripod was exactly what I needed to conduct street interviews more efficiently" I thought. So I approached her and asked for the name of the tripod. She explained that she is also starting a channel where she go to different conventions and get public opinion, and she asked me if I would like to be in an interview. I responded positively and she clipped a microphone to my jacket for an interview. I acted just like how I wanted my interviewees to act, and at the end asked for her Instagram or social media to connect. She respond just like how I imagined I would respond, by dodging the question over embarrassment that I have a low following as someone just starting out with digital journalism.
       </p>
-      <img src="../images/articles/what-if-i-became-a-photojournalist/6.png" alt="Model at Imaging USA 2026" class="rounded-lg shadow-lg w-full object-cover" style="object-fit: contain; height: 400px">
+      <img src="../images/articles/what-if-i-became-a-photojournalist/6.png" alt="Model at Imaging USA 2026" class="rounded-lg shadow-lg my-6 w-full object-cover">
       <p>
         Overall, I had a wonderful experience at Imaging USA 2026. I chatted with over 20 different photographers and models, asked 8 photographers for pictures, operated a professional camera, and learned about the "Exposure Triangle" and the rule of third when framing and editing. On the journalism side of being a photojournalist, I conducted two formal interviews with a smartphone and microphone to a model and a photographer. I was also an interviewee for someone else's passion project.
       </p>
@@ -514,6 +514,7 @@ export const ARTICLES: BlogPost[] = [
       <p>
         One photographer I chatted with during a photowalk told me that he does event photography, weddings, graduation headshots, travel, and couple photography, but he still could not identify a point in time where he could say that he is a professional, because at the end of the day, just like my amateurish attempt at interviewing people to the lady in her 30s walking around the expo hall with her tripod, everyone in the community is carving their own path in the world, and while we are striving towards that ideal, each of us meet and affect each other in numerous unforeseeable ways.
       </p>
+      <video controls loop playsinline src="../images/articles/what-if-i-became-a-photojournalist/video3.mp4" alt="Imaging USA 2026 Compilation" class="w-auto h-[500px] rounded-lg my-6 object-cover"></video>
     `,
     "date": "January 13, 2026",
     "authorId": "hai-dao",
@@ -529,7 +530,7 @@ export const ARTICLES: BlogPost[] = [
       <p>
           At 11:10am on a Wednesday morning in Nashville, Tennessee, I went to Puttshack with a mission to see how long it would take for me to get a hole-in-one in every hole. I have never been to this location before, and from a brief look at the images online, I thought that it was just a small room with only one 9-hole course, and so I budgeted only 2 hours to complete the challenge. After paying for 2 hours of street parking and paying for the All-You-Can-Putt ticket, I walked toward the course and immediately learned that the challenge would take much longer than I had anticipated. In the large room were two 9-hole courses next to each other so if it takes me on average 10 minutes to get a hole-in-one, I would need to spend at least 3 hours at the center. Fortunately, because I entered right after the employee put out the signs and opened the door, there was only one other group playing mini-golf and I had plenty of time to speed through the courses. Little did I know that the challenge was going to get a lot tougher in the next 30 minutes.
       </p>
-      <img src="../images/articles/what-if-i-played-mini-golf-until-i-get-a-hole-in-one-on-every-hole/0.png" alt="Puttshack Course" class="rounded-lg shadow-lg w-full object-cover" style="object-fit: contain; height: 400px">
+      <img src="../images/articles/what-if-i-played-mini-golf-until-i-get-a-hole-in-one-on-every-hole/0.png" alt="Puttshack Course" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain; height: 400px">
       <p>
           I began my mission, selected a comfortable putt, and zealously approached the first hole. I set up the camera at an angle to record myself putting, hoping to capture the moment I achieved a hole-in-one. This took awhile because I did not bring any filming equipment with me on this trip, and was working with only a smartphone. After a few holes, I scrapped the idea because it was taking up too much time, and conceded to only taking out my phone and recording the screen after getting a hole-in-one.
       </p>
@@ -539,15 +540,15 @@ export const ARTICLES: BlogPost[] = [
       <p>
           Still, I tried my best to finish my mission and began swinging the club like a man possessed, achieving 8 different hole-in-one in 40 minutes, doubling my expected average, and even placing 1st on the daily leaderboard (in the 3 hours since Puttshack opened).
       </p>
-      <video controls loop playsinline src="../images/articles/what-if-i-played-mini-golf-until-i-get-a-hole-in-one-on-every-hole/video1.mp4" alt="Puttshack Hole-in-One Compilation" class="w-auto h-[500px] rounded-lg object-cover"></video>
+      <video controls loop playsinline src="../images/articles/what-if-i-played-mini-golf-until-i-get-a-hole-in-one-on-every-hole/video1.mp4" alt="Puttshack Hole-in-One Compilation" class="w-auto h-[500px] rounded-lg my-6 object-cover"></video>
       <p>
           At this point, I discovered two demoralizing facts about my current predicament. Firstly, despite my recent gains and progress of achieving 9 of the easiest hole-in-ones, there were still 27 more holes to go and I have already spent three hours during the least crowded time at Puttshack. The venue is open for only 9 more hours, so even if I spend the entire day, I would not be able to finish my mission. Second, I discovered that I was playing too fast, and there was a limit to the number of sessions I could book because every round I book needs to be in a timeslot 10 minutes after my previous round, and the screen to retrieve a ball to putt only showed up to 90 minutes in advance. At 2pm, I was already having to book a slot for 3pm because of how fast I was rushing through each course, and so I took a forced break to tour the venue, go to the restroom, and just wander through the bar, taking videos of each hole.
       </p>
-      <video controls loop playsinline src="../images/articles/what-if-i-played-mini-golf-until-i-get-a-hole-in-one-on-every-hole/video2.mp4" alt="Puttshack Walkthrough Video" class="w-auto h-[500px] rounded-lg object-cover"></video>
+      <video controls loop playsinline src="../images/articles/what-if-i-played-mini-golf-until-i-get-a-hole-in-one-on-every-hole/video2.mp4" alt="Puttshack Walkthrough Video" class="w-auto h-[500px] rounded-lg my-6 object-cover"></video>
       <p>
           After 30 minutes, I began playing through the courses again, but at this point, I have not eaten anything since morning and I have been putting for over 4 hours. Moreover, the link now block me from booking a timeslot with an error message saying that my booking slot was too far in advanced. Exhausted, I exited the venue with 14 out of 36 hole-in-one and one last glance at my name on the top of the daily leaderboard.
       </p>
-      <img src="../images/articles/what-if-i-played-mini-golf-until-i-get-a-hole-in-one-on-every-hole/1.png" alt="Puttshack Scoreboard" class="rounded-lg shadow-lg w-full object-cover" style="object-fit: contain; height: 600px">
+      <img src="../images/articles/what-if-i-played-mini-golf-until-i-get-a-hole-in-one-on-every-hole/1.png" alt="Puttshack Scoreboard" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain; height: 500px">
     `,
     "date": "January 14, 2026",
     "authorId": "hai-dao",
@@ -555,4 +556,99 @@ export const ARTICLES: BlogPost[] = [
     "imageUrl": "../images/articles/what-if-i-played-mini-golf-until-i-get-a-hole-in-one-on-every-hole/2.png",
     "readTime": "8 min read"
   },
+  {
+    "id": "what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat",
+    "title": "What if I planned a trip to NYC with no time to eat?",
+    "excerpt": "Will I accomplish every activities on my bucket list or will hunger and exhaustion overwhelm me?",
+    "content": `
+        <p>
+            My first time in NYC during December was filled with hope and excitement from the massive collections of Christmas itineraries all over social media. Beautiful cityscapes, the tallest skyscrapers in the United States, the largest museum in the Americas, and the number one Christmas light neighborhood in the US had all taken up residence in my mind. My thirst for discoveries added to an insatiable completionism culminated in a schedule with activities every hours in a day. Since I have no prior experience in NYC, my schedule was crafted with only time estimates from Google Reviews and Google Maps in calculating commuting time. If Google Maps said that the commuting time was 90 minutes on the subway and bus, then I scheduled exactly that many minutes in my packed schedule.
+        </p>
+        <p>
+            When I landed in JFK at 9am, I was completely unprepared for the bustling traffics in downtown, walkways crowded with tourists, a metro system with unplanned disruptions, wind speed so strong that push all pedestrian traffic in the opposite direction, and my own grouching stomach.
+        </p>
+        <img src="../images/articles/what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat/0.png" alt="7-Day Unlimited MetroCard" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain; height: 400px">
+        <p>
+            My first destination after arriving in NYC was the MET Cloister as it was the furthest from all the other attractions and I would work my way down toward my lodging that night. It was located 90 minutes away from the JFK airport by taking a combination of the air train, subway, and local buses. With so many transfers across different transportation systems, a 90 minute journey easily slipped to 120 minutes.
+        </p>
+        <img src="../images/articles/what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat/1.png" alt="Air Train Station" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain; height: 400px">
+        <h3>Stairs, Stairs, Everywhere</h3>
+        <p>
+            NYC has a lot of stairs. The city has an extensive subway system with multiple levels of underground railway which meant that transferring to another line can require walking up or down multiple flights of stairs.
+        </p>
+        <p>
+            When I reached the MET Cloisters, I discovered to my chagrin that the museum is located atop a hill with over 100 steps ("The Grand Staircase"). Inside the entrance is another 60 steps before reaching the admission desks with 30 more afterward before reaching the first exhibit. Even the restroom was down 20 steps of stairs. No wonder so many people in NYC are physically fit.
+        </p>
+        <p>
+            From the images online, it was hard to judge the scale of this smaller medieval branch of the MET and even a brisk walkthrough of the exhibitions took me 90 minutes before walking down 90 more stairsteps and exiting at 12:30pm.
+        </p>
+        <video controls loop playsinline src="../images/articles/what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat/video0.mp4" alt="MET Cloister Compilation" class="w-auto h-[500px] rounded-lg my-6 object-cover"></video>
+        <p>
+            I initially planned to also walk through central park and explore the tomb of Ulysses S. Grant but there was only a few hours before sunset so I immediately took the bus and subway downtown to the main Metropolitan Museum of Arts.
+        </p>
+        <p>
+            From the reviews online, I allocated 3.5 hours to explore the museum, thinking that would be ample time to leisurely stroll through their exhibits.
+        </p>
+        <p>
+            When I arrived at the steps of the largest museum in the Americas, I could only stare up in amazement at the sight before me. The building stretches an entire block and stand 5 stories tall across 2 million square feet of space. Stepping (on more stairs) inside the museum, I was immediately greeted with a space not unlike a bustling airport with metal detectors at the entrance, dedicated customer service representatives, and multiple lines directing traffic for the average of 20,000 people entering the museum per day. Taking into account the average time spent inside the museum as 3.5 hours, and the museum is open for 7 hours a day, there was about 10,000 people inside the MET during my visit.
+        </p>
+        <p>
+            I exchanged my MET Cloisters ticket for a free ticket to the Metropolitan Museum of Arts and head inside one of the three interconnected corridors. The path stretched on seemingly forever with paintings, sculptures, and relics from the past with their own paragraph delving deeper into the history of each art pieces.
+        </p>
+        <img src="../images/articles/what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat/2.png" alt="Endless Rooms in the Met Museum" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain; height: 500px">
+        <p>
+            I knew immediately that it would be impossible to study individual artworks and so I opted to just record my walk through every exhibits at the museum.
+        </p>
+        <p>
+            I walked ceaselessly without barely any stops for over 8 miles in 3.5 hours and by the time the museum closes at 5pm, I still had not walked through every exhibit in the museum despite not even reading of the exhibit descriptions.
+        </p>
+        <p>
+            Throughout my brisk walkthrough, I saw many tourists posing for pictures, but there were also locals casually exploring pieces of arts that they missed from previous visits, and multiple student groups reviewing art and history throughout the ages.
+        </p>
+        <p>
+            So what did I learn about arts from the largest museum in the Americas? Walking for 3.5 hours with a 20lb backpack, bending down to see details of relics from below, and staring up repeatedly at paintings hung on the walls, I learned that art is time consuming but it can also give you back pain and a sore neck.
+        </p>
+        <div style="width: 100%; max-width: 100%; aspect-ratio: 16 / 9;">
+        <iframe
+            src="https://www.youtube.com/embed/jgKYIl6rqIg?si=yd64t3J2FACXZN9e"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            style="width: 100%; height: 100%;">
+        </iframe>
+        </div>
+        <p>
+            I initially planned to leave the MET by 4pm to catch a view of the sunset on the Staten Island ferry at 4:40pm, but after failing to explore every section of the museum by 5pm and getting increasingly hungrier each second having eaten nothing since waking up 12 hours earlier (the delicious smell of nearby food trucks only serve to further agitate my growling stomach), I conceded to my hunger in search for a fulfilling meal. Google Maps showed a promising Chinese buffet an hour away on the path to my third destination of the day, the Dyker Heights Christmas light.
+        </p>
+        <p>
+            So I jumped on the bus then down the subway to Flaming Grill & Buffet in Brooklyn, NY. An energized mind would have noticed that something was off when a buffet located in the middle of a well-lit street yet has barely any pedestrian traffic. Yet my hungry mind chose to look past the warning signs. I went inside, paid the $20 dinner fee, washed my hands, and started filling up the plates with one of each entree.
+        </p>
+        <p>
+            Right away, I noticed that despite arriving at the peak dining hour of 6pm, every single offering was cold and unappetizing. The meat were hard, some undercooked, and others were poorly seasoned. Even the dumplings were dry and the sushi were soggy. Still, I slogged through every dish once hoping to find a diamond in the rough. In the end, I left after 30 minutes still hungry because I could barely finish the plates.
+        </p>
+        <img src="../images/articles/what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat/3.png" alt="Buffet Plate at Flaming Grill & Buffet in Brooklyn, NY" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain">
+        <p>
+            At 6:40pm, I took a 50 minutes bus ride to the Dyker Heights Christmas lights. Since the bus stopped about 0.8 miles from the address of the lights, I decided to turn off my GPS to conserve battery and wander through the surroundings neighborhood. My first stop was the Bay Ridge Holiday House which attracted a decently sized crowd of about a dozen people when I visited at 7:30pm. I then proceeded to walk another half mile down 83rd to 86th street, recording the beautiful lights on display along the way. This neighborhood completely outshine (pun intended) any other residential display in the US through the sheer number of lights with some families spending up to $20,000 in set up costs. After 90 minutes of strolling through the neighborhoods, taking pictures of festive decorations, and recording the holiday light shows, I accidentally stumbled upon the busiest and loudest street in an otherwise silent neighbor at 9:07pm. I knew even before seeing the big sign at the house entrance that I had arrived at the famous Dyker Height Christmas light display with nearly 3,000 highly rated reviews because there were multiple police cars and upward of 100 people covering the sidewalk, excitedly chatting, taking pictures, and enjoying hot chocolates as cars stroll down the road stopping intermittently to admire the lights.
+        </p>
+        <video controls loop playsinline src="../images/articles/what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat/video3.mp4" alt="Dyker Height Christmas Lights Compilation" class="w-auto h-[500px] rounded-lg my-6 object-cover"></video>
+        <p>
+            Many of the nearby decorated houses took advantage of the high foot traffic to sell desserts and refreshments with food trucks parked on their driveway. Some families were even selling light up toys and photo ops, ultimately transforming the street once hidden deep inside a residential neighborhood into a bustling Christmas market. After 2 hours of strolling through every major Dyker Height Christmas light street in the torturously cold air, having walked over 23 miles for 12 hours on 4 hours of sleep, I began my journey back to the warm comfort of an AirBnB at 10:50pm. One hour later, I fell into a satisfied sleep in preparation for an even longer day tomorrow.
+        </p>
+        <p>
+            Read about my second day in "What if I became a tech blogger?"
+        </p>
+        <img src="../images/articles/what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat/4.png" alt="AI Summit NY" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain;">
+        <p>
+            or the second night in "What if I accidently fasted for 30 hours?"
+        </p>
+        <img src="../images/articles/what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat/5.png" alt="Bryant Park Winter Village" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain;">
+        `,
+    "date": "January 14, 2026",
+    "authorId": "hai-dao",
+    "category": "Travel",
+    "imageUrl": "../images/articles/what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat/1.png",
+    "readTime": "12 min read"
+  }
 ];
