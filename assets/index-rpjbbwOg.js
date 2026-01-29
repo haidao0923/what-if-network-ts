@@ -919,7 +919,7 @@ Error generating stack: `+l.message+`
         </p>
         <div style="width: 100%; max-width: 100%; aspect-ratio: 16 / 9;">
             <iframe
-                src="https://www.youtube.com/embed/WIbALSlzQM8?si=Y57pQ3rGmhMiFG06"
+                src="https://www.youtube.com/embed/ds6"
                 title="Broadway Under the Stars - SIX Wives"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -941,9 +941,21 @@ Error generating stack: `+l.message+`
         <p>
             The seat I was assigned was on the left orchestra at the very end, but by the time the show started about 20 minutes later, there was no one sitting in the middle of the row, and so I and a few other people next to me moved seat to the center for a complete view of the performance. Even if I had to sit at the partial view throughout the show, it would still be a phenomenal experience. All the performers were incredible artists in both their harmony and synchronized dance. Watching these performers in action, you can clearly tell that each of them spend hundreds of hours practicing their acts because they sing and move so perfectly in sync that some dance appears quite uncanny (as they were designed to be!). Aside from the show starting 10 minutes after the scheduled time, everything from the respectful audience to the sound system, costume, and set designs were the highest standard of any performances I have ever seen.
         </p>
+        <img src="../images/articles/what-if-i-collected-more-swags-than-i-could-carry-home/7.png" alt="Times Square View From the Stairs" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain;">
         <p>
             After the show, I spent about 10 minutes people watching in Times Square before heading to Fifth Avenue to see two popular Christmas attractions, the Saks Light Show and the Rockefeller Christmas Tree and Skating Rink. At 10:00pm, I began my return trip to my Airbnb where I dropped off the 20-pounds backpack I have been carrying for over 40 hours over 3 days and took a bus to a nearby nightclub: The House of Yes where I chatted with locals and dance with some of the wildest crowd I have ever seen in night clubs.
         </p>
+        <div style="width: 100%; max-width: 100%; aspect-ratio: 16 / 9;">
+            <iframe
+                src="https://www.youtube.com/embed/WIbAdasdassiFG06"
+                title="Saks Light Show"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                style="width: 100%; height: 100%;">
+            </iframe>
+        </div>
         <p>
             I returned to my Airbnb at 1:30am to pack my belongings but there is a major problem. I bought a Frontier ticket with no carry-on allowance, and now not only do I have an oversized backpack, but also a pillow-sized plushie and an equally large external bag of all the swags I collected at the AI Summit NY. I left behind two large books on AI at the Airbnb because it would be impossible to condense the books and I lugged the three large items to JFK airport. After passing through TSA at 5am, I began to look for places where I can carry out my plan of hiding the extraneous luggage. I searched for a restroom near my departing gate, but the men's restroom is closed for cleaning. Frantically looking around, there was no restroom in sight, and when I asks a cleaner, she also say that there is no restroom available within a 15 minute walk. The next 20 minutes felt like an eternity, but I waited while brainstorming alternative ideas. I could hide the plushie underneath my jacket, but there was no space to hide the second bag. When the men's restroom finally opened about 30 minutes before the boarding time, I immediately rushed inside one of the stalls. Looking inside the bag of swags, I put on a baggy pajama pant over my dress pant and stuffed as many soft t-shirts, hats, socks, and gloves as possible in the space between my two pants, and the beanie underneath my coat.
         </p>
@@ -954,8 +966,9 @@ Error generating stack: `+l.message+`
             Boarding started and I approached the gate more nervous than I have ever been in my life. I normally walked at a slower than average pace, but in the minute leading up to the front of the line, my gait speed was comparative to that of a soldier crawling through a minefield. The closer I got to the front of the gate, the more my confidence grew. The agent was just waving people through, trying to board as fast as possible. "But all of them had small luggage while mine was clearly oversized" said the voice inside my head. Then I reached the front of the line. If the agent was shorter than me, she would have saw the large gap underneath my coat, clearing exposing that I was hiding a plushie underneath, but luck was on my side. The agent quickly scanned my passport and waved me through.
         </p>
         <p>
-            Once inside, I was sitting in the seat with a belly so big that it would have been impossible to put on my seatbelt. I glanced around for the perfect opportunity, and slipped the plushie out of my coat. When everyone had boarded the plane, I noticed that there was still space in the overhead compartment, and I asked the flight attendant if I could put my oversized "personal item" in the overhead. He said yes, and I had a warm and comfortable flight home. When I arrived at my home airport, I quickly went into the closest restroom to take the clothing and socks from between my two pants so that I can more easily move my legs and went home satisfied with all that I have accomplished during my NYC trip.
+            Once inside, I sat in the seat with a belly so big that it would have been impossible to put on my seatbelt. I glanced around for the perfect opportunity, and slipped the plushie out of my coat. When everyone had boarded the plane, I noticed that there was still space in the overhead compartment, and I asked the flight attendant if I could put my oversized "personal item" in the overhead. He said yes, and I had a warm and comfortable flight home. When I arrived at my home airport, I quickly went into the closest restroom to take the clothing and socks from between my two pants so that I can more easily move my legs and went home satisfied with all that I have accomplished during my NYC trip.
         </p>
+        <img src="../images/articles/what-if-i-collected-more-swags-than-i-could-carry-home/8.png" alt="Rockefeller Center Skating Rink" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain;">
         <h3>So, what is the main takeaway from my 3-day trip to NYC?</h3>
         <p>I learned that</p>
         <ol>
