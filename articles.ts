@@ -795,9 +795,19 @@ export const ARTICLES: BlogPost[] = [
         <p>
             20 minutes later, I could not handle the cold any longer, and had to step inside where I spend 8 minutes taking pictures with the Pinkmas holiday decorations. I went outside for 8 more minutes, then back in again for 8 minutes, each time letting my body warm up before heading back out to admire the city. This time I met an older asian lady in her 40s who asked me to take a picture for her. I agreed and she repaid the favor by taking pictures for me. When I stepped outside, she approached me again and we take pictures and videos of each other for 8 more minutes. When I stepped back inside for one final time, I lingered around for last minute photo opportunities before saying goodbye to the sky and descending 100 floors.
         </p>
-        <video controls loop playsinline src="../images/articles/what-if-i-collected-more-swags-than-i-could-carry-home/video0.mp4" alt="The Edge" class="w-auto h-[500px] rounded-lg my-6 object-cover"></video>
+        <div style="width: 100%; max-width: 100%; aspect-ratio: 16 / 9;">
+            <iframe
+                src="https://www.youtube.com/embed/WIbALSlzQM8?si=Y57pQ3rGmhMiFG06"
+                title="The Edge Compilation"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                style="width: 100%; height: 100%;">
+            </iframe>
+        </div>
         <p>
-            Stepping into the street, I approached the northern terminus of The High Line near the Vessel but despite trudging forward with all of my strength, the strong wind rendered me completely immobile. Turning around, my body literally lifted off the ground, shoving me back to the midpoint.
+            Stepping into the street, I approached the northern terminus of The High Line near the Hudson Yards but despite trudging forward with all of my strength, the strong wind rendered me completely immobile. Turning around, my body literally lifted off the ground, shoving me back to the midpoint.
         </p>
         <p>
             Starving from the lack of food the past two days of my trip, I took a 40 minute subway ride to Chinatown in New York searching for two cheap high calories meal. I visited Jin Mei Dumpling and ordered 20 Steamed Pork Buns for $10, then I went to Mei Lai Wah Bakery and ordered two Baked Porn Bun for $6. "This lavish meal will supplement all the lost calories from the two days prior" I told myself as I head back to attend my second day as a tech blogger at the AI Summit NY.
@@ -810,9 +820,21 @@ export const ARTICLES: BlogPost[] = [
         <p>
             At 4pm, I exited the Javits convention center and made my way to the largest train station in the world: Grand Central. This station is arguably an underground city with over 1 million people passing through every day during December, stores, and tunnels spreading further than the eye could see. With so many outlets, In the brief time I spent at the station, multiple people came up to me asking for direction to their destination, but I could only direct them to the information desk or someone else who looked like a local because I was also disoriented by the omnidirectional exits and multiple levels for different trains.
         </p>
+        <img src="../images/articles/what-if-i-collected-more-swags-than-i-could-carry-home/4.png" alt="Grand Central" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain;">
         <p>
             When you begin a trip from Grand Central, you could be getting on a new rail with digital display or an outdated one where you must listen to the conductor to make sure that you arrive at the correct stop. I stepped onto a wrong train by mistake and went nearly 30 minutes past my intended destination, but fortunately, I discovered my mistake just in time. At 5:50pm, I arrived at The Shops at Columbus Circle just 10 minutes before the free Broadway Under The Stars performance where I listened to songs from SIX The Musical, Two Strangers (Carry a Cake Across New York), and The Queen of Versailles.
         </p>
+        <div style="width: 100%; max-width: 100%; aspect-ratio: 16 / 9;">
+            <iframe
+                src="https://www.youtube.com/embed/WIbALSlzQM8?si=Y57pQ3rGmhMiFG06"
+                title="Broadway Under the Stars - SIX Wives"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                style="width: 100%; height: 100%;">
+            </iframe>
+        </div>
         <p>
             I did not have time to buy rush tickets earlier in the day, but with heightened determination to see a Broadway show after listening to the incredible voices of these Broadway singers, I immediately searched for places to buy tickets online. Unfortunately, as it was only 50 minutes before show start time, not a single online store had tickets.
         </p>
@@ -822,6 +844,7 @@ export const ARTICLES: BlogPost[] = [
         <p>
             "I want to buy a ticket to see a Broadway show" "What show do you want to see?" "Whatever show is happening right now" "What seat do you want?" There was an elderly couple right beside me and they opted for a ticket priced around $100 per person which was a lot higher than I had budgeted for this trip, so in a nervous voice I say "Um... do you have any student discounts?" "We don't have any student discount for this show, but the cheapest ticket I have is a partial view for $49" Disappointed that not only will I be buying Broadway tickets for a higher price than I anticipated, but that I will also be getting a blocked view of the show, I asked "What does the partial view look like?" "It's not bad, you can still see all the actors, some of the background will be blocked." This journey is all about taking chances, so I bought the tickets and stepped inside.
         </p>
+        <img src="../images/articles/what-if-i-collected-more-swags-than-i-could-carry-home/6.png" alt="Broadway Show Theater" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain;">
         <p>
             The seat I was assigned was on the left orchestra at the very end, but by the time the show started about 20 minutes later, there was no one sitting in the middle of the row, and so I and a few other people next to me moved seat to the center for a complete view of the performance. Even if I had to sit at the partial view throughout the show, it would still be a phenomenal experience. All the performers were incredible artists in both their harmony and synchronized dance. Watching these performers in action, you can clearly tell that each of them spend hundreds of hours practicing their acts because they sing and move so perfectly in sync that some dance appears quite uncanny (as they were designed to be!). Aside from the show starting 10 minutes after the scheduled time, everything from the respectful audience to the sound system, costume, and set designs were the highest standard of any performances I have ever seen.
         </p>
@@ -866,7 +889,7 @@ export const ARTICLES: BlogPost[] = [
     "date": "December 11, 2025",
     "authorId": "hai-dao",
     "category": "Travel",
-    "imageUrl": "../images/articles/what-if-i-collected-more-swags-than-i-could-carry-home/main.png",
+    "imageUrl": "../images/articles/what-if-i-collected-more-swags-than-i-could-carry-home/4.png",
     "readTime": "15 min read"
     }
 ];

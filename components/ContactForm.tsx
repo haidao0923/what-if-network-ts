@@ -13,9 +13,9 @@ const ContactForm: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!formRef.current) return;
-    
+
     // Check if EmailJS is loaded
     if (!window.emailjs) {
       console.error('EmailJS script not loaded');
@@ -54,7 +54,7 @@ const ContactForm: React.FC = () => {
             Get in Touch
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-            Have a "What If" story to share? Or just want to say hi? I'd love to hear from you.
+            Have a "What If" story to share? Type in your information below and we'll add it to this page so that other readers could be inspired!
           </p>
         </div>
 
@@ -122,8 +122,8 @@ const ContactForm: React.FC = () => {
                 type="submit"
                 disabled={status === 'sending' || status === 'success'}
                 className={`w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white transition-all duration-300 ${
-                  status === 'success' 
-                    ? 'bg-green-600 hover:bg-green-700' 
+                  status === 'success'
+                    ? 'bg-green-600 hover:bg-green-700'
                     : 'bg-primary hover:bg-yellow-700 hover:-translate-y-1 shadow-lg shadow-yellow-900/20'
                 } focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed`}
               >
@@ -144,7 +144,7 @@ const ContactForm: React.FC = () => {
                 )}
               </button>
             </div>
-            
+
             {status === 'error' && (
               <div className="text-red-400 text-sm text-center bg-red-900/20 p-2 rounded">
                 Oops! Something went wrong. Please check your console or try again later.

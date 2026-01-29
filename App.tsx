@@ -6,7 +6,7 @@ import BlogGrid from './components/BlogGrid';
 import BlogPostDetail from './components/BlogPostDetail';
 import ContactForm from './components/ContactForm';
 import { ARTICLES } from './articles';
-import { Instagram, Youtube } from 'lucide-react';
+import { Instagram, Youtube, MessageCircle } from 'lucide-react';
 
 declare global {
   interface Window {
@@ -18,16 +18,9 @@ const Home = () => {
   // Posts reversed to show latest first
   const posts = [...ARTICLES].reverse();
 
-  const handleReadStories = () => {
-    const gridElement = document.getElementById('blog-grid');
-    if (gridElement) {
-      gridElement.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <>
-      <Hero onReadStories={handleReadStories} />
+      <Hero />
       <BlogGrid posts={posts} />
     </>
   );
@@ -63,6 +56,15 @@ const App: React.FC = () => {
             <p className="text-gray-400 text-sm mt-2">Embracing the unexpected, one adventure at a time.</p>
           </div>
           <div className="flex space-x-6">
+            <a
+              href="https://chat.whatsapp.com/Jp1YDfHCYBm8OBpvsNFzP4?mode=gi_t"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center text-gray-400 hover:text-primary transition-colors"
+            >
+              <MessageCircle className="w-5 h-5 mr-2" />
+              WhatsApp
+            </a>
             <a href="https://www.youtube.com/@what.if.network" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-400 hover:text-primary transition-colors">
               <Youtube className="w-5 h-5 mr-2" />
               YouTube
