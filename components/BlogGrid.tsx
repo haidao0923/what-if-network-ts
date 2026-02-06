@@ -8,7 +8,7 @@ interface BlogGridProps {
   posts: BlogPost[];
 }
 
-const POSTS_PER_PAGE = 9;
+const POSTS_PER_PAGE = 6;
 
 // Helper to get category-specific colors
 export const getCategoryColor = (category: string): string => {

@@ -366,11 +366,11 @@ export const ARTICLES: BlogPost[] = [
         <p>
             When I landed in JFK at 9am, I was completely unprepared for the bustling traffics in downtown, walkways crowded with tourists, a metro system with unplanned disruptions, wind speed so strong that push all pedestrian traffic in the opposite direction, and my own grouching stomach.
         </p>
-        <img src="../images/articles/what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat/0.png" alt="7-Day Unlimited MetroCard" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain; height: 400px">
+        <img src="../images/articles/what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat/0.png" alt="7-Day Unlimited MetroCard" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain;">
         <p>
             My first destination after arriving in NYC was the MET Cloister as it was the furthest from all the other attractions and I would work my way down toward my lodging that night. It was located 90 minutes away from the JFK airport by taking a combination of the air train, subway, and local buses. With so many transfers across different transportation systems, a 90 minute journey easily slipped to 120 minutes.
         </p>
-        <img src="../images/articles/what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat/1.png" alt="Air Train Station" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain; height: 400px">
+        <img src="../images/articles/what-if-i-planned-a-trip-to-nyc-with-no-time-to-eat/1.png" alt="Air Train Station" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain;">
         <h3>Stairs, Stairs, Everywhere</h3>
         <p>
             NYC has a lot of stairs. The city has an extensive subway system with multiple levels of underground railway which meant that transferring to another line can require walking up or down multiple flights of stairs.
@@ -579,7 +579,7 @@ export const ARTICLES: BlogPost[] = [
         <p>
             To fill my now open schedule, I scour through the directory of attractions on Google Maps to find places that were still open and discovered that the New York Public Library was open until 8pm. I took the subway and walked 7 minutes in the freezing rain before reaching the library. The sky was pitch black and people were walking out of the library because there was only 35 minutes left until it closes. I dashed inside, went through a rigorous security procedure of walking through a metal detector and the guard manually searching through my backpack, and began a rapid walk around the massive marbled building (named the most beautiful library in the US). When I arrived, the guards were already ushering people outside of certain exhibits and closing the doors, but despite the fact that many rooms were closed, I could still not walkthrough all the open area in 30 minutes. In a rush, I simply ran around taking pictures of unique sights before being directed out as the library closes.
         </p>
-        <img src="../images/articles/what-if-i-accidently-fasted-for-30-hours/1.png" alt="New York Public Library Exhibit" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain; height: 400px">
+        <img src="../images/articles/what-if-i-accidently-fasted-for-30-hours/1.png" alt="New York Public Library Exhibit" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain;">
         <p>
             My next destination was the nearby Bryant Park Winter Village where I saw many people enjoying the free ice skating rink. I also shot one of the most vivid and creative photo of my NYC trip this night.
         </p>
@@ -604,7 +604,7 @@ export const ARTICLES: BlogPost[] = [
         </p>
         <div style="width: 100%; max-width: 100%; aspect-ratio: 16 / 9;">
             <iframe
-                src="https://www.youtube.com/embed/TjC9RGxq6Eods?sifsfdsfsdfd"
+                src="https://www.youtube.com/embed/BO0yfPJyZpE?si=WS1fYncytAP-rBPC"
                 title="Times Square Midnight Moment"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
