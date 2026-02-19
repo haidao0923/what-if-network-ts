@@ -495,12 +495,24 @@ export const ARTICLES: BlogPost[] = [
         <p>
             For now, she no longer saw me as just another attendee but as a potential source for marketing to a flood of other clients. It wasn't just her, but in almost every booth I talked to, the exhibitor initially looked at me with disinterest, with some completely ignoring me over others in their mid 30s wearing business suits. However, their personality completely flipped when I introduced myself as a tech blogger, and immediately I became the center of attention after my introduction.
         </p>
+        <img src="../images/articles/what-if-i-became-a-tech-blogger/1.png" alt="AI Summit NYC Exhibitor Booth" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain">
         <p>
             I continued walking around the expo floor and chatting with exhibitors and other attendees. Since this was my first time acting as a tech blogger, I did not know how to navigate through the videography and so I resorted to clumsily record a video while talking with the exhibitor (this resulted in very bad footages because I could not keep the other person in frame while talking and making eye contact). In other cases, I attempted to simply converse and taking a few pictures to supplement my blog, but this was also very difficult because I would not be able to remember much of the conversation after leaving the booth.
         </p>
         <p>
             I tried my best to talk with as many exhibitors as possible to learn about the latest technology and build up my social muscle to connect with about 40 different company throughout my time there.
         </p>
+        <div style="width: 100%; max-width: 100%; aspect-ratio: 16 / 9;">
+            <iframe
+                src="https://www.youtube.com/embed/lShNFAetF4E?si=QkK_RejcdWytlj7r"
+                title="AI Summit New York 2025 - Compilation"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                style="width: 100%; height: 100%;">
+            </iframe>
+        </div>
         <h3>Some of the key takeaways from the summit:</h3>
         <ul>
             <li>There were many students asking for a job</li>
@@ -733,13 +745,14 @@ export const ARTICLES: BlogPost[] = [
         <p>
             When I came out of the restroom, my figure looked as if I had gained 100lbs, and some of the passengers who were sitting next to me at the gate noticed immediately. Three talkative college-aged girls chattered among themselves saying "Look! That guy is hiding stuffs under his coat and pants." I gave myself some affirmation "Fortunately, the Frontier agent at the gate did not see me before my disguise so I still have a chance. And beside, the rule is stupid anyway, it doesn't make sense to charge me for extra luggage when a heavier man weigh a lot more than the combined weight of me with all of my extra luggage."
         </p>
+        <img src="../images/articles/what-if-i-collected-more-swags-than-i-could-carry-home/8.png" alt="Swag from AI Summit NYC" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain;">
         <p>
             Boarding started and I approached the gate more nervous than I have ever been in my life. I normally walked at a slower than average pace, but in the minute leading up to the front of the line, my gait speed was comparative to that of a soldier crawling through a minefield. The closer I got to the front of the gate, the more my confidence grew. The agent was just waving people through, trying to board as fast as possible. "But all of them had small luggage while mine was clearly oversized" said the voice inside my head. Then I reached the front of the line. If the agent was shorter than me, she would have saw the large gap underneath my coat, clearing exposing that I was hiding a plushie underneath, but luck was on my side. The agent quickly scanned my passport and waved me through.
         </p>
         <p>
             Once inside, I sat in the seat with a belly so big that it would have been impossible to put on my seatbelt. I glanced around for the perfect opportunity, and slipped the plushie out of my coat. When everyone had boarded the plane, I noticed that there was still space in the overhead compartment, and I asked the flight attendant if I could put my oversized "personal item" in the overhead. He said yes, and I had a warm and comfortable flight home. When I arrived at my home airport, I quickly went into the closest restroom to take the clothing and socks from between my two pants so that I can more easily move my legs and went home satisfied with all that I have accomplished during my NYC trip.
         </p>
-        <img src="../images/articles/what-if-i-collected-more-swags-than-i-could-carry-home/8.png" alt="Rockefeller Center Skating Rink" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain;">
+        <img src="../images/articles/what-if-i-collected-more-swags-than-i-could-carry-home/9.png" alt="Rockefeller Center Skating Rink" class="rounded-lg shadow-lg my-6 w-full object-cover" style="object-fit: contain;">
         <h3>So, what is the main takeaway from my 3-day trip to NYC?</h3>
         <p>I learned that</p>
         <ol>
