@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Send, User, Mail, MessageSquare } from 'lucide-react';
+import { Send, User, Mail, MessageSquare, Users } from 'lucide-react';
 
 declare global {
   interface Window {
@@ -46,6 +46,10 @@ const ContactForm: React.FC = () => {
       );
   };
 
+  const handleJoinNetwork = () => {
+    window.open("https://chat.whatsapp.com/Jp1YDfHCYBm8OBpvsNFzP4?mode=gi_t", "_blank");
+  };
+
   return (
     <div className="min-h-[80vh] flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8 bg-dark">
       <div className="max-w-2xl w-full space-y-8">
@@ -56,6 +60,15 @@ const ContactForm: React.FC = () => {
           <p className="mt-2 text-lg text-gray-400">
             Have a "What If" story to share? Type in your information below and we'll add it to this page so that other readers could be inspired!
           </p>
+          <div className="mt-4 flex justify-center">
+            <button
+              onClick={handleJoinNetwork}
+              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-yellow-700 transition-all shadow-lg shadow-yellow-900/20 hover:-translate-y-1"
+            >
+              Join the Network
+              <Users className="ml-2 h-5 w-5" />
+            </button>
+          </div>
         </div>
 
         <div className="bg-card py-8 px-4 shadow-xl rounded-xl sm:px-10 border border-gray-800">

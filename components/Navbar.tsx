@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, Mail } from 'lucide-react';
+import { BookOpen, Mail, Users } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
@@ -36,6 +36,18 @@ const Navbar: React.FC = () => {
             >
               <BookOpen className="h-4 w-4 mr-1.5" />
               Stories
+            </Link>
+
+            <Link
+              to="/about"
+              className={`flex items-center px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                location.pathname === '/about'
+                  ? 'text-primary bg-primary/10'
+                  : 'text-gray-400 hover:text-white hover:bg-white/5'
+              }`}
+            >
+              <Users className="h-4 w-4 mr-1.5" />
+              About
             </Link>
 
             <Link

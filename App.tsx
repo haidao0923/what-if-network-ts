@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import BlogGrid from './components/BlogGrid';
 import BlogPostDetail from './components/BlogPostDetail';
 import ContactForm from './components/ContactForm';
+import About from './components/About';
 import { ARTICLES } from './articles';
 import { Instagram, Youtube, MessageCircle } from 'lucide-react';
 
@@ -45,6 +46,7 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/article/:id" element={<BlogPostDetail />} />
+          <Route path="/about" element={<About />} />
           <Route path="/contact" element={<ContactForm />} />
         </Routes>
       </main>
