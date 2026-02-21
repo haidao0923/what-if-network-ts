@@ -30,8 +30,9 @@ const Home = () => {
 const App: React.FC = () => {
   const location = useLocation();
 
-  // Track page views on route change
+  // Track page views on route change and scroll to top
   useEffect(() => {
+    window.scrollTo(0, 0);
     if (window.gtag) {
       window.gtag('config', 'G-MS19G6DNEM', {
         page_path: location.pathname + location.search,

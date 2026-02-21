@@ -90,8 +90,7 @@ const About: React.FC = () => {
             </div>
             <div className="space-y-4 text-gray-300">
               <p className="text-lg leading-relaxed">
-                The last few months have been a whirlwind of saying "yes" to things that usually scare me.
-                I've learned that the discomfort zone is where the most interesting stories live.
+                Some of the things I have learned recently.
               </p>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
                 {[
@@ -130,8 +129,8 @@ const About: React.FC = () => {
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
                 {[
                   "Spread the mission to more people on the street",
-                  "Host the first 'What If' community meetup",
                   "Ask people to share their personal 'What If' stories",,
+                  "Host the first 'What If' community meetup",
                   "Continue stepping outside my comfort zone and embracing the unexpected"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start">
@@ -154,7 +153,7 @@ const About: React.FC = () => {
               <div className="p-3 bg-primary/10 rounded-lg mr-4">
                 <ShieldAlert className="w-8 h-8 text-primary" />
               </div>
-              <h2 className="font-serif text-3xl font-bold text-white">The Hurdles</h2>
+              <h2 className="font-serif text-3xl font-bold text-white">The Challenges</h2>
             </div>
             <div className="space-y-4 text-gray-300">
               <p className="text-lg leading-relaxed">
