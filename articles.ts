@@ -656,7 +656,7 @@ export const ARTICLES: BlogPost[] = [
   {
     "id": "what-if-i-collected-more-swags-than-i-could-carry-home",
     "title": "What If I Collected More Swags Than I Could Carry Home?",
-    "excerpt": "My third day is NYC is full of unexpected events. What happen when I recklessly say 'yes' to last-minute trips and accepted dozens of gifts?",
+    "excerpt": "My third day in NYC is full of unexpected events. What happen when I recklessly say 'yes' to last-minute trips and accepted dozens of gifts?",
     "content": `
         <p>
             This is a continuation of <a href="/article/what-if-i-accidently-fasted-for-30-hours" class="text-primary hover:text-white transition-colors">"What if I accidently fasted for 30 hours?"</a>
@@ -983,4 +983,108 @@ export const ARTICLES: BlogPost[] = [
     "imageUrl": "../images/articles/what-if-i-played-mini-golf-until-i-get-a-hole-in-one-on-every-hole/2.png",
     "readTime": "8 min read"
   },
+  {
+    "id": "what-if-i-traded-for-food-at-a-fair",
+    "title": "What If I Traded for Food at a Fair?",
+    "excerpt": "Can I survive the 2026 state fair using only the 1776 barter system?",
+    "content": `
+      <p>
+        Florida State Fair is the first official state fair in the United States, and coming to the fair, I have a goal of bartering for food. I wanted to see if I could remaster my attempt of getting free food from restaurants nearly three years prior (read about it at "What If I Asked Stores for Free Stuffs on My Birthday?"), but this time with the twist of asking food vendors and in exchange for some of the many Delta trading cards in my possession. I figured that being America's 250th birthday, I could leverage the history of fairs as a marketplace for bartering to give credibility to my quest. When I first arrived at the fairground, I noticed immediately that the crowd at noon on a Monday was very sparse and vendors were strategically positioned in every section of the fair, fishing for the limited number of customers.
+      </p>
+      <p>
+        While I knew that early in the day were prime time for asking vendors to trade because they were not as busy and possibly very bored, I still felt great reservation to approach, knowing that they were all working class people trying to make a living from selling at the fair. After about an hour of wandering through the fair, checking out the Cowboy Circus and the petting zoo, I suppressed my fear and approached a fries vendor in the middle of the fairground. I stated my mission of restoring the 250-year-old spirit for trading to the fair, but halfway through my spiel, the person behind the counter said that he would need his manager's approval and the manager placed cameras around the booth to prevent any shenanigans such as my attempt. This was incredibly devastating for me as the first time I managed to approach a vendor after an hour of walking around aimlessly ended in total failure (the vendor didn't even trade a prepackaged bag of chips normally worth less than a dollar for my card which retails for 5 time the price). After 15 more minutes of meandering around the fairground, I suppressed my fear and shame to approach a place selling Turkey Legs. There was a high school boy and a middle-aged man at the booth. Barely a sentence into my spiel, the pair pointed to the manager walking up from behind me "he's the guy you want to talk to". After 2 minutes of back and forth about the value of the card, my inspiration, and my goal of making a YouTube video, I scored the biggest possible deal at the fair, trading a common card for a $20 turkey leg.
+      </p>
+      <video controls loop playsinline src="../images/articles/what-if-i-traded-for-food-at-a-fair/video0.mp4" alt="Turkey Leg Trade" class="w-auto h-[500px] rounded-lg my-6 object-cover"></video>
+      <p>
+        I am more motivated by failures than success. After the first failure, I felt the drive to prove to myself that I am capable of achieving my goals, but once I obtained the turkey leg, it was as if all of my desire to continue the challenge had vanished. "I made the biggest value trade possible at the fair. What is the point of continuing the challenge when I know that the chance of anything surpassing this trade is slim to none?" I rationalized. The turkey leg was also a lot more fulfilling than I expected and I spent two hours consuming it while watching the Rock n Circus and Racing Corgis shows. I then went inside the climate-controlled tent to watch the Circus Hollywood adaptation of America's 250th birthday celebration. Afterward, I watched the Fire guy show from the world record fire eater.
+      </p>
+      <p>
+        Around 4:30pm, I attempt my bartering again, this time for a refreshing Slushy in order to satiate my thirst from walking around the sunbaked fairground. After some back and forth, the owner of the stand agreed to give me a small bottle of Slushy in exchange for two delta trading cards just to support my mission.
+      </p>
+      <p>
+        Now that I have obtained both my main meal and drink for the day, I was content with spending the rest of the afternoon watching the different performances and demonstrations including a live birthing to an infant calf, a knife juggling show, and a jet ski water show with neon lights under the dark sky. At around 9pm, I was completely exhausted from walking all day under the sun on barely 4 hours of sleep and so I returned to my hotel to examine my POV footage from my camera and get some sleep.
+      </p>
+      <p>
+        I did not account for the fact that my passion for the new camera and my inexperience with handling the equipment led to a 4 hour editing session until nearly 2am in the morning.
+      </p>
+      <p>
+        Continue reading my second morning in Tampa, Florida at <a href="/article/what-if-i-gambled-for-10-minutes" class="text-primary hover:text-white transition-colors">"What If I Gambled for 10 Minutes?"</a> or about my second day at the Florida State Fair in <a href="/article/what-if-i-spent-20-minutes-trapped-in-a-glass-box-with-my-three-biggest-phobias" class="text-primary hover:text-white transition-colors">"What If I Spent 20 Minutes Trapped in a Glass Box With My Three Biggest Phobias?"</a>
+      </p>
+    `,
+    "date": "February 9, 2026",
+    "authorId": "hai-dao",
+    "category": "Social Experiments",
+    "imageUrl": "../images/articles/what-if-i-traded-for-food-at-a-fair/0.png",
+    "readTime": "5 min read"
+  },
+  {
+    "id": "what-if-i-gambled-for-10-minutes",
+    "title": "What If I Gambled for 10 Minutes?",
+    "excerpt": "How much could I possibly lose in 10 minutes of gambling?",
+    "content": `
+      <p>
+        This is a continuation of <a href="/article/what-if-i-traded-for-food-at-a-fair" class="text-primary hover:text-white transition-colors">"What If I Traded for Food at a Fair?"</a>
+      </p>
+      <p>
+        The second morning, in Tampa, Florida, I awoke at 10am, in preparation for a busy second day at the fair with the $25 unlimited ride promotion. Knowing that the rides were open at 1pm, I still have 3 hours to spare and so I went into the Seminole Hard Rock Casino located just across the street from the Fairground.
+      </p>
+      <p>
+        I have went to a few casual casino nights in local gatherings and have peeked into the casino section on a cruise ship, and so I knew what a casino was supposed to look like, with arrays of slot machines filling up a room and some tables for more social games like poker, blackjack, crap, and roulette. To my surprise, stepping inside the massive rectangular complex, I was greeted with a reception desk with no slot machines in sight (in hindsight, this made a lot of sense because the venue was both a casino and a resort). After walking through the lobby and the adjacent dessert shop, I stumbled into a familiar dark room lit mostly by the flashing lights of the gambling machines, but because this was a large building dedicated almost entirely to gambling, the slots and card tables seemed to span endlessly. The casino operates like a large bank with receptionists, ATM machines, and cashiers behind glass panels.
+      </p>
+      <p>
+        After walking around for 20 minutes and exploring three levels of gambling, I decided to try gambling. The only game I knew how to play and understood the odds was roulette, and I figured that with a 95% RTP, I would not lose much money by betting small on high odds options like Red or Black. So I signed up for a gambler card and approached a roulette table with 3 other players. The players here were mostly quiet and when they saw me looking around and fumbling with the machines, one of them stood up to leave. I could not figure out how to insert the player card and cash and I was too afraid to mess up and lose $50 due to improperly putting in the bill and so I got up and walk around the gaming area looking for a more straightforward game, but the only games I saw were slots (which I do not complete grasp the odds) and poker (which were too unforgiving for someone with only $50).
+      </p>
+      <p>
+        With no other options, I went back to the roulette table and tried once more to understand the mechanism of the device. When I sat down and fumbled with the machine, the person next to me stood up and left again. I thought that many people in this casino are reserved but just then the person on my other side gave me some basic instructions. They inevitably fail to get me started because the machine could not read my card and so once more I stood up to look for a worker to help me. Just like most of the players, the attendants were quiet and scarced but I finally managed to find one after walking down to the end of a completely separate section of the casino. She guided me to an empty roulette machine with a minimum bet of $10, and within 30 seconds, my virtual stack of chips had dropped to $40.
+      </p>
+      <p>
+        I asked to cash out to try the adjacent roulette machine with 3 other players and a $5 minimum bet where I played for all of 10 minutes. At one point I had $54 of virtual chips, but greed is too alluring a temptress, so I told myself that I was going to go all-in on one bet to minimize any additional lost time. I made a single large bet of everything on black, and in less than a minute, I had lost the initial $50 and (luckily) only 10 minutes of my time. Stepping toward the front door of the casino with a dazed and depressed expression on my face, a girl walked in from the outside. She asked "Do you work here?", associating my joyless expression to be of an apathetic employee. I responded with a dismissive headshake, "no", and left the venue.
+      </p>
+      <p>
+        When I was at the peak of my greed after earning a net $4 from my initial investment, I told myself that if I doubled my money, then I would treat myself to a nice buffet at the casino. However, after leaving the casino with a $50 hole in my pocket, I could not bear wasting any more money. Regardless, my stomach was grumbling as it was now past noon. Looking for the cheapest nearby option to refuel, I discovered three fast food chains right across the street from the Casino (great for business from the inevitably multitudes of people who lost money gambling). I downloaded the Burger King app and bought myself a BOGO Original Chicken Sandwich (this sandwich was notably a lot smaller than the last time I bought one which was over a year ago - welcome to the future of shrinkflation). Still, I did not let this experience go to waste, so I took advantage of the opportunity and take out my DJI Osmo Nano camera to record my very first eating in a fast food restaurant vlog and it was a lot less intimidating than I had expected as no one paid attention to the guy sitting at a fast food restaurant by himself with a camera in front of him.
+      </p>
+      <p>
+        So what is the moral of this story? We are often anxious of trying new experiences for the first. I had never been into such a large casino and resort before, and so walking around the space, I was very self-conscious, fearing that the other people leaving the roulette table when I sat down next to them was a personal attack on my aloof behavior. I quickly discounted my own emotion as I left the casino to a disillusioned employee, which ultimately led to a cold and harsh response to the clueless girl just walking in. Finally, I feared judgement to taking out my camera and recording myself eating at a fast food restaurant, but in reality, most people simply ignored the slightly unusual stranger. Therefore, take a chance and do the social activity that you feared, because you might discover that many fear are simply your body's natural defense mechanism acting too strongly to protect you. But also on the flip side, you must not be too reckless. Because had I continued to put more money or time into gambling, I might have lost much more than $50 and 10 minutes.
+      </p>
+      <p>
+        Continue reading about my second afternoon in Tampa, Florida in <a href="/article/what-if-i-spent-20-minutes-trapped-in-a-glass-box-with-my-three-biggest-phobias" class="text-primary hover:text-white transition-colors">"What If I Spent 20 Minutes Trapped in a Glass Box With My Three Biggest Phobias?"</a>
+      </p>
+    `,
+    "date": "February 10, 2026",
+    "authorId": "hai-dao",
+    "category": "Travel",
+    "imageUrl": "../images/articles/what-if-i-gambled-for-10-minutes/0.png",
+    "readTime": "4 min read"
+  },
+  {
+    "id": "what-if-i-discovered-my-fear-of-height-50-feet-in-the-air-with-no-way-down",
+    "title": "What if I discovered my fear of height 50 feet in the air with no way down?",
+    "excerpt": "For 23 years, \"fear of height\" never crossed my mind as something that applied to me. In fact, just two month prior, I had stood atop the tallest outdoor observation deck in the Western Hemisphere over 1,100 feet up in the air...",
+    "content": `
+      <p>
+        This is a segment from <a href="/article/what-if-i-spent-20-minutes-trapped-in-a-glass-box-with-my-three-biggest-phobias" class="text-primary hover:text-white transition-colors">"What If I Spent 20 Minutes Trapped in a Glass Box With My Three Biggest Phobias?"</a>
+      </p>
+      <p>
+        For 23 years, "fear of height" never crossed my mind as something that applied to me. In fact, just two month prior, I had stood atop the tallest outdoor observation deck in the Western Hemisphere over 1,100 feet up in the air, staring down without a single sweat at the ground below the glass floor. Little did I realize that my courage would be tested a measly 50 feet above the cemented ground of a fair.
+      </p>
+      <p>
+        I have been inside the sky lift at Stone Mountain and the Tramway at Roosevelt Island which went up to over 800 feet above surface level, but minutes into this Sky Ride over the Florida State Fairground, I lost all feeling in my feet. It was as if all the blood rushed up to my thighs out of fear of plummetting to the cemented ground below. For the first time in 23 years, looking down at the fairground below, I understood what it felt like to be afraid of height.
+      </p>
+      <p>
+        The first minute as the lift slowly ascend to terminal height, I felt completely at ease. In the second minute when I am at the highest point and now merely coasting along the line at a slowed pace that I began to experience numbness. I was more afraid in that moment than when I rode a rollercoaster, because most rollercoaster end after 1-2 minutes, but at the pace the lift was moving, it would take nearly 10 minutes to reach the other side. The lift was also much scarier than the cable car at Stone Mountain and Roosevelt Island because it was mostly exposed like a bench with a very loose lap bar. If I wanted to or felt asleep, I could have easily slip under the bar or fall over it down 5 stories below. In fact, just 4 years before, a 7-year-old girl slipped under the lap bar and fell 40 feet into a (fortunately) grassy area.
+      </p>
+      <p>
+        With a mindset to expose myself to fearful situations and get acclimated to the unnatural sensations, I stared down (pun intended) fear head on and forced myself to look at everything in my surrounding, up, down, straight, and even twisting my entire body backward to look at the scenery behind me. After 8 minutes, the ride reached the end and began to descend, and that was when my breathing returned to normal. When my foot touched the ground after 10 minutes, my fear had mostly vanished. Now that I have conquered the fear of the exposed sky ride, I learned to enjoy the adrenaline rush and appreciate the view of the fairground from above. I rode the lift 6 more times afterward during sunset, and even as the fair was closing at 10pm.
+      </p>
+      <p>
+        Continue reading about my second afternoon in Tampa, Florida in <a href="/article/what-if-i-spent-20-minutes-trapped-in-a-glass-box-with-my-three-biggest-phobias" class="text-primary hover:text-white transition-colors">"What If I Spent 20 Minutes Trapped in a Glass Box With My Three Biggest Phobias?"</a>
+      </p>
+    `,
+    "date": "February 11, 2026",
+    "authorId": "hai-dao",
+    "category": "Travel",
+    "imageUrl": "../images/articles/what-if-i-discovered-my-fear-of-height-50-feet-in-the-air-with-no-way-down/0.png",
+    "readTime": "3 min read"
+  },
+
 ];
