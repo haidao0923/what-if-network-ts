@@ -13,7 +13,7 @@ const POSTS_PER_PAGE = 6;
 // Helper to get category-specific colors
 export const getCategoryColor = (category: string): string => {
   const mapping: Record<string, string> = {
-    'Social Experiments': 'bg-primary',
+    'Social Experiment': 'bg-primary',
     'Travel': 'bg-emerald-600',
     'Wellness': 'bg-rose-600',
     'Activity': 'bg-indigo-600',
@@ -178,11 +178,11 @@ const BlogGrid: React.FC<BlogGridProps> = ({ posts }) => {
                       </span>
                     </div>
 
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors line-clamp-2">
+                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors line-clamp-3">
                       {post.title}
                     </h3>
 
-                    <p className="text-gray-400 mb-4 line-clamp-3 text-sm leading-relaxed">
+                    <p className="text-gray-400 mb-4 line-clamp-5 text-sm leading-relaxed">
                       {post.excerpt}
                     </p>
 

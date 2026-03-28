@@ -63,7 +63,7 @@ export const ARTICLES: BlogPost[] = [
     `,
     date: "March 22, 2023",
     authorId: "hai-dao",
-    category: "Social Experiments",
+    category: "Social Experiment",
     imageUrl: "../images/articles/what-if-i-was-homeless-for-100-hours/16.png",
     readTime: "10 min read"
   },
@@ -108,7 +108,7 @@ export const ARTICLES: BlogPost[] = [
     `,
     date: "March 25, 2023",
     authorId: "hai-dao",
-    category: "Social Experiments",
+    category: "Social Experiment",
     imageUrl: "../images/articles/what-if-i-slept-with-a-serial-killer/8.png",
     readTime: "8 min read"
   },
@@ -261,7 +261,7 @@ export const ARTICLES: BlogPost[] = [
     `,
     date: "September 23, 2023",
     authorId: "hai-dao",
-    category: "Social Experiments",
+    category: "Social Experiment",
     imageUrl: "../images/articles/what-if-i-asked-stores-for-free-food-on-my-birthday/0.png",
     readTime: "15 min read"
   },
@@ -1013,14 +1013,14 @@ export const ARTICLES: BlogPost[] = [
     `,
     "date": "February 9, 2026",
     "authorId": "hai-dao",
-    "category": "Social Experiments",
+    "category": "Social Experiment",
     "imageUrl": "../images/articles/what-if-i-traded-for-food-at-a-fair/0.png",
     "readTime": "5 min read"
   },
   {
     "id": "what-if-i-gambled-for-10-minutes",
     "title": "What If I Gambled for 10 Minutes?",
-    "excerpt": "How much could I possibly lose in 10 minutes of gambling?",
+    "excerpt": "My first time inside a dedicated casino. How much could I possibly lose in 10 minutes of gambling?",
     "content": `
       <p>
         This is a continuation of <a href="/article/what-if-i-traded-for-food-at-a-fair" class="text-primary hover:text-white transition-colors">"What If I Traded for Food at a Fair?"</a>
@@ -1058,7 +1058,7 @@ export const ARTICLES: BlogPost[] = [
   },
   {
     "id": "what-if-i-discovered-my-fear-of-height-50-feet-in-the-air-with-no-way-down",
-    "title": "What if I discovered my fear of height 50 feet in the air with no way down?",
+    "title": "What If I Discovered My Fear of Height 50 Feet in the Air With No Way Down?",
     "excerpt": "For 23 years, \"fear of height\" never crossed my mind as something that applied to me. In fact, just two month prior, I had stood atop the tallest outdoor observation deck in the Western Hemisphere over 1,100 feet up in the air...",
     "content": `
       <p>
@@ -1086,5 +1086,149 @@ export const ARTICLES: BlogPost[] = [
     "imageUrl": "../images/articles/what-if-i-discovered-my-fear-of-height-50-feet-in-the-air-with-no-way-down/0.png",
     "readTime": "3 min read"
   },
-
+  {
+    "id": "what-if-i-spent-20-minutes-trapped-in-a-glass-box-with-my-three-biggest-phobias",
+    "title": "What If I Spent 20 Minutes Trapped in a Glass Box With My Three Biggest Phobias?",
+    "excerpt": "Inside the tallest portable Ferris Wheel in North America, I sat tucked in a corner, speechless and shivering, trapped between the intersection of my three biggest phobia, when suddenly a light so bright came into view.",
+    "content": `
+      <p>
+        This is a continuation of <a href="/article/what-if-i-traded-for-food-at-a-fair" class="text-primary hover:text-white transition-colors">"What If I Traded for Food at a Fair?"</a> and <a href="/article/what-if-i-gambled-for-10-minutes" class="text-primary hover:text-white transition-colors">"What If I Gambled for 10 Minutes?"</a>
+      </p>
+      <p>
+        At 1pm on my second day in Tampa, Florida, I stepped into the fairground and quickly purchased the $25 admission and unlimited rides combo. Within 5 minutes, I started riding one of the high speed circular ride. Usually these rides were very aggressive and it would force my body against the edge of the seat as the car speed along a circular track, but this ride was quite enjoyable as I could press my feet against the back of the car in front to apply friction and keep my body from being crushed against the seat. Consequently, I could more freely enjoy the refreshing wind on my skin.
+      </p>
+      <p>
+        Despite my wristband allowing unlimited rides, I had already been on many of the rides in local fairs, and some rides such as Techno Powers were incredibly nausea-inducing, so I was in no rush to put myself through pain and suffering just because I could.
+      </p>
+      <p>
+        I never understood how some people felt almost an uncontrollable compulsion to force themselves to "maximize" a deal, ultimately impeding their experience by overwhelming it with too much activities and not allowing themselves time to relax and enjoy. (Yes, I am being hypocritical as I was once like this, remember the time when I travelled to NYC with a schedule so tight that I accidentally fasted for 30 hours and developed blisters on my feet?)
+      </p>
+      <p>
+        Returning to the fairground, there was one ride that I had never ridden on before in my life and one that I am most excited about trying. The Sky Ride was a 10 minute lift ride taking you 50 feet into the air and from one end of the fairground to the other. Read about my frightful first experience on the lift at "What if I discovered my fear of height up 50 feet with no way down?"
+      </p>
+      <p>
+        After riding the Sky Ride, I went to the stage at the center of the fairground for a pizza eating contest at 3pm. I approached the people on stage to ask if I could compete, but was told that I had to preregister at the beginning of the day. Although I could not participate, I still took a seat and watch the event. As expected, all of the people on stage had a large figure and were visibly experienced in consuming large quantities of food (this lessened my regret as I would not have won the competition anyway), and sure enough, the winner finished 5 large slices of pizza in under 5 minutes.
+      </p>
+      <p>
+        After watching the competition, I walked to the adjacent section of the fairground housing the Wall of Death show where daredevil motorcyclists rode at top speed parallel to the ground and mere inches away from the faces of the viewers. The motorists were so close to the audience that as they were riding, they could even reach out to take money from the hands of the crowd. While this was definitely one of the most thrilling acts I have watched at the fair, the experience could be off-putting for some as there were very loud engine noises, the walls and floors were shaking like a mini earthquake under the impact of the motorcycles, and the smell of gasoline filled the air (I dropped my camera twice as I was not prepared for the shakiness, and an elderly woman had to leave in the middle of the show because of the smell of gasoline).
+      </p>
+      <p>
+        Throughout the day, I went on as many fun ride as possible including 5 slides, all 4 rollercoasters, 3 swing rides including the tallest Thunderbird ride, 2 spinning rides, a pirate ship ride, the Genesis ride, a dark ride, and the staple of every fair (The Gravitron) twice.
+      </p>
+      <p>
+        As a solo traveler, the biggest inconvenience at the fair was the "No Single Rider" sign. I asked a man and a woman who were walking by themselves on two separate occasions near the Ferris Wheel but they both hastily rejected me. However, this wasn't going to stop me from riding what was the most popular ride at the fair. When I approached the Crazy Mouse rollercoaster, I noticed right away that it would be a very fun experience seeing that the car spin 360 degree on the track, and that it had the longest line of any ride at the fair. When I reached the entrance, I discovered to my chagrin that there was a sign saying "No Single Rider".
+      </p>
+      <p>
+        Standing by the entrance with an approachable smile stitched onto my face, I spotted a man in his early 40s standing alone looking toward the rollercoaster ride. "Do you want to go on the ride? This looks like a fun ride but the sign says no single rider." "I couldn't go on the ride, it would be too dizzying for me, I think they allow single rider, my son is in line and he's by himself." Seizing the golden opportunity, I asked the father "Do you know where he is in the line? I can see if I could join him." He pointed to the front of the line and I rushed in that direction. Looking around, I noticed a guy around 20 years old who was standing by himself and immediately asked to join him since the signed said "no single rider". He agreed and I ran as fast as possible, pushing everyone in the 30 minute long queue aside so that I could reach my newfound friend at the front of the line. I made it to the front just as he was about about to get inside the car and the ride definitely lived up to its popularity, being an incredibly unique experience as the barrel-shaped cart rushed through the track.
+      </p>
+      <p>
+        Toward the end of the night, I watched the Johnny Rockett's Cycle Circus show featuring thrilling motorcycle rides up a ramp and the rider performing multiple spins and stunts in the air, culminating in a human cannonball performance at the end of the show. As the sky turned pitch black, I rode the Sky Ride to observe the lit-up attractions and the almost empty fairground below, and explored some more of the rides that were closed for maintenance earlier in the day.
+      </p>
+      <p>
+        At 9pm, I joined the queue to go on the tallest travelling Ferris Wheel in North America. Each of the 45 gondolas were completely enclosed with glass panels and each group of 4-6 were on the ride for approximately 20 minutes as the wheel load passengers. The wheel moved at a sluggish pace which exacerbated my greatest phobia, the fear of enclosed spaces. I was in a group with a family of three, and in the beginning, it was extremely awkward as I was the lone outsider silently looking around and at the view below. However, the 27-year-old daughter of the family was extremely talkative and she commented on everything, opening up about her own fear of height and enclosed spaces, about the rides, the decorations, the farm animals, and even the landscape.
+      </p>
+      <p>
+        About 10 minutes into the ride, she gave me an opening to talk when she asked about the name of the ride from far away. As I have been on that ride before, I plainly answered her question. She then adopted a curious expression on her face and asked me to describe the ride. I let in some vulnerability when I shared my personal experience with that uncomfortably dizzying ride. After the short exchange, my mood heightened greatly as I no longer feel like a silent outsider of the group. The daughter of the family was incredibly responsive to what I have to say and continued to chatter excitedly about her surrounding.
+      </p>
+      <p>
+        Two minutes later, as the ride was on its final rotation, I challenged my typically reserved attitude and asked the son of the group where he is from, assuming from the family's accent that they are from Spain. The 29-year-old corrected me, saying that his family is from Cuba and they had moved to America less than three years ago. I then shared some of the stories I had heard about Cuba to relate with the group and say my goodbye as our gondola reached the bottom and the door opened to unload.
+      </p>
+      <p>
+        -----
+      </p>
+      <p>
+        <strong>The Moral of the Story:</strong><br>
+        Looking back at that neon-lit night, the true value of my $25 wristband wasn’t found in the number of G-forces I endured or the sheer volume of rides I checked off a list. The real "maximization" happened in the moments where I felt the most vulnerable.
+      </p>
+      <p>
+        <strong>1. Breaking the Social Barrier</strong><br>
+        As a solo traveler, the "No Single Rider" sign is more than a logistical hurdle; it’s a psychological test. It forces you to choose between two paths: give up on the experience or admit your "aloneness" to a stranger and ask for help. By standing at the entrance of the Crazy Mouse ride with a "stitched-on smile," I was practicing a form of social courage that is often more intimidating than riding a rollercoaster. That brief, 360-degree spinning ride was the reward, but the development came from the 30-second negotiation with a stranger's father and the consequently short exchange with the son. I learned that most people aren't looking to judge you; they’re often just waiting for a reason to be helpful.
+      </p>
+      <p>
+        <strong>2. The Alchemy of Fear and Connection</strong><br>
+        My experience on the tallest traveling Ferris wheel in the country was the ultimate confrontation with my own biology. I was trapped in a glass box (claustrophobia) suspended in the air (acrophobia) with a family of three strangers (xenophobia). My instinct was to turtle up, stay silent, and wait for the "suffering" to end.
+      </p>
+      <p>
+        I had initially seen myself as the "silent outsider," but I failed to notice the efforts being made by the family of three across from me. Despite having lived in America for less than three years, this Cuban family spent the first ten minutes of the ride, while I was still a wall of silence, speaking to each other in English (instead of their native tongue). The father could barely utter a word in English but he tried anyway to be friendly.
+      </p>
+      <p>
+        This was more than just practice for them; it was a deliberate, hospitable act. By choosing to speak English amongst themselves in the presence of a stranger, they were keeping the door to their conversation unlocked. They were providing me with a verbal map, allowing me to listen, understand, and eventually find the perfect moment to step inside their world.
+      </p>
+      <p>
+        <strong>3. Facing the Friction</strong><br>
+        My growth that night wasn't just about surviving 50 feet of elevation; it was about recognizing that while I was struggling to find the bravery to speak, the world were already working to make me feel welcome. The moment I finally let in some vulnerability and shared my own fears, the "outsider" label vanished. We weren't four strangers in a cramped box anymore; we were a temporary community, held together by shared stories of dizziness and the irrational phobias of life.
+      </p>
+      <p>
+        We often spend our lives trying to curate comfort, avoiding the rides that make us nauseous and the social interactions that make us sweat. But comfort is a plateau. Real development happens in the "No-Man's Land" of discomfort, where you realize that your fears are often the only thing keeping you from a world that is already trying to talk to you.
+      </p>
+      <p>
+        I walked out of the fairground at 10:15pm not just exhausted, but expanded. I didn't just see the fair; I felt the full friction of it. And in that friction, I found a version of myself that was a little more resilient, a little more open, and a lot more aware that nobody is truly a "single rider" unless they choose to be.
+      </p>
+      <p>
+        Continue reading my second night in Florida in <a href="/article/what-if-i-fought-a-club-bouncer" class="text-primary hover:text-white transition-colors">"What If I Fought a Club Bouncer?"</a>
+      </p>
+    `,
+    "date": "February 11, 2026",
+    "authorId": "hai-dao",
+    "category": "Social Experiment",
+    "imageUrl": "../images/articles/what-if-i-spent-20-minutes-trapped-in-a-glass-box-with-my-three-biggest-phobias/0.png",
+    "readTime": "8 min read"
+  },
+  {
+    "id": "what-if-i-fought-a-club-bouncer",
+    "title": "What If I Fought a Club Bouncer?",
+    "excerpt": "Can I charm the door girl and a club bouncer into letting me into the club while acting like a private investigator? Or will one of us go home with a black eye and a bloody nose?",
+    "content": `
+      <p>
+        This is a continuation of <a href="/article/what-if-i-spent-20-minutes-trapped-in-a-glass-box-with-my-three-biggest-phobias" class="text-primary hover:text-white transition-colors">"What If I Spent 20 Minutes Trapped in a Glass Box With My Three Biggest Phobias?"</a>
+      </p>
+      <p>
+        After leaving the florida state fair around 10:15pm, I booked an Uber ride to Ybor Showbar because I saw online that Ybor is a lively nighttime location in Tampa. However, when I arrived at 10:25pm on a Tuesday night, the area was deserted. Every few minutes you might see one or two pairs cross the street leaving behind a deafening silence.
+      </p>
+      <p>
+        I was carrying a not insignificantly-sized bag, and so I was nervous if the bar would allow me to bring something so big inside the venue. I was visibly nervous in my body language, even stepping down from the curb to avoid the group of 3 guys and 1 girl standing at the entrance to Showbar. The girl noticed that I was about to cross without going into the bar, and she immediately offered a card saying that I would get a free shot if I come in the bar.
+      </p>
+      <p>
+        Not missing the golden opportunity, I acted like I was totally unaware that Showbar existed and curiously examine the card before replying in a nonchalant tone "ok, I'll come inside for a while". Finally I had an excuse to look inside, but just like the outside, the lobby was completely empty except for two girls sitting alone at the bar. Still, I thought that a free drink was a very attractive offer for a few minutes inside. I took a step toward the entrance when a burly man with a bullet-proof vest stood in the center of the doorway, blocking my path. "ID please" I gave him my ID and he casually glanced at it before giving it back to me. He then motioned for me to stand with two hands up before he began the most aggressive pat down I have ever experienced. His hands pressed tight against each side of my pants as they traversed slowly down from my upper thighs to the ankles (I later encountered another very handsy TSA agent at the Tampa International Airport who asked if I had anything in my back pocket to which he followed with grabbing my butt with the front of his palm and then running his hands down my thighs to the ankle before coming back up and grabbing tightly my inner thighs near the crotch - both of these incidents made me look up the statistics which proved my hypothesis that Tampa is ranked the 5th city with the highest LGBTQ population in the US (180,000 which is triple the number of LGBTQ in my home city of Atlanta)).
+      </p>
+      <p>
+        The bouncer at Ybor Showbar spotted my car keys which I had stored in the bottom pocket of my inner shorts as a precaution against pickpockets and he demanded that I showed him the item. Since I kept the keys hidden deep inside my pants, I could not retrieve it without taking off my pants in the street and I argued with the bouncer. After 3 minutes of back and forth, I realized that any more argument will only weaken my frame and the battle could not be gracefully won. So I quickly said goodbye and moved away from the scene.
+      </p>
+      <p>
+        Continue reading about my last night in Tampa, Florida in <a href="/article/what-if-i-almost-missed-the-last-bus-of-the-night" class="text-primary hover:text-white transition-colors">"What If I Almost Missed the Last Bus of the Night?"</a>
+      </p>
+    `,
+    "date": "February 11, 2026",
+    "authorId": "hai-dao",
+    "category": "Social Experiment",
+    "imageUrl": "../images/articles/what-if-i-fought-a-club-bouncer/0.png",
+    "readTime": "6 min read"
+  },
+  {
+    "id": "what-if-i-almost-missed-the-last-bus-of-the-night",
+    "title": "What If I Almost Missed the Last Bus of the Night?",
+    "excerpt": "500 miles away from home with only 3 minutes before the scheduled last bus of the night, did I already miss the bus and will I have to sleep outside in the chilling cold air?",
+    "content": `
+      <p>
+        This is a continuation of <a href="/article/what-if-i-fought-a-club-bouncer" class="text-primary hover:text-white transition-colors">"What If I Fought a Club Bouncer?"</a> and the final article in my adventure in Tampa, Florida.
+      </p>
+      <p>
+        After failing to enter Ybor Showbar, I walked aimlessly in one direction along the empty (and quiet) street of Ybor until I eventually stumbled upon a nearby bench to rest my sore feet from 23 miles of walking throughout the day. As I sat on the bench, I was on high alert because the street were dark and deserted so it would be very easy for me to get attacked and robbed. Because I was so nervous being alone in a quiet place with nowhere to go for the night, I did not notice the rail track right in front of my feet. 3 minutes later, a light rail burst into view and stopped right in front of my seat. The reason there was a bench in the middle of the quiet lamp-lit street was because it was a railway stop. About 7 people came out and as I did not know where the rail was headed, I did not step inside.
+      </p>
+      <p>
+        My nerves were beginning to grow accustomed to the stillness of the night and my curiosity returned slightly from the sight of a new mode of public transportation. I looked up the name of the rail and checked Google Maps to discover that I could take the rail to downtown before taking a HART bus to the airport. The next and last rail of the night was scheduled in 3 minutes, and I was beginning to panic. From my previous experience of public transportation system, busses occasionally skip past stops at night, ultimately reaching places a few minutes ahead of schedule. If the rail I just missed was the last one, then I would have missed out on the experience of riding in a new mode of public transportation and an extra $20 for the cost of Uber to the airport.
+      </p>
+      <p>
+        Fortunately, about 2 minutes after schedule, the last rail stopped in front of me and the driver waved at me to get on saying "come on! I have to leave soon" "Is this light rail 800 to go to the airport?" "No, this rail doesn't go to the airport" "but you go to downtown right? I can transfer from downtown" "yes this rail only go to downtown, now hurry up and get on!" (He was in a rush because this was his last ride for the night, but the gentleman was still very friendly and responsive along with the 4 other passengers who were returning home from a bar). I took the rail to the last stop in downtown, and walked 8 minutes to the bus stop, waiting for the last bus of the night to the airport. Right next to the bus stop was a beautiful drawbridge with a beautifully lit pathway over the water below. A couple and several other pairs were crossing the bridge even at 11:15pm to take in the view, and I even received a compliment from a passerby on my dressing style 😎.
+      </p>
+      <p>
+        15 minutes later, right at the scheduled time, the last bus came and I reached the Tampa International Airport at 12am. The Tampa airport was very clean, safe, and very accommodating with comfortable sofa chairs, security personnels and cleaners walking around and mopping the same spot multiple times. A space is never unattended for longer than 3 minutes at any time through the night. Even though the airport was so safe that the security guard that has been working at the airport for 26 years said that he had never heard of a pickpocket incident, I still opted to trade my sleep to write this post. I occasionally shut my eye to rest and at one point I closed my eyes for 5 minutes and cleaners roped off the entire quadrant I was napping in to clean around me so that no one could enter and potentially steal my luggage. At 5am, I went inside the secured area which was very spacious and once again with many cleaners working throughout the early morning, keeping the airport one of the cleanest and most comfortable airport I have ever been to in my life. About an hour later, I stepped onto the half-filled Frontier plane and slept peacefully with an entire row of seat to myself.
+      </p>
+    `,
+    "date": "February 11, 2026",
+    "authorId": "hai-dao",
+    "category": "Travel",
+    "imageUrl": "../images/articles/what-if-i-almost-missed-the-last-bus-of-the-night/0.png",
+    "readTime": "6 min read"
+  }
 ];
