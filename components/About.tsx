@@ -94,9 +94,11 @@ const About: React.FC = () => {
               </p>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
                 {[
-                  "Started this website and social media platform to share my perspective",
+                  "AI can now develop fully functional apps with database integration and multiplayer capabilities",
+                  "Success in the future won't be about 'What can you make?' but rather 'What can you sell?'",
+                  "Created the 'What If Forum' for community building",
                   "Faced my fear (and discover new fear) one step at a time",
-                  "Connected with a few other creators in the same niche",
+                  "Followed a few other creators in the same niche",
                   "Started documenting all of my personal experiences"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start">

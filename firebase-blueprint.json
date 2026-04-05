@@ -1,0 +1,67 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "A user of the What If Network forum.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "name": { "type": "string" },
+        "avatar": { "type": "string" },
+        "email": { "type": "string" },
+        "bio": { "type": "string" },
+        "role": { "type": "string", "enum": ["user", "admin"] }
+      },
+      "required": ["uid", "name", "email"]
+    },
+    "Question": {
+      "title": "Question",
+      "description": "A 'What If' question asked by a user.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "authorId": { "type": "string" },
+        "authorName": { "type": "string" },
+        "authorAvatar": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "likesCount": { "type": "integer" },
+        "responsesCount": { "type": "integer" }
+      },
+      "required": ["title", "description", "authorId", "authorName", "createdAt"]
+    },
+    "Response": {
+      "title": "Response",
+      "description": "A user's contribution to a 'What If' question.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "questionId": { "type": "string" },
+        "content": { "type": "string" },
+        "authorId": { "type": "string" },
+        "authorName": { "type": "string" },
+        "authorAvatar": { "type": "string" },
+        "isVerified": { "type": "boolean" },
+        "isAnonymous": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["questionId", "content", "authorName", "isVerified", "isAnonymous", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/users/{uid}": {
+      "schema": "User",
+      "description": "User profiles."
+    },
+    "/questions/{questionId}": {
+      "schema": "Question",
+      "description": "Forum questions."
+    },
+    "/questions/{questionId}/responses/{responseId}": {
+      "schema": "Response",
+      "description": "Responses to a specific question."
+    }
+  }
+}

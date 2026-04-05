@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Environment variables and config
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+firebase-applet-config.json

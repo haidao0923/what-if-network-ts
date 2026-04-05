@@ -6,6 +6,8 @@ import BlogGrid from './components/BlogGrid';
 import BlogPostDetail from './components/BlogPostDetail';
 import ContactForm from './components/ContactForm';
 import About from './components/About';
+import ForumHome from './components/ForumHome';
+import QuestionDetail from './components/QuestionDetail';
 import { ARTICLES } from './articles';
 import { Instagram, Youtube, MessageCircle } from 'lucide-react';
 
@@ -48,6 +50,8 @@ const App: React.FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/article/:id" element={<BlogPostDetail />} />
           <Route path="/about" element={<About />} />
+          <Route path="/forum" element={<ForumHome />} />
+          <Route path="/forum/question/:id" element={<QuestionDetail />} />
           <Route path="/contact" element={<ContactForm />} />
         </Routes>
       </main>
