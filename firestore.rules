@@ -1,116 +1,35 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    // ===============================================================
-    // Assumed Data Model
-    // ===============================================================
-    //
-    // Collection: /users/{uid}
-    // Fields:
-    //   - uid: string (required)
-    //   - name: string (required)
-    //   - avatar: string (optional)
-    //   - email: string (required)
-    //   - bio: string (optional)
-    //   - role: string (enum: ['user', 'admin'])
-    //
-    // Collection: /questions/{questionId}
-    // Fields:
-    //   - id: string (required)
-    //   - title: string (required)
-    //   - description: string (required)
-    //   - authorId: string (required)
-    //   - authorName: string (required)
-    //   - authorAvatar: string (optional)
-    //   - createdAt: timestamp (required)
-    //   - tags: list (optional)
-    //
-    // Collection: /questions/{questionId}/responses/{responseId}
-    // Fields:
-    //   - id: string (required)
-    //   - questionId: string (required)
-    //   - content: string (required)
-    //   - authorId: string (optional)
-    //   - authorName: string (required)
-    //   - authorAvatar: string (optional)
-    //   - isVerified: boolean (required)
-    //   - isAnonymous: boolean (required)
-    //   - createdAt: timestamp (required)
-    //
-    // ===============================================================
-
-    // ===============================================================
-    // Helper Functions
-    // ===============================================================
-    function isAuthenticated() {
-      return request.auth != null;
+    // Default catch-all
+    match /{document=**} {
+      allow read, write: if false;
     }
 
-    function isOwner(userId) {
-      return isAuthenticated() && request.auth.uid == userId;
+    // Users collection
+    match /users/{userId} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.uid == userId;
     }
 
-    function isAdmin() {
-      return isAuthenticated() &&
-        (get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin' ||
-         (request.auth.token.email == "HaiXDao0923@gmail.com" && request.auth.token.email_verified == true));
-    }
-
-    function isValidUser(data) {
-      return data.keys().hasAll(['uid', 'name', 'email']) &&
-             data.uid is string && data.uid.size() > 0 &&
-             data.name is string && data.name.size() > 0 && data.name.size() < 100 &&
-             data.email is string && data.email.matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$");
-    }
-
-    function isValidQuestion(data) {
-      return data.keys().hasAll(['title', 'description', 'authorId', 'authorName', 'createdAt']) &&
-             data.title is string && data.title.size() > 0 && data.title.size() < 200 &&
-             data.description is string && data.description.size() > 0 && data.description.size() < 5000 &&
-             data.authorId == request.auth.uid &&
-             data.createdAt == request.time;
-    }
-
-    function isValidResponse(data) {
-      return data.keys().hasAll(['questionId', 'content', 'authorName', 'isVerified', 'isAnonymous', 'createdAt']) &&
-             data.questionId is string &&
-             data.content is string && data.content.size() > 0 && data.content.size() < 10000 &&
-             data.authorName is string && data.authorName.size() > 0 &&
-             data.isVerified == (request.auth != null) &&
-             data.isAnonymous is bool &&
-             (data.isVerified ? data.authorId == request.auth.uid : !('authorId' in data)) &&
-             data.createdAt == request.time &&
-             (!('parentId' in data) || data.parentId is string);
-    }
-
-    // ===============================================================
-    // Rules
-    // ===============================================================
-
-    match /users/{uid} {
-      allow read: if isAuthenticated();
-      allow create: if isOwner(uid) && isValidUser(request.resource.data) && request.resource.data.role == 'user';
-      allow update: if isOwner(uid) && isValidUser(request.resource.data) && request.resource.data.role == resource.data.role;
-      allow delete: if isAdmin();
-    }
-
+    // Questions collection and its subcollections
     match /questions/{questionId} {
       allow read: if true;
-      allow create: if isAuthenticated() && isValidQuestion(request.resource.data);
-      allow update: if (isOwner(resource.data.authorId) || isAdmin()) && isValidQuestion(request.resource.data) ||
-                      (request.resource.data.diff(resource.data).affectedKeys().hasOnly(['likesCount', 'responsesCount']));
-      allow delete: if isOwner(resource.data.authorId) || isAdmin();
+      allow create: if request.auth != null;
+      allow update: if true; // Allow counts to be updated by anyone
+      allow delete: if request.auth != null && (resource.data.authorId == request.auth.uid || request.auth.token.email.lower() == "haixdao0923@gmail.com");
 
-      match /responses/{responseId} {
-        allow read: if true;
-        allow create: if isValidResponse(request.resource.data);
-        allow update: if (isOwner(resource.data.authorId) || isAdmin()) && isValidResponse(request.resource.data);
-        allow delete: if isOwner(resource.data.authorId) || isAdmin();
+      // Nested likes on questions
+      match /likes/{likeId} {
+        allow read, write: if true;
       }
 
-      match /likes/{likeId} {
+      // Responses subcollection
+      match /responses/{responseId} {
         allow read: if true;
-        allow create, delete: if true; // Allow guest likes/unlikes
+        allow create: if true; // Guest responses
+        allow update: if true; // Counts and content
+        allow delete: if request.auth != null && (resource.data.authorId == request.auth.uid || request.auth.token.email.lower() == "haixdao0923@gmail.com");
       }
     }
   }

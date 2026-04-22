@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { collection, query, orderBy, onSnapshot, addDoc, serverTimestamp, getDoc, doc, setDoc, updateDoc, increment, deleteDoc } from 'firebase/firestore';
-import { db, auth } from '../firebase';
+import React, { useState, useEffect, useRef } from 'react';
+import { collection, query, orderBy, onSnapshot, addDoc, serverTimestamp, getDoc, doc, setDoc, updateDoc, increment, deleteDoc, writeBatch } from 'firebase/firestore';
+import { db, auth, handleFirestoreError, OperationType } from '../firebase';
 import { GoogleAuthProvider, signInWithPopup, onAuthStateChanged, User as FirebaseUser, signOut } from 'firebase/auth';
 import { MessageCircle, Plus, Search, Tag, Clock, User as UserIcon, ChevronRight, MessageSquareHeart, Heart, LogOut, Filter, ArrowUpDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
@@ -67,7 +67,7 @@ const ForumHome: React.FC = () => {
       setQuestions(questionsData);
       setLoading(false);
     }, (error) => {
-      console.error("Error fetching questions:", error);
+      handleFirestoreError(error, OperationType.LIST, 'questions');
       setLoading(false);
     });
 
@@ -295,17 +295,28 @@ const LikeButton: React.FC<{ questionId: string, initialLikes: number, user: Fir
   const [isLiked, setIsLiked] = useState(false);
   const [likesCount, setLikesCount] = useState(initialLikes);
   const currentUserId = user?.uid || getGuestId();
+  const isMounted = useRef(true);
+
+  const fetchLikeState = async () => {
+    try {
+      const likeRef = doc(db, 'questions', questionId, 'likes', currentUserId);
+      const docSnap = await getDoc(likeRef);
+      if (isMounted.current) setIsLiked(docSnap.exists());
+    } catch (error: any) {
+      if (error?.code !== 'permission-denied') {
+        console.warn("Could not fetch like state:", error);
+      }
+    }
+  };
 
   useEffect(() => {
-    const likeRef = doc(db, 'questions', questionId, 'likes', currentUserId);
-    const unsubscribe = onSnapshot(likeRef, (docSnap) => {
-      setIsLiked(docSnap.exists());
-    });
-    return () => unsubscribe();
+    isMounted.current = true;
+    fetchLikeState();
+    return () => { isMounted.current = false; };
   }, [questionId, currentUserId]);
 
   useEffect(() => {
-    setLikesCount(initialLikes);
+    if (isMounted.current) setLikesCount(initialLikes);
   }, [initialLikes]);
 
   const handleLike = async (e: React.MouseEvent) => {
@@ -317,14 +328,22 @@ const LikeButton: React.FC<{ questionId: string, initialLikes: number, user: Fir
 
     try {
       if (isLiked) {
+        setIsLiked(false);
+        setLikesCount(prev => prev - 1);
         await deleteDoc(likeRef);
+        await new Promise(resolve => setTimeout(resolve, 50));
         await updateDoc(questionRef, { likesCount: increment(-1) });
       } else {
+        setIsLiked(true);
+        setLikesCount(prev => prev + 1);
         await setDoc(likeRef, { uid: currentUserId, createdAt: serverTimestamp() });
+        await new Promise(resolve => setTimeout(resolve, 50));
         await updateDoc(questionRef, { likesCount: increment(1) });
       }
     } catch (error) {
-      console.error("Error toggling like:", error);
+      // Revert optimism
+      fetchLikeState();
+      handleFirestoreError(error, OperationType.WRITE, `questions/${questionId}/likes`);
     }
   };
 

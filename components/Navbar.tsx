@@ -5,7 +5,6 @@ import { Link, useLocation } from 'react-router-dom';
 const Navbar: React.FC = () => {
   const location = useLocation();
   const isHome = location.pathname === '/';
-  const isContact = location.pathname === '/contact';
 
   return (
     <nav className="sticky top-0 z-50 bg-dark/90 backdrop-blur-md border-b border-gray-800 shadow-sm">
@@ -20,7 +19,7 @@ const Navbar: React.FC = () => {
               alt="What If Network Logo"
               className="h-12 w-12 rounded-full border-2 border-primary mr-2 object-cover"
             />
-            <span className="font-serif font-bold text-xl tracking-tight text-white group-hover:text-primary transition-colors">
+            <span className="hidden sm:inline font-serif font-bold text-xl tracking-tight text-white group-hover:text-primary transition-colors">
               <span className="text-primary">W</span>hat <span className="text-primary">I</span>f <span className="text-primary">N</span>etwork
             </span>
           </Link>
@@ -60,18 +59,6 @@ const Navbar: React.FC = () => {
             >
               <MessageSquare className="h-4 w-4 mr-1.5" />
               Forum
-            </Link>
-
-            <Link
-              to="/contact"
-              className={`flex items-center px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                isContact
-                  ? 'text-primary bg-primary/10'
-                  : 'text-gray-400 hover:text-white hover:bg-white/5'
-              }`}
-            >
-              <Mail className="h-4 w-4 mr-1.5" />
-              Contact
             </Link>
           </div>
         </div>

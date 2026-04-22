@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { doc, getDoc, collection, query, orderBy, onSnapshot, addDoc, serverTimestamp, updateDoc, increment, setDoc, deleteDoc } from 'firebase/firestore';
-import { db, auth } from '../firebase';
+import { doc, getDoc, collection, query, orderBy, onSnapshot, addDoc, serverTimestamp, updateDoc, increment, setDoc, deleteDoc, writeBatch } from 'firebase/firestore';
+import { db, auth, handleFirestoreError, OperationType } from '../firebase';
 import { onAuthStateChanged, User as FirebaseUser, GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth';
 import { ArrowLeft, Clock, User as UserIcon, Send, Sparkles, Target, ShieldAlert, MessageSquareHeart, Heart, MessageCircle, LogOut } from 'lucide-react';
 import { motion } from 'motion/react';
@@ -49,70 +49,80 @@ const QuestionDetail: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [isLiked, setIsLiked] = useState(false);
   const [replyingTo, setReplyingTo] = useState<Response | null>(null);
+  const [sortBy, setSortBy] = useState<'newest' | 'oldest'>('newest');
   const currentUserId = user?.uid || getGuestId();
+  const isMounted = useRef(true);
 
   const ANONYMOUS_AVATAR = "https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y";
 
   useEffect(() => {
+    isMounted.current = true;
     const unsubscribeAuth = onAuthStateChanged(auth, (currentUser) => {
-      setUser(currentUser);
+      if (isMounted.current) setUser(currentUser);
     });
 
     if (!id) return;
 
-    const fetchQuestion = async () => {
-      try {
-        const docRef = doc(db, 'questions', id);
-        const unsubscribeQuestion = onSnapshot(docRef, (docSnap) => {
-          if (docSnap.exists()) {
-            setQuestion({ id: docSnap.id, ...docSnap.data() } as Question);
-          } else {
-            navigate('/forum');
-          }
-        });
-        return unsubscribeQuestion;
-      } catch (error) {
-        console.error("Error fetching question:", error);
+    // Question listener
+    const docRef = doc(db, 'questions', id);
+    const unsubscribeQuestion = onSnapshot(docRef, (docSnap) => {
+      if (!isMounted.current) return;
+      if (docSnap.exists()) {
+        setQuestion({ id: docSnap.id, ...docSnap.data() } as Question);
+      } else {
+        navigate('/forum');
       }
-    };
+    }, (error) => {
+      if (isMounted.current) {
+        handleFirestoreError(error, OperationType.GET, `questions/${id}`);
+      }
+    });
 
-    let unsubscribeQuestion: any;
-    fetchQuestion().then(unsub => unsubscribeQuestion = unsub);
-
-    const q = query(collection(db, 'questions', id, 'responses'), orderBy('createdAt', 'asc'));
+    // Responses listener
+    const responsesPath = `questions/${id}/responses`;
+    const q = query(collection(db, 'questions', id, 'responses'), orderBy('createdAt', 'desc'));
     const unsubscribeResponses = onSnapshot(q, (snapshot) => {
+      if (!isMounted.current) return;
       const responsesData = snapshot.docs.map(doc => ({
         id: doc.id,
         ...doc.data()
       })) as Response[];
       setResponses(responsesData);
       setLoading(false);
+    }, (error) => {
+      if (isMounted.current) {
+        handleFirestoreError(error, OperationType.LIST, responsesPath);
+        setLoading(false);
+      }
     });
 
     return () => {
+      isMounted.current = false;
       unsubscribeAuth();
-      if (unsubscribeQuestion) unsubscribeQuestion();
+      unsubscribeQuestion();
       unsubscribeResponses();
     };
   }, [id, navigate]);
 
-  useEffect(() => {
-    // Auto-fix responsesCount if it's out of sync
-    if (id && question && responses.length !== question.responsesCount) {
-      const questionRef = doc(db, 'questions', id);
-      updateDoc(questionRef, {
-        responsesCount: responses.length
-      }).catch(err => console.error("Error auto-fixing responsesCount:", err));
+  // Remove the auto-fix responsesCount useEffect as it causes redundant writes and potential race conditions
+
+  const fetchQuestionLikeState = async () => {
+    if (!id) return;
+    try {
+      const likeRef = doc(db, 'questions', id, 'likes', currentUserId);
+      const docSnap = await getDoc(likeRef);
+      if (isMounted.current) setIsLiked(docSnap.exists());
+    } catch (error: any) {
+      // Silence permission errors during fetch to avoid console storm
+      if (error?.code !== 'permission-denied') {
+        console.warn("Could not fetch question like state:", error);
+      }
     }
-  }, [id, question?.responsesCount, responses.length]);
+  };
 
   useEffect(() => {
     if (id) {
-      const likeRef = doc(db, 'questions', id, 'likes', currentUserId);
-      const unsubscribeLike = onSnapshot(likeRef, (docSnap) => {
-        setIsLiked(docSnap.exists());
-      });
-      return () => unsubscribeLike();
+      fetchQuestionLikeState();
     }
   }, [id, currentUserId]);
 
@@ -123,18 +133,21 @@ const QuestionDetail: React.FC = () => {
 
     try {
       if (isLiked) {
+        setIsLiked(false);
+        setQuestion(prev => prev ? { ...prev, likesCount: (prev.likesCount || 0) - 1 } : null);
         await deleteDoc(likeRef);
-        await updateDoc(questionRef, {
-          likesCount: increment(-1)
-        });
+        await new Promise(resolve => setTimeout(resolve, 50));
+        await updateDoc(questionRef, { likesCount: increment(-1) });
       } else {
+        setIsLiked(true);
+        setQuestion(prev => prev ? { ...prev, likesCount: (prev.likesCount || 0) + 1 } : null);
         await setDoc(likeRef, { uid: currentUserId, createdAt: serverTimestamp() });
-        await updateDoc(questionRef, {
-          likesCount: increment(1)
-        });
+        await new Promise(resolve => setTimeout(resolve, 50));
+        await updateDoc(questionRef, { likesCount: increment(1) });
       }
     } catch (error) {
-      console.error("Error toggling like:", error);
+      fetchQuestionLikeState();
+      handleFirestoreError(error, OperationType.WRITE, `questions/${id}/likes`);
     }
   };
 
@@ -165,64 +178,86 @@ const QuestionDetail: React.FC = () => {
 
   if (!question) return null;
 
-  const rootResponses = responses.filter(r => !r.parentId);
-  const getReplies = (parentId: string) => responses.filter(r => r.parentId === parentId);
+  // Sorting logic
+  const sortedResponses = [...responses].sort((a, b) => {
+    const timeA = a.createdAt?.toMillis() || 0;
+    const timeB = b.createdAt?.toMillis() || 0;
+
+    if (sortBy === 'oldest') return timeA - timeB;
+    return timeB - timeA; // newest
+  });
+
+  const rootResponses = sortedResponses.filter(r => !r.parentId);
+  const getReplies = (parentId: string) => sortedResponses.filter(r => r.parentId === parentId);
 
   const renderResponse = (response: Response, depth = 0) => {
     const replies = getReplies(response.id);
+    const isReplying = replyingTo?.id === response.id;
 
     return (
-      <div key={response.id} className={`${depth > 0 ? 'ml-6 md:ml-12 mt-4 border-l-2 border-gray-800 pl-4 md:pl-8' : 'mb-8'}`}>
+      <div key={response.id} className={`${depth > 0 ? 'ml-4 md:ml-8 mt-2 border-l border-gray-800 pl-4' : 'mb-4'}`}>
         <motion.div
-          initial={{ opacity: 0, x: -20 }}
+          initial={{ opacity: 0, x: -10 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="bg-card border border-gray-800 rounded-2xl p-6 md:p-8 shadow-xl"
+          className="bg-card/50 border border-gray-800/50 rounded-xl p-4 shadow-sm hover:border-gray-700 transition-colors"
         >
-          <div className="flex items-center justify-between mb-6">
-            <div className="flex items-center gap-3">
+          <div className="flex items-center justify-between mb-3">
+            <div className="flex items-center gap-2">
               <img
                 src={response.isAnonymous && !response.authorAvatar ? ANONYMOUS_AVATAR : (response.authorAvatar || `https://ui-avatars.com/api/?name=${encodeURIComponent(response.authorName)}&background=CA8A04&color=fff`)}
                 alt={response.authorName}
-                className="w-10 h-10 rounded-full border border-gray-700"
+                className="w-8 h-8 rounded-full border border-gray-700"
               />
               <div>
-                <div className="flex items-center gap-2">
-                  <span className="text-white font-bold">{response.authorName}</span>
+                <div className="flex items-center gap-1.5">
+                  <span className="text-white font-bold text-sm">{response.authorName}</span>
                   {response.isVerified && (
-                    <span className="px-2 py-0.5 bg-blue-500/10 text-blue-400 text-[10px] font-bold uppercase tracking-widest rounded-full border border-blue-500/20 flex items-center gap-1">
-                      <ShieldAlert className="w-2.5 h-2.5" />
+                    <span className="px-1.5 py-0.5 bg-blue-500/10 text-blue-400 text-[9px] font-bold uppercase tracking-widest rounded-full border border-blue-500/20 flex items-center gap-1">
+                      <ShieldAlert className="w-2 h-2" />
                       Verified
                     </span>
                   )}
                 </div>
-                <p className="text-xs text-gray-500 uppercase tracking-widest">
-                  {response.isAnonymous ? 'Anonymous Contributor' : 'Contributor'}
+                <p className="text-[10px] text-gray-500 uppercase tracking-widest">
+                  {response.isAnonymous ? 'Anonymous' : 'Contributor'}
                 </p>
               </div>
             </div>
-            <span className="text-xs text-gray-500">
+            <span className="text-[10px] text-gray-500">
               {response.createdAt?.toDate().toLocaleDateString()} {response.createdAt?.toDate().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
             </span>
           </div>
 
-          <div className="space-y-4">
-            <p className="text-gray-300 leading-relaxed whitespace-pre-wrap">
+          <div className="space-y-3">
+            <p className="text-sm text-gray-300 leading-relaxed whitespace-pre-wrap">
               {response.content}
             </p>
 
-            <button
-              onClick={() => {
-                setReplyingTo(response);
-                document.getElementById('response-form')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="flex items-center gap-2 text-sm text-gray-500 hover:text-primary transition-colors"
-            >
-              <MessageCircle className="w-4 h-4" />
-              Reply
-            </button>
+            <div className="flex items-center gap-4">
+              <button
+                onClick={() => setReplyingTo(isReplying ? null : response)}
+                className={`flex items-center gap-1.5 text-xs transition-colors ${isReplying ? 'text-primary' : 'text-gray-500 hover:text-primary'}`}
+              >
+                <MessageCircle className="w-3.5 h-3.5" />
+                {isReplying ? 'Cancel' : 'Reply'}
+              </button>
+            </div>
           </div>
         </motion.div>
+
+        {isReplying && (
+          <div className="mt-2 ml-4">
+            <ResponseForm
+              questionId={question.id}
+              user={user}
+              parentId={response.id}
+              onCancelReply={() => setReplyingTo(null)}
+              replyingToName={response.authorName}
+              compact
+            />
+          </div>
+        )}
 
         {replies.map(reply => renderResponse(reply, depth + 1))}
       </div>
@@ -264,18 +299,18 @@ const QuestionDetail: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="bg-card border border-gray-800 rounded-3xl p-8 md:p-12 mb-12 shadow-2xl"
+          className="bg-card border border-gray-800 rounded-3xl p-6 md:p-10 mb-8 shadow-2xl"
         >
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-4">
               <img
                 src={question.authorAvatar || `https://ui-avatars.com/api/?name=${encodeURIComponent(question.authorName)}&background=CA8A04&color=fff`}
                 alt={question.authorName}
-                className="w-12 h-12 rounded-full border-2 border-primary"
+                className="w-10 h-10 rounded-full border-2 border-primary"
               />
               <div>
-                <h3 className="text-white font-bold text-lg">{question.authorName}</h3>
-                <p className="text-gray-500 text-sm flex items-center">
+                <h3 className="text-white font-bold text-base">{question.authorName}</h3>
+                <p className="text-gray-500 text-xs flex items-center">
                   <Clock className="w-3 h-3 mr-1" />
                   Asked on {question.createdAt?.toDate().toLocaleDateString()} {question.createdAt?.toDate().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                 </p>
@@ -287,61 +322,72 @@ const QuestionDetail: React.FC = () => {
                 onClick={handleLike}
                 className={`flex items-center gap-2 transition-all ${isLiked ? 'text-red-500' : 'text-gray-500 hover:text-red-400'}`}
               >
-                <Heart className={`w-6 h-6 ${isLiked ? 'fill-current' : ''}`} />
-                <span className="font-bold">{question.likesCount || 0}</span>
+                <Heart className={`w-5 h-5 ${isLiked ? 'fill-current' : ''}`} />
+                <span className="font-bold text-sm">{question.likesCount || 0}</span>
               </button>
               <div className="flex items-center gap-2 text-gray-500">
-                <MessageCircle className="w-6 h-6" />
-                <span className="font-bold">{responses.length}</span>
+                <MessageCircle className="w-5 h-5" />
+                <span className="font-bold text-sm">{responses.length}</span>
               </div>
             </div>
           </div>
 
-          <h1 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6 leading-tight">
+          <h1 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-4 leading-tight">
             {question.title}
           </h1>
 
-          <p className="text-xl text-gray-300 leading-relaxed mb-8">
+          <p className="text-lg text-gray-300 leading-relaxed mb-6">
             {question.description}
           </p>
 
           <div className="flex flex-wrap gap-2">
             {question.tags.map((tag, i) => (
-              <span key={i} className="px-4 py-1.5 bg-dark/50 border border-gray-800 rounded-full text-sm text-primary font-medium">
+              <span key={i} className="px-3 py-1 bg-dark/50 border border-gray-800 rounded-full text-xs text-primary font-medium">
                 #{tag}
               </span>
             ))}
           </div>
         </motion.div>
 
-        {/* Response Form */}
-        <div className="mb-16" id="response-form">
-          <h2 className="font-serif text-3xl font-bold text-white mb-8 flex items-center">
-            <Sparkles className="w-8 h-8 text-primary mr-3" />
-            {replyingTo ? `Reply to ${replyingTo.authorName}` : 'Contribute Your Perspective'}
+        {/* Response Form (Root) */}
+        <div className="mb-12">
+          <h2 className="font-serif text-2xl font-bold text-white mb-6 flex items-center">
+            <Sparkles className="w-6 h-6 text-primary mr-2" />
+            Contribute Your Perspective
           </h2>
 
           <ResponseForm
             questionId={question.id}
             user={user}
-            parentId={replyingTo?.id}
-            onCancelReply={() => setReplyingTo(null)}
-            replyingToName={replyingTo?.authorName}
           />
         </div>
 
         {/* Responses List */}
         <div className="space-y-4">
-          <h2 className="font-serif text-3xl font-bold text-white mb-8">
-            {responses.length} {responses.length === 1 ? 'Response' : 'Responses'}
-          </h2>
+          <div className="flex justify-between items-center mb-6">
+            <h2 className="font-serif text-2xl font-bold text-white">
+              {responses.length} {responses.length === 1 ? 'Response' : 'Responses'}
+            </h2>
+
+            <div className="flex items-center gap-2 text-xs">
+              <span className="text-gray-500">Sort by:</span>
+              <select
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value as any)}
+                className="bg-dark border border-gray-800 text-gray-300 rounded px-2 py-1 outline-none focus:border-primary transition-colors"
+              >
+                <option value="newest">Newest</option>
+                <option value="oldest">Oldest</option>
+              </select>
+            </div>
+          </div>
 
           {rootResponses.length > 0 ? (
             rootResponses.map((response) => renderResponse(response))
           ) : (
-            <div className="text-center py-12 bg-card/20 border border-gray-800 rounded-2xl">
-              <MessageSquareHeart className="w-12 h-12 text-gray-700 mx-auto mb-4" />
-              <p className="text-gray-500 italic">No responses yet. Be the first to contribute!</p>
+            <div className="text-center py-10 bg-card/20 border border-gray-800 rounded-2xl">
+              <MessageSquareHeart className="w-10 h-10 text-gray-700 mx-auto mb-3" />
+              <p className="text-gray-500 text-sm italic">No responses yet. Be the first to contribute!</p>
             </div>
           )}
         </div>
@@ -355,11 +401,18 @@ const ResponseForm: React.FC<{
   user: FirebaseUser | null,
   parentId?: string,
   onCancelReply?: () => void,
-  replyingToName?: string
-}> = ({ questionId, user, parentId, onCancelReply, replyingToName }) => {
+  replyingToName?: string,
+  compact?: boolean
+}> = ({ questionId, user, parentId, onCancelReply, replyingToName, compact }) => {
   const [content, setContent] = useState('');
   const [isAnonymous, setIsAnonymous] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const isMounted = useRef(true);
+
+  useEffect(() => {
+    isMounted.current = true;
+    return () => { isMounted.current = false; };
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -393,54 +446,64 @@ const ResponseForm: React.FC<{
         responseData.authorAvatar = '';
       }
 
+      // We use addDoc and updateDoc separately instead of writeBatch to avoid a known Firestore SDK
+      // internal assertion error (ID: ca9) that can occur when mixing serverTimestamp in a batch
+      // with parent document updates while listeners are active.
       await addDoc(collection(db, 'questions', questionId, 'responses'), responseData);
 
-      // Update response count
+      // Update response count on parent question
       const questionRef = doc(db, 'questions', questionId);
+      await new Promise(resolve => setTimeout(resolve, 50));
       await updateDoc(questionRef, {
         responsesCount: increment(1)
       });
 
-      setContent('');
-      if (onCancelReply) onCancelReply();
+      if (isMounted.current) {
+        setContent('');
+        if (onCancelReply) onCancelReply();
+      }
     } catch (error) {
-      console.error("Error adding response:", error);
+      if (isMounted.current) {
+        handleFirestoreError(error, OperationType.WRITE, `questions/${questionId}/responses`);
+      }
     } finally {
-      setSubmitting(false);
+      if (isMounted.current) setSubmitting(false);
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-card border border-gray-800 rounded-3xl p-8 shadow-2xl space-y-6">
+    <form onSubmit={handleSubmit} className={`bg-card border border-gray-800 rounded-2xl shadow-xl space-y-4 ${compact ? 'p-4' : 'p-6'}`}>
       {parentId && (
-        <div className="flex items-center justify-between bg-dark/50 px-4 py-2 rounded-lg border border-gray-800">
-          <span className="text-sm text-gray-400">Replying to <span className="text-primary font-bold">{replyingToName}</span></span>
+        <div className="flex items-center justify-between bg-dark/50 px-3 py-1.5 rounded-lg border border-gray-800">
+          <span className="text-xs text-gray-400">Replying to <span className="text-primary font-bold">{replyingToName}</span></span>
           <button
             type="button"
             onClick={onCancelReply}
-            className="text-xs text-gray-500 hover:text-red-400 transition-colors"
+            className="text-[10px] text-gray-500 hover:text-red-400 transition-colors"
           >
-            Cancel Reply
+            Cancel
           </button>
         </div>
       )}
       <div>
-        <label className="block text-sm font-bold text-primary uppercase tracking-widest mb-3">
-          {parentId ? 'Your Reply' : 'Have you attempted this before and/or how would you approach this what if challenge?'}
-        </label>
+        {!compact && (
+          <label className="block text-xs font-bold text-primary uppercase tracking-widest mb-2">
+            Share your perspective
+          </label>
+        )}
         <textarea
           required
-          rows={parentId ? 4 : 6}
+          rows={compact ? 3 : 4}
           value={content}
           onChange={(e) => setContent(e.target.value)}
-          placeholder={parentId ? "Write your reply..." : "Share your perspective, strategy, or experience..."}
-          className="w-full px-4 py-3 bg-dark border border-gray-800 rounded-xl text-white focus:ring-2 focus:ring-primary outline-none resize-none"
+          placeholder={parentId ? "Write your reply..." : "How would you approach this what if challenge?"}
+          className="w-full px-3 py-2 bg-dark border border-gray-800 rounded-xl text-white text-sm focus:ring-2 focus:ring-primary outline-none resize-none"
         />
       </div>
 
-      <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div className="flex flex-col sm:flex-row justify-between items-center gap-3">
         {user ? (
-          <label className="flex items-center gap-3 cursor-pointer group">
+          <label className="flex items-center gap-2 cursor-pointer group">
             <div className="relative flex items-center">
               <input
                 type="checkbox"
@@ -448,28 +511,28 @@ const ResponseForm: React.FC<{
                 onChange={(e) => setIsAnonymous(e.target.checked)}
                 className="peer sr-only"
               />
-              <div className="w-5 h-5 border-2 border-gray-700 rounded bg-dark peer-checked:bg-primary peer-checked:border-primary transition-all" />
-              <svg className="absolute w-3.5 h-3.5 text-white opacity-0 peer-checked:opacity-100 transition-opacity left-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="4">
+              <div className="w-4 h-4 border-2 border-gray-700 rounded bg-dark peer-checked:bg-primary peer-checked:border-primary transition-all" />
+              <svg className="absolute w-3 h-3 text-white opacity-0 peer-checked:opacity-100 transition-opacity left-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="4">
                 <path d="M5 13l4 4L19 7" />
               </svg>
             </div>
-            <span className="text-sm text-gray-400 group-hover:text-gray-300 transition-colors">Post anonymously</span>
+            <span className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors">Post anonymously</span>
           </label>
         ) : (
-          <p className="text-sm text-gray-500 italic">
-            You are posting as a guest. Your response will be anonymous.
+          <p className="text-[10px] text-gray-500 italic">
+            Posting as guest (anonymous).
           </p>
         )}
 
         <button
           type="submit"
           disabled={submitting}
-          className="w-full sm:w-auto flex items-center justify-center px-10 py-4 bg-primary text-white font-bold rounded-xl hover:bg-yellow-700 transition-all shadow-lg hover:-translate-y-1 disabled:opacity-50"
+          className={`w-full sm:w-auto flex items-center justify-center bg-primary text-white font-bold rounded-xl hover:bg-yellow-700 transition-all shadow-lg hover:-translate-y-0.5 disabled:opacity-50 ${compact ? 'px-6 py-2 text-xs' : 'px-8 py-3 text-sm'}`}
         >
           {submitting ? 'Submitting...' : (
             <>
               {parentId ? 'Post Reply' : 'Share Perspective'}
-              <Send className="w-5 h-5 ml-2" />
+              <Send className="w-4 h-4 ml-2" />
             </>
           )}
         </button>
